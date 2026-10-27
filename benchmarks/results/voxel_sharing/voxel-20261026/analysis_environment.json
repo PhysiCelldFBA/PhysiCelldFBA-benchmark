@@ -1,0 +1,9 @@
+{
+  "python": "3.12.1 (main, Apr 23 2024, 15:55:27) [GCC Intel(R) C++ gcc 11.3.1 mode]",
+  "python_prefix": "/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/venv",
+  "matplotlib": "3.10.8",
+  "numpy": "2.4.4",
+  "slurm_job_id": "48051632",
+  "modules": "impi/2021.10.0:mkl/2023.2.0:ucx/1.15.0:intel/2023.2.0:oneapi/2023.2.0:bsc/1.0:ncurses/6.4:tmux/3.3a:hdf5/1.14.1-2:sqlite3/3.45.2:python/3.12.1",
+  "host": "gs01r3b71"
+}

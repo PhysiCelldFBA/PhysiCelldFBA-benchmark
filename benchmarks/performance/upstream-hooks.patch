@@ -1,0 +1,135 @@
+diff --git a/core/PhysiCell_cell.cpp b/core/PhysiCell_cell.cpp
+index ed5dd976..5ebc8674 100644
+--- a/core/PhysiCell_cell.cpp
++++ b/core/PhysiCell_cell.cpp
+@@ -66,6 +66,9 @@
+ */
+
+ #include "PhysiCell_cell.h"
++#ifdef PHYSICELL_BENCHMARK
++#include "../benchmarks/performance/telemetry.h"
++#endif
+ #include "PhysiCell_cell_container.h"
+ #include "PhysiCell_utilities.h"
+ #include "PhysiCell_constants.h"
+@@ -364,7 +367,11 @@ void Cell::advance_bundled_phenotype_functions( double dt_ )
+     phenotype.cell_integrity.advance_damage( dt_ );
+
+     // check for new death events
+-    if( phenotype.death.check_for_death( dt_ ) == true )
++    if(
++#ifdef PHYSICELL_BENCHMARK
++        !(PCBenchmark::state().enabled && PCBenchmark::state().fixed_population) &&
++#endif
++        phenotype.death.check_for_death( dt_ ) == true )
+     {
+         // if so, change the cycle model to the current death model
+         phenotype.cycle.sync_to_cycle_model( phenotype.death.current_model() );
+@@ -491,18 +498,27 @@ Cell::~Cell()
+
+ void Cell::flag_for_division( void )
+ {
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().fixed_population) return;
++#endif
+     get_container()->flag_cell_for_division( this );
+     return;
+ }
+
+ void Cell::flag_for_removal( void )
+ {
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().fixed_population) return;
++#endif
+     get_container()->flag_cell_for_removal( this );
+     return;
+ }
+
+ void Cell::start_death( int death_model_index )
+ {
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().fixed_population) return;
++#endif
+     // set the death data struture to the indicated death model
+     phenotype.death.trigger_death( death_model_index );
+     // change the cycle model to the current death model
+diff --git a/core/PhysiCell_cell_container.cpp b/core/PhysiCell_cell_container.cpp
+index ab6a206e..ad8f0d2d 100644
+--- a/core/PhysiCell_cell_container.cpp
++++ b/core/PhysiCell_cell_container.cpp
+@@ -69,6 +69,9 @@
+ #include "PhysiCell_constants.h"
+ #include "../BioFVM/BioFVM_vector.h"
+ #include "PhysiCell_cell.h"
++#ifdef PHYSICELL_BENCHMARK
++#include "../benchmarks/performance/telemetry.h"
++#endif
+
+ #include <algorithm>
+ #include <iterator>
+@@ -131,7 +134,15 @@ void Cell_Container::update_all_cells(double t, double phenotype_dt_ , double me
+
+     bool time_for_phenotype = time_since_last_phenotype > phenotype_threshold;
+     bool time_for_mechanics = time_since_last_mechanics > mechanics_threshold;
+-
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().before_exchange)
++        PCBenchmark::state().before_exchange(diffusion_dt_);
++#endif
++
++    {
++#ifdef PHYSICELL_BENCHMARK
++    PCBenchmark::Timer benchmark_exchange("exchange_seconds");
++#endif
+     #pragma omp parallel for
+     for( int i=0; i < (*all_cells).size(); i++ )
+     {
+@@ -142,10 +153,18 @@ void Cell_Container::update_all_cells(double t, double phenotype_dt_ , double me
+     }
+
+     // intracellular update. called for every diffusion_dt, but actually depends on the intracellular_dt of each cell (as it can be noisy)
++    }
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().after_exchange)
++        PCBenchmark::state().after_exchange();
++#endif
+     update_all_cells_intracellular();
+
+     if( time_for_phenotype )
+     {
++#ifdef PHYSICELL_BENCHMARK
++        PCBenchmark::Timer benchmark_phenotype("phenotype_seconds");
++#endif
+         // new as of 1.2.1 -- bundles cell phenotype parameter update, volume update, geometry update,
+         // checking for death, and advancing the cell cycle. Not motility, though. (that's in mechanics)
+         #pragma omp parallel for
+@@ -178,6 +197,9 @@ void Cell_Container::update_all_cells(double t, double phenotype_dt_ , double me
+
+     if( time_for_mechanics )
+     {
++#ifdef PHYSICELL_BENCHMARK
++        PCBenchmark::Timer benchmark_mechanics("mechanics_seconds");
++#endif
+         // new February 2018
+         // if we need gradients, compute them
+         if( default_microenvironment_options.calculate_gradients )
+@@ -285,6 +307,9 @@ void Cell_Container::update_all_cells(double t, double phenotype_dt_ , double me
+
+ void Cell_Container::update_all_cells_intracellular( void )
+ {
++#ifdef PHYSICELL_BENCHMARK
++    PCBenchmark::Timer benchmark_intracellular("intracellular_seconds");
++#endif
+     bool anything_to_update = false; // Use a simple boolean for reduction
+     std::vector<bool> ready_to_update_intracellular = std::vector<bool>( (*all_cells).size(), false );
+
+@@ -295,6 +320,9 @@ void Cell_Container::update_all_cells_intracellular( void )
+             if( (*all_cells)[i]->phenotype.intracellular != NULL  && (*all_cells)[i]->phenotype.intracellular->need_update())
+             {
+                 ready_to_update_intracellular[i] = true;
++#ifdef PHYSICELL_BENCHMARK
++                if (!(*all_cells)[i]->phenotype.death.dead) PCBenchmark::due((*all_cells)[i]->ID);
++#endif
+                 anything_to_update = true; // Set to true if any cell needs an update
+                 if ((*all_cells)[i]->functions.pre_update_intracellular != NULL)
+                 {

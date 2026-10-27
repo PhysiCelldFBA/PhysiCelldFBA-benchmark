@@ -1,0 +1,32 @@
+postfix exit 0
+  ok   CO2        min concentration  0.000000e+00 mM (t=0 min)
+PASS
+glucose drawn: output_voxel_n4 = 0.165008, output_voxel_mixed = 0.165008, relative difference 0
+PASS
+output_order_identity_t1           max difference to identity_t1 0.000e+00   lowest concentration -3.360e-06   ok
+output_order_identity_t4           max difference to identity_t1 6.939e-18   lowest concentration -3.360e-06   ok
+output_order_rand0_t1              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand0_t4              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand1_t1              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand1_t4              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand2_t1              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand2_t4              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_reversed_t1           max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_reversed_t4           max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+PASS
+prefix exit 1
+  ok   CO2        min concentration  0.000000e+00 mM (t=0 min)
+PASS
+glucose drawn: output_voxel_n4 = 0.165008, output_voxel_mixed = 0.165008, relative difference 0
+PASS
+output_order_identity_t1           max difference to identity_t1 0.000e+00   lowest concentration -3.360e-06   ok
+output_order_identity_t4           max difference to identity_t1 5.904e-01   lowest concentration -2.213e-03   FAIL
+output_order_rand0_t1              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand0_t4              max difference to identity_t1 2.214e-01   lowest concentration -5.705e-05   FAIL
+output_order_rand1_t1              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand1_t4              max difference to identity_t1 4.428e-01   lowest concentration -1.732e-02   FAIL
+output_order_rand2_t1              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand2_t4              max difference to identity_t1 8.118e-01   lowest concentration -1.563e-02   FAIL
+output_order_reversed_t1           max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_reversed_t4           max difference to identity_t1 1.328e+00   lowest concentration -2.798e-01   FAIL
+FAIL: 5 run(s) differ from the 1-thread reference by more than 1e-09

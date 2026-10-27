@@ -1,0 +1,12 @@
+{
+  "source_commit": null,
+  "upstream_commit": null,
+  "compiler": null,
+  "compiler_flags": null,
+  "build_command": null,
+  "binary_sha256": null,
+  "benchmark_harness": null,
+  "libraries": null,
+  "solver_settings": null,
+  "notes": "Fill this from the actual build and linked libraries, not from assumed package versions."
+}

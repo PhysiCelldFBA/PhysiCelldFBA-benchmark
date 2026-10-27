@@ -1,0 +1,31 @@
+salloc: Pending job allocation 48054003
+salloc: job 48054003 queued and waiting for resources
+salloc: job 48054003 has been allocated resources
+salloc: Granted job allocation 48054003
+salloc: Waiting for resource configuration
+salloc: Nodes gs08r1b72 are ready for job
+load HDF5/1.14.1-2 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, HDF5_DIR, HDF5_ROOT,CFLAGS, CPPFLAGS, LDFLAGS) 
+load PYTHON/3.12.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME, PYTHONPATH) 
+load SQLITE3/3.45.2 (PATH)
+Extracted 23 configs and 135 field definitions; no simulations run.
+Completed 36 static LP checks; no simulations run.
+g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Python 3.12.1
+gs08r1b72
+2f3465e6546444a1312bfc79e4da7f09cd4272373f712c33bf6c1e62b0cd1da5  benchmarks/performance/review_conditions.py
+d1b8178f2187446583ed9506baee77016a7eb76f1faf6f7459ac8d4177d09d23  benchmarks/performance/screen_conditions.py
+4592ee9c46fb0de1f4c3a104e89e66ad4e6883696396d1c9e3ff038bd18b0844  benchmarks/performance/diagnostics/screen_medium.cpp
+806e9a4f304c3435ff6a169b45a2d45740db656625bbc4ae1c089c7aa5f7ed51  addons/dFBA/src/dfba_Model.cpp
+d90d49e4fcc0bc3eccd3649916c8a43c43c418837bedbd300f04a57376e2b7ee  addons/dFBA/src/dfba_Reaction.cpp
+8c2847dbea4a882164b44f18b8d52408f1f822ec606663c1849014c915f530ee  addons/dFBA/src/dfba_Metabolite.cpp
+e68114dcaacca47d4f5d5222354257bfd92d7f086e1ca00f92922eb15ec89a50  addons/dFBA/src/dfba_Solution.cpp
+63aa041a715007c95b4ef0466b729e1114b71dc4bae68af621970cad93939401  addons/dFBA/ext/coin-or/lib/libClp.a
+8385a77e13ebfa1414077c7fc24ee42fec18550a95d8c0f6118b6d4d4400f208  addons/dFBA/ext/coin-or/lib/libCoinUtils.a
+d63ac7f2283aff424626aab9e8d130dd78468bdd38cc169363bef7d95d837b49  addons/dFBA/ext/libsbml/lib/libsbml-static.a
+salloc: Relinquishing job allocation 48054003

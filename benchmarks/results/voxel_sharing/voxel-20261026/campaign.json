@@ -1,0 +1,28 @@
+{
+  "active_part": "voxel_sharing",
+  "cases": 60,
+  "duration_minutes": 0.1,
+  "expected_threads": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "input_sources": {
+    "sample_projects_intracellular/fba/dfba_unit_test/config/Ecoli_core.xml": "a61a61fd3f10d079c3c69eff9db99c537369eec794dc6c8c84105154a44ce5d4",
+    "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_n8.xml": "5b6efb976eb563cb967e1b9f17bd6e38251fbc529494228e594fa7619a026837"
+  },
+  "order_seeds": [
+    11,
+    23,
+    37,
+    51,
+    71
+  ],
+  "other_parts": "planned; not submitted",
+  "preparation_commit": "63334e9216f190c70628bd780c52a80b9f449ba6",
+  "protocol_sha256": "3843da2e126f6354e9b9b629bf412cec44a106064cc77d10e0153c312f2f45c2",
+  "repeats": 3,
+  "schema_version": 1,
+  "simulation_commit": "8ae6a1d722718b9e6a6ffcbc00f19c270281ecda"
+}

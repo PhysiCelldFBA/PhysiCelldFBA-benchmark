@@ -1,0 +1,112 @@
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/voxel-20261027/preflight/runs/voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012826957044Z
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/voxel-20261027/preflight/runs/voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012827282004Z
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-20261027/preflight/runs/mesh16-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012827641898Z
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-20261027/preflight/runs/mesh16-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012827963916Z
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-20261027/preflight/runs/mesh2-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012828288297Z
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-20261027/preflight/runs/mesh2-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012828604778Z
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-20261027/preflight/runs/mesh4-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012828924805Z
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-20261027/preflight/runs/mesh4-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012829239997Z
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-20261027/preflight/runs/mesh8-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012829556596Z
+/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-20261027/preflight/runs/mesh8-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012829868831Z
+[
+  {
+    "case_id": "voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/voxel-20261027/preflight/runs/voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012826957044Z",
+    "status": "completed_flagged",
+    "occupancy": 8,
+    "actual_updates": 80,
+    "min_concentration": -3.7803191410903936e-06,
+    "flags": [
+      "negative_concentration"
+    ]
+  },
+  {
+    "case_id": "voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/voxel-20261027/preflight/runs/voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012827282004Z",
+    "status": "completed_flagged",
+    "occupancy": 8,
+    "actual_updates": 80,
+    "min_concentration": -3.7803191410903936e-06,
+    "flags": [
+      "negative_concentration"
+    ]
+  }
+]
+[
+  {
+    "case_id": "mesh16-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/mesh-20261027/preflight/runs/mesh16-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012827641898Z",
+    "status": "completed",
+    "occupancy": 8,
+    "actual_updates": 80,
+    "min_concentration": 0,
+    "flags": []
+  },
+  {
+    "case_id": "mesh16-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/mesh-20261027/preflight/runs/mesh16-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012827963916Z",
+    "status": "completed",
+    "occupancy": 8,
+    "actual_updates": 80,
+    "min_concentration": 0,
+    "flags": []
+  },
+  {
+    "case_id": "mesh2-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/mesh-20261027/preflight/runs/mesh2-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012828288297Z",
+    "status": "completed_flagged",
+    "occupancy": 1,
+    "actual_updates": 80,
+    "min_concentration": -1.1883362427411726e-06,
+    "flags": [
+      "negative_concentration"
+    ]
+  },
+  {
+    "case_id": "mesh2-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/mesh-20261027/preflight/runs/mesh2-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012828604778Z",
+    "status": "completed_flagged",
+    "occupancy": 1,
+    "actual_updates": 80,
+    "min_concentration": -1.1883362427411726e-06,
+    "flags": [
+      "negative_concentration"
+    ]
+  },
+  {
+    "case_id": "mesh4-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/mesh-20261027/preflight/runs/mesh4-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012828924805Z",
+    "status": "completed",
+    "occupancy": 2,
+    "actual_updates": 80,
+    "min_concentration": 0,
+    "flags": []
+  },
+  {
+    "case_id": "mesh4-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/mesh-20261027/preflight/runs/mesh4-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012829239997Z",
+    "status": "completed",
+    "occupancy": 2,
+    "actual_updates": 80,
+    "min_concentration": 0,
+    "flags": []
+  },
+  {
+    "case_id": "mesh8-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/mesh-20261027/preflight/runs/mesh8-voxel-ecoli_core-dfba-n8-p1-f4-q1-h1-o11-r1_job48112650_20261027T012829556596Z",
+    "status": "completed",
+    "occupancy": 4,
+    "actual_updates": 80,
+    "min_concentration": 0,
+    "flags": []
+  },
+  {
+    "case_id": "mesh8-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1",
+    "run": "benchmarks/workspaces/mesh-20261027/preflight/runs/mesh8-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1_job48112650_20261027T012829868831Z",
+    "status": "completed",
+    "occupancy": 4,
+    "actual_updates": 80,
+    "min_concentration": 0,
+    "flags": []
+  }
+]

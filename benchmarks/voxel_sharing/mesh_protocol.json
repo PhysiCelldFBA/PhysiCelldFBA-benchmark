@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "template": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_n8.xml",
+  "cells": 8,
+  "initial_position": [0, 0, 0],
+  "initial_positions": [[-7, -7, -7], [-5, -7, -7], [-7, -3, -7], [-5, -3, -7], [-7, -7, 1], [-5, -7, 1], [-7, -3, 1], [-5, -3, 1]],
+  "meshes": [
+    {"id": "mesh16", "voxel_size_um": 16, "expected_max_occupancy": 8},
+    {"id": "mesh8", "voxel_size_um": 8, "expected_max_occupancy": 4},
+    {"id": "mesh4", "voxel_size_um": 4, "expected_max_occupancy": 2},
+    {"id": "mesh2", "voxel_size_um": 2, "expected_max_occupancy": 1}
+  ],
+  "threads": [1, 2, 4, 8],
+  "order_seeds": [11, 23, 37, 51, 71],
+  "repeats": 3,
+  "simulation_seed": 50,
+  "launch_order_seed": 20261027,
+  "duration": "Use max_time from the existing eight-cell unit test (0.1 minutes)",
+  "interpretation": "New separated-cell diagnostic; compare parallel to serial within each mesh, not against the original coincident-cell experiment",
+  "controls": "Use initial_positions instead of initial_position for mesh cases. Keep domain [-8,8]^3, initial concentrations, timesteps, positions, population and solver fixed. Allow metabolic biomass growth. Permute once at initialization. Scheduler and exchange code unchanged."
+}

@@ -1,0 +1,4 @@
+# Preserve original evidence bytes and generated CSV line endings.
+data/** -text -whitespace
+tables/*.csv -text -whitespace
+diagnosis/** -text -whitespace

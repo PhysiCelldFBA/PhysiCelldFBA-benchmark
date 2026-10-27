@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "template": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_n8.xml",
+  "cells": 8,
+  "initial_position": [0, 0, 0],
+  "threads": [1, 2, 4, 8],
+  "order_seeds": [11, 23, 37, 51, 71],
+  "repeats": 3,
+  "simulation_seed": 50,
+  "launch_order_seed": 20261026,
+  "duration": "Use max_time from the existing eight-cell unit test",
+  "interpretation": "Concurrency and order-sensitivity diagnostic; retain failed and flagged attempts",
+  "controls": "Freeze positions and population; allow metabolic biomass growth; permute once at initialization"
+}

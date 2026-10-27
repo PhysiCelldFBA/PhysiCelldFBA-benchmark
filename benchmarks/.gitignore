@@ -1,0 +1,3 @@
+# Generated campaign inputs, binaries, raw simulation outputs and job logs.
+/workspaces/
+# Reproducible compact reports under results/ are deliberately versionable.

@@ -1,0 +1,4 @@
+[submodule "PhysiCelldFBA"]
+	path = PhysiCelldFBA
+	url = https://github.com/PhysiCelldFBA/PhysiCelldFBA.git
+	shallow = true

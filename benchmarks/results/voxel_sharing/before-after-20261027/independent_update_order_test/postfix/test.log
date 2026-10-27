@@ -1,0 +1,37 @@
+output_voxel_n1: 11 snapshots, 1 cells at the end
+  ok   oxygen     min concentration  1.000000e+08 mM (t=0.03 min)
+  ok   glucose    min concentration -4.965017e-06 mM (t=0.04 min)
+  ok   acetate    min concentration  0.000000e+00 mM (t=0 min)
+  ok   CO2        min concentration  0.000000e+00 mM (t=0 min)
+PASS
+output_voxel_n4: 11 snapshots, 4 cells at the end
+  ok   oxygen     min concentration  1.000000e+08 mM (t=0.03 min)
+  ok   glucose    min concentration -7.560725e-06 mM (t=0.03 min)
+  ok   acetate    min concentration  0.000000e+00 mM (t=0 min)
+  ok   CO2        min concentration  0.000000e+00 mM (t=0 min)
+PASS
+output_voxel_n8: 11 snapshots, 8 cells at the end
+  ok   oxygen     min concentration  1.000000e+08 mM (t=0.03 min)
+  ok   glucose    min concentration -3.780319e-06 mM (t=0.03 min)
+  ok   acetate    min concentration  0.000000e+00 mM (t=0 min)
+  ok   CO2        min concentration  0.000000e+00 mM (t=0 min)
+PASS
+output_voxel_mixed: 11 snapshots, 8 cells at the end
+  ok   oxygen     min concentration  1.000000e+08 mM (t=0.03 min)
+  ok   glucose    min concentration -7.560725e-06 mM (t=0.03 min)
+  ok   acetate    min concentration  0.000000e+00 mM (t=0 min)
+  ok   CO2        min concentration  0.000000e+00 mM (t=0 min)
+PASS
+glucose drawn: output_voxel_n4 = 0.165008, output_voxel_mixed = 0.165008, relative difference 0
+PASS
+output_order_identity_t1           max difference to identity_t1 0.000e+00   lowest concentration -3.360e-06   ok
+output_order_identity_t4           max difference to identity_t1 6.939e-18   lowest concentration -3.360e-06   ok
+output_order_rand0_t1              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand0_t4              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand1_t1              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand1_t4              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand2_t1              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_rand2_t4              max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_reversed_t1           max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+output_order_reversed_t4           max difference to identity_t1 1.110e-15   lowest concentration -3.360e-06   ok
+PASS

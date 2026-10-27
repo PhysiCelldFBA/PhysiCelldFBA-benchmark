@@ -1,0 +1,3 @@
+experiment,reaction,required_lower,status,objective
+cold_primal,,0,1,-0
+relax_required_lower_and_maximize,R_ATPM,1.0700000000000001,0,0.83241808311966425

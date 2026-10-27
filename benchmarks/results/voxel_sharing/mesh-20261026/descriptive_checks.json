@@ -1,0 +1,66 @@
+{
+  "serial_repeat_groups": 20,
+  "serial_repeat_groups_with_any_variation": 0,
+  "parallel_repeat_groups": 60,
+  "parallel_repeat_groups_with_any_variation": 57,
+  "solver_failures": 0.0,
+  "nonoptimal_cell_updates": 0,
+  "parallel_missed_updates_runs": 147,
+  "parallel_exchange_mismatch_runs": 99,
+  "mesh2_parallel_no_missing_update_runs": [
+    {
+      "threads": "2",
+      "seed": "11",
+      "repeat": "1",
+      "glucose_min_mM": "-1.1883362427411726e-06"
+    },
+    {
+      "threads": "2",
+      "seed": "23",
+      "repeat": "1",
+      "glucose_min_mM": "-1.1883362427411726e-06"
+    },
+    {
+      "threads": "2",
+      "seed": "23",
+      "repeat": "3",
+      "glucose_min_mM": "-1.1883362427411726e-06"
+    },
+    {
+      "threads": "2",
+      "seed": "37",
+      "repeat": "1",
+      "glucose_min_mM": "-1.1883362427411726e-06"
+    },
+    {
+      "threads": "2",
+      "seed": "37",
+      "repeat": "3",
+      "glucose_min_mM": "-1.1883362427411726e-06"
+    },
+    {
+      "threads": "2",
+      "seed": "51",
+      "repeat": "1",
+      "glucose_min_mM": "-1.1883362427411726e-06"
+    },
+    {
+      "threads": "2",
+      "seed": "51",
+      "repeat": "2",
+      "glucose_min_mM": "-1.1883362427411726e-06"
+    },
+    {
+      "threads": "2",
+      "seed": "71",
+      "repeat": "1",
+      "glucose_min_mM": "-1.1883362427411726e-06"
+    },
+    {
+      "threads": "2",
+      "seed": "71",
+      "repeat": "2",
+      "glucose_min_mM": "-1.1883362427411726e-06"
+    }
+  ]
+}

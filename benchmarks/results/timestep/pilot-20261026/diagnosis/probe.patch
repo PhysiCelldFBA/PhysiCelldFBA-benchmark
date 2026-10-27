@@ -1,0 +1,40 @@
+--- a/addons/dFBA/src/dfba_Model.cpp
++++ b/addons/dFBA/src/dfba_Model.cpp
+@@ -6,6 +6,7 @@
+  */
+ 
+ #include "dfba_Model.h"
++#include "/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/performance/diagnostics/lp_probe.h"
+ #include "dfba_Reaction.h"  // Include the full definition
+ 
+ #include <algorithm>
+@@ -614,6 +615,7 @@
+     PCBenchmark::count("model_optimization_calls");
+     PCBenchmark::solve(problem, "stage_one", false, false, [&](){ problem.dual(); });
+     if (!problem.isProvenOptimal()) PCBenchmark::count("solver_failures");
++    probe_failed_lp(problem, reactionsIndexer);
+ #else
+     this->problem.dual();
+ #endif
+--- a/benchmarks/performance/runtime.h
++++ b/benchmarks/performance/runtime.h
+@@ -152,6 +152,19 @@
+ #ifdef ADDON_PHYSIDFBA
+     auto* m = dynamic_cast<PhysiCelldFBA::dFBAIntracellular*>(c->phenotype.intracellular);
+     auto sol = m->sbml_model.getSolution();
++    static bool probe_recorded=false;
++    if (!probe_recorded) {
++        probe_recorded=true;
++        std::ofstream ex("first_update_exchange.csv");
++        ex << "field,reaction,concentration_mM,kinetic_bound,actual_lower_bound,voxel_um3,dry_mass_pg,dt_minutes\n" << std::setprecision(17);
++        for(auto p:m->substrate_exchanges) {
++            auto e=p.second;
++            double concentration=std::max(c->nearest_density_vector()[e.density_index],0.0);
++            double kinetic=e.Vmax.value*concentration/(e.Km.value+concentration);
++            ex << p.first << ',' << e.fba_flux_id << ',' << concentration << ',' << kinetic << ',' << m->sbml_model.getReactionLowerBound(e.fba_flux_id) << ',' << microenvironment.voxels(c->get_current_voxel_index()).volume << ',' << dry_mass_pg(c) << ',' << m->dfba_time_step << '\n';
++        }
++    }
++
+     row << ',' << m->get_growth_rate() << ',' << sol.status << ',' << sol.secondary_status << ',' << m->sbml_model.getTotalAbsoluteFlux();
+ #else
+     row << ",0,none,none,0";

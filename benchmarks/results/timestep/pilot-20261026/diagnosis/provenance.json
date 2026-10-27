@@ -1,0 +1,11 @@
+{
+  "diagnostic_source_changes": [
+    "Export first failed LP; solve independent copies with fresh basis and relaxed required flux bounds",
+    "Record first-update local concentrations and exchange bounds"
+  ],
+  "modified_model_sha256": "7d4b8ffc4855e23417f16c4fcc6d4eab0f9141257215a49a3bb0ff868cd2dadd",
+  "modified_runtime_sha256": "b44302e258f83abc6228ee6f83d004a0e9b0f1933417974d17ee40e4aec740b2",
+  "original_binary_sha256": "e2034f57e36e1e1d48e8517cd363a30292100eeeb61c95b483d3ec315ddf37fa",
+  "original_run": "/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/timestep-pilot-20261026/timestep/runs/pilot-timestep-mcf7_core-dfba-n1-p1-f23-q100-h1-oNone-r1_job48052925_20261026T045826762434Z",
+  "probe_header_sha256": "a03b24cfb50b09f1afeae1764b20c5c0f2741da3a321573fee0df73afde37309"
+}

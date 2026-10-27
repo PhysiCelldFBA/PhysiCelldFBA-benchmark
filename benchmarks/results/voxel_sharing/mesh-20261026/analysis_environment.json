@@ -1,0 +1,9 @@
+{
+  "python": "3.12.1 (main, Apr 23 2024, 15:55:27) [GCC Intel(R) C++ gcc 11.3.1 mode]",
+  "executable": "/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/venv/bin/python",
+  "matplotlib": "3.10.8",
+  "numpy": "2.4.4",
+  "host": "gs10r2b69",
+  "slurm_job_id": "48055204",
+  "reproduction": "Three supplemental tables regenerated from archived evidence and matched byte for byte; all 3840 source evidence checksums verified."
+}

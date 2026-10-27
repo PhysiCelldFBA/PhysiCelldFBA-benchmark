@@ -1,0 +1,3461 @@
+[
+  {
+    "bounds": [
+      {
+        "capped_max": 7.984031936127745,
+        "concentration_mM": 10.0,
+        "field": "glucose",
+        "kinetic_max": 7.984031936127745
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 17.99999999964,
+        "concentration_mM": 100000000.0,
+        "field": "oxygen",
+        "kinetic_max": 17.99999999964
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_BIOMASS_Ecoli_core_w_GAM",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.7318542624758873,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 10.0,
+      "oxygen": 100000000.0
+    },
+    "model": "sample_projects_intracellular/fba/dfba_unit_test/config/Ecoli_core.xml",
+    "model_sha256": "a61a61fd3f10d079c3c69eff9db99c537369eec794dc6c8c84105154a44ce5d4",
+    "overrides": "{}",
+    "profile": "ecoli_mass-ecoli1",
+    "sbml_objective_used": "R_BIOMASS_Ecoli_core_w_GAM",
+    "source_config": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_mass_conversion.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 4.096000000000001
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 7.984031936127745,
+        "concentration_mM": 10.0,
+        "field": "glucose",
+        "kinetic_max": 7.984031936127745
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 17.99999999964,
+        "concentration_mM": 100000000.0,
+        "field": "oxygen",
+        "kinetic_max": 17.99999999964
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_BIOMASS_Ecoli_core_w_GAM",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.7318542624758873,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 10.0,
+      "oxygen": 100000000.0
+    },
+    "model": "sample_projects_intracellular/fba/dfba_unit_test/config/Ecoli_core.xml",
+    "model_sha256": "a61a61fd3f10d079c3c69eff9db99c537369eec794dc6c8c84105154a44ce5d4",
+    "overrides": "{}",
+    "profile": "ecoli_mass-ecoli1",
+    "sbml_objective_used": "R_BIOMASS_Ecoli_core_w_GAM",
+    "source_config": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_mass_conversion.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 4.096000000000001
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 7.271005917159764,
+        "concentration_mM": 10.0,
+        "field": "glucose",
+        "kinetic_max": 7.984031936127745
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 17.99999999964,
+        "concentration_mM": 100000000.0,
+        "field": "oxygen",
+        "kinetic_max": 17.99999999964
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_BIOMASS_Ecoli_core_w_GAM",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.6664949132883363,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 10.0,
+      "oxygen": 100000000.0
+    },
+    "model": "sample_projects_intracellular/fba/dfba_unit_test/config/Ecoli_core.xml",
+    "model_sha256": "a61a61fd3f10d079c3c69eff9db99c537369eec794dc6c8c84105154a44ce5d4",
+    "overrides": "{}",
+    "profile": "ecoli_mass-ecoli1",
+    "sbml_objective_used": "R_BIOMASS_Ecoli_core_w_GAM",
+    "source_config": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_mass_conversion.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 4.096000000000001
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 9.990917347865578,
+        "concentration_mM": 11.0,
+        "field": "glucose",
+        "kinetic_max": 9.990917347865578
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 19.9990000499975,
+        "concentration_mM": 10.0,
+        "field": "oxygen",
+        "kinetic_max": 19.9990000499975
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Biomass_Ecoli_core",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.8321736988347332,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 11.0,
+      "lactate": 0,
+      "oxygen": 10.0
+    },
+    "model": "sample_projects_intracellular/fba/bacterial_colony/config/Ecoli_core.xml",
+    "model_sha256": "5e0e011badcb1135d8a61e73beb2521cf5ac570ea75ced37010c7d8416f4aedf",
+    "overrides": "{}",
+    "profile": "ecoli_colony-ecoli",
+    "sbml_objective_used": "R_Biomass_Ecoli_core",
+    "source_config": "sample_projects_intracellular/fba/bacterial_colony/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 8.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 9.990917347865578,
+        "concentration_mM": 11.0,
+        "field": "glucose",
+        "kinetic_max": 9.990917347865578
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 19.9990000499975,
+        "concentration_mM": 10.0,
+        "field": "oxygen",
+        "kinetic_max": 19.9990000499975
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Biomass_Ecoli_core",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.8321736988347332,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 11.0,
+      "lactate": 0,
+      "oxygen": 10.0
+    },
+    "model": "sample_projects_intracellular/fba/bacterial_colony/config/Ecoli_core.xml",
+    "model_sha256": "5e0e011badcb1135d8a61e73beb2521cf5ac570ea75ced37010c7d8416f4aedf",
+    "overrides": "{}",
+    "profile": "ecoli_colony-ecoli",
+    "sbml_objective_used": "R_Biomass_Ecoli_core",
+    "source_config": "sample_projects_intracellular/fba/bacterial_colony/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 8.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 9.990917347865578,
+        "concentration_mM": 11.0,
+        "field": "glucose",
+        "kinetic_max": 9.990917347865578
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 14.20118343195266,
+        "concentration_mM": 10.0,
+        "field": "oxygen",
+        "kinetic_max": 19.9990000499975
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Biomass_Ecoli_core",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.6952798065524034,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 11.0,
+      "lactate": 0,
+      "oxygen": 10.0
+    },
+    "model": "sample_projects_intracellular/fba/bacterial_colony/config/Ecoli_core.xml",
+    "model_sha256": "5e0e011badcb1135d8a61e73beb2521cf5ac570ea75ced37010c7d8416f4aedf",
+    "overrides": "{}",
+    "profile": "ecoli_colony-ecoli",
+    "sbml_objective_used": "R_Biomass_Ecoli_core",
+    "source_config": "sample_projects_intracellular/fba/bacterial_colony/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 8.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 7.980049875311721,
+        "concentration_mM": 8.0,
+        "field": "glucose",
+        "kinetic_max": 7.980049875311721
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 17.99280287884846,
+        "concentration_mM": 5.0,
+        "field": "oxygen",
+        "kinetic_max": 17.99280287884846
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Biomass_Ecoli_core",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.6887632910985179,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 8.0,
+      "oxygen": 5.0
+    },
+    "model": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/Ecoli_core.xml",
+    "model_sha256": "5e0e011badcb1135d8a61e73beb2521cf5ac570ea75ced37010c7d8416f4aedf",
+    "overrides": "{}",
+    "profile": "ecoli_static-ecoli",
+    "sbml_objective_used": "R_Biomass_Ecoli_core",
+    "source_config": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings_static_condition.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 1.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 7.980049875311721,
+        "concentration_mM": 8.0,
+        "field": "glucose",
+        "kinetic_max": 7.980049875311721
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 8.875739644970414,
+        "concentration_mM": 5.0,
+        "field": "oxygen",
+        "kinetic_max": 17.99280287884846
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Biomass_Ecoli_core",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.456874310951682,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 8.0,
+      "oxygen": 5.0
+    },
+    "model": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/Ecoli_core.xml",
+    "model_sha256": "5e0e011badcb1135d8a61e73beb2521cf5ac570ea75ced37010c7d8416f4aedf",
+    "overrides": "{}",
+    "profile": "ecoli_static-ecoli",
+    "sbml_objective_used": "R_Biomass_Ecoli_core",
+    "source_config": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings_static_condition.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 1.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 1.4201183431952664,
+        "concentration_mM": 8.0,
+        "field": "glucose",
+        "kinetic_max": 7.980049875311721
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.8875739644970414,
+        "concentration_mM": 5.0,
+        "field": "oxygen",
+        "kinetic_max": 17.99280287884846
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Biomass_Ecoli_core",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.0,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 8.0,
+      "oxygen": 5.0
+    },
+    "model": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/Ecoli_core.xml",
+    "model_sha256": "5e0e011badcb1135d8a61e73beb2521cf5ac570ea75ced37010c7d8416f4aedf",
+    "overrides": "{}",
+    "profile": "ecoli_static-ecoli",
+    "sbml_objective_used": "R_Biomass_Ecoli_core",
+    "source_config": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings_static_condition.xml",
+    "status": "infeasible",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 1.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.5,
+        "concentration_mM": 0.5,
+        "field": "O2",
+        "kinetic_max": 0.5
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.013653092634260204,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 0.5,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{}",
+    "profile": "cancer_native-MCF7_core",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.5,
+        "concentration_mM": 0.5,
+        "field": "O2",
+        "kinetic_max": 0.5
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.013653092634260204,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 0.5,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{}",
+    "profile": "cancer_native-MCF7_core",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.13011998026031704,
+        "concentration_mM": 0.5,
+        "field": "O2",
+        "kinetic_max": 0.5
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.0,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 0.5,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{}",
+    "profile": "cancer_native-MCF7_core",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "infeasible",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 7.984031936127745,
+        "concentration_mM": 10.0,
+        "field": "glucose",
+        "kinetic_max": 7.984031936127745
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 17.982017982017982,
+        "concentration_mM": 1.0,
+        "field": "oxygen",
+        "kinetic_max": 17.982017982017982
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_BIOMASS_Ec_iML1515_core_75p37M",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.694995151145841,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 808.0560000000003,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 10.0,
+      "oxygen": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml",
+    "model_sha256": "9c772d44ca43350e40dc7ee86c7aa148796856be1eea45e5406c6df8f7dcde28",
+    "overrides": "{}",
+    "profile": "iml_native-ecoli",
+    "sbml_objective_used": "R_BIOMASS_Ec_iML1515_core_75p37M",
+    "source_config": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/Ecoli_large_scale.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 21,
+    "voxel_um3": 8000.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 7.984031936127745,
+        "concentration_mM": 10.0,
+        "field": "glucose",
+        "kinetic_max": 7.984031936127745
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 5.94018236359856,
+        "concentration_mM": 1.0,
+        "field": "oxygen",
+        "kinetic_max": 17.982017982017982
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_BIOMASS_Ec_iML1515_core_75p37M",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.3439063208893452,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 808.0560000000003,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 10.0,
+      "oxygen": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml",
+    "model_sha256": "9c772d44ca43350e40dc7ee86c7aa148796856be1eea45e5406c6df8f7dcde28",
+    "overrides": "{}",
+    "profile": "iml_native-ecoli",
+    "sbml_objective_used": "R_BIOMASS_Ec_iML1515_core_75p37M",
+    "source_config": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/Ecoli_large_scale.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 21,
+    "voxel_um3": 8000.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 5.940182363598559,
+        "concentration_mM": 10.0,
+        "field": "glucose",
+        "kinetic_max": 7.984031936127745
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.5940182363598561,
+        "concentration_mM": 1.0,
+        "field": "oxygen",
+        "kinetic_max": 17.982017982017982
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_BIOMASS_Ec_iML1515_core_75p37M",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.09273823096218427,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 808.0560000000003,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 10.0,
+      "oxygen": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml",
+    "model_sha256": "9c772d44ca43350e40dc7ee86c7aa148796856be1eea45e5406c6df8f7dcde28",
+    "overrides": "{}",
+    "profile": "iml_native-ecoli",
+    "sbml_objective_used": "R_BIOMASS_Ec_iML1515_core_75p37M",
+    "source_config": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/Ecoli_large_scale.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 21,
+    "voxel_um3": 8000.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 12.5,
+        "concentration_mM": 5.0,
+        "field": "glucose",
+        "kinetic_max": 12.5
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 3.665941115820826,
+        "concentration_mM": 0.06,
+        "field": "oxygen",
+        "kinetic_max": 17.704918032786885
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.08444376889421651,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 785.6100000000002,
+    "medium_mM": {
+      "CO2": 0,
+      "glucose": 5.0,
+      "lactate": 0,
+      "oxygen": 0.06
+    },
+    "model": "sample_projects_intracellular/fba/cancer_metabolism/config/Recon2.2_FBC_trimmed_final.xml",
+    "model_sha256": "f15d79bc732d3a07731828e9d0d47d897af7e4e0b1c496972911d25bb15ab478",
+    "overrides": "{}",
+    "profile": "recon_native-cancer",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 36,
+    "voxel_um3": 8000.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 12.5,
+        "concentration_mM": 5.0,
+        "field": "glucose",
+        "kinetic_max": 12.5
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.36659411158208255,
+        "concentration_mM": 0.06,
+        "field": "oxygen",
+        "kinetic_max": 17.704918032786885
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.08444376889421651,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 785.6100000000002,
+    "medium_mM": {
+      "CO2": 0,
+      "glucose": 5.0,
+      "lactate": 0,
+      "oxygen": 0.06
+    },
+    "model": "sample_projects_intracellular/fba/cancer_metabolism/config/Recon2.2_FBC_trimmed_final.xml",
+    "model_sha256": "f15d79bc732d3a07731828e9d0d47d897af7e4e0b1c496972911d25bb15ab478",
+    "overrides": "{}",
+    "profile": "recon_native-cancer",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 36,
+    "voxel_um3": 8000.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 3.054950929850688,
+        "concentration_mM": 5.0,
+        "field": "glucose",
+        "kinetic_max": 12.5
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.036659411158208255,
+        "concentration_mM": 0.06,
+        "field": "oxygen",
+        "kinetic_max": 17.704918032786885
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.0,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 785.6100000000002,
+    "medium_mM": {
+      "CO2": 0,
+      "glucose": 5.0,
+      "lactate": 0,
+      "oxygen": 0.06
+    },
+    "model": "sample_projects_intracellular/fba/cancer_metabolism/config/Recon2.2_FBC_trimmed_final.xml",
+    "model_sha256": "f15d79bc732d3a07731828e9d0d47d897af7e4e0b1c496972911d25bb15ab478",
+    "overrides": "{}",
+    "profile": "recon_native-cancer",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_metabolism/config/PhysiCell_settings.xml",
+    "status": "infeasible",
+    "unmapped_uptake_reactions": 36,
+    "voxel_um3": 8000.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 3.75,
+        "concentration_mM": 1.0,
+        "field": "glucose",
+        "kinetic_max": 3.75
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "H2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 14.997000599880023,
+        "concentration_mM": 5.0,
+        "field": "NH4",
+        "kinetic_max": 14.997000599880023
+      },
+      {
+        "capped_max": 14.997000599880023,
+        "concentration_mM": 5.0,
+        "field": "Pi",
+        "kinetic_max": 14.997000599880023
+      },
+      {
+        "capped_max": 14.997000599880023,
+        "concentration_mM": 5.0,
+        "field": "SO4",
+        "kinetic_max": 14.997000599880023
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.0,
+        "concentration_mM": 1.0,
+        "field": "CO2",
+        "kinetic_max": 0.0
+      }
+    ],
+    "configured_objective": "R_biomass",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.16648835688416572,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 1.0,
+      "H2": 0,
+      "NH4": 5.0,
+      "Pi": 5.0,
+      "SO4": 5.0,
+      "acetate": 0,
+      "glucose": 1.0,
+      "methane": 0
+    },
+    "model": "sample_projects_intracellular/fba/crossfeeding/config/sbml_models/C_beijerinckii_model_iCB925_trimmed.xml",
+    "model_sha256": "5b861b9a2330fd8fd5852e30c73561ea547d18b1aada09b7a8b9fe8b9d32c83b",
+    "overrides": "{}",
+    "profile": "crossfeeding-c_beijerinckii",
+    "sbml_objective_used": "R_biomass",
+    "source_config": "sample_projects_intracellular/fba/crossfeeding/config/PhysiCell_settings_crossfeeding.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 3,
+    "voxel_um3": 0.5120000000000001
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.9088757396449705,
+        "concentration_mM": 1.0,
+        "field": "glucose",
+        "kinetic_max": 3.75
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "H2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 4.544378698224852,
+        "concentration_mM": 5.0,
+        "field": "NH4",
+        "kinetic_max": 14.997000599880023
+      },
+      {
+        "capped_max": 4.544378698224852,
+        "concentration_mM": 5.0,
+        "field": "Pi",
+        "kinetic_max": 14.997000599880023
+      },
+      {
+        "capped_max": 4.544378698224852,
+        "concentration_mM": 5.0,
+        "field": "SO4",
+        "kinetic_max": 14.997000599880023
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.0,
+        "concentration_mM": 1.0,
+        "field": "CO2",
+        "kinetic_max": 0.0
+      }
+    ],
+    "configured_objective": "R_biomass",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.0403512609347658,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 1.0,
+      "H2": 0,
+      "NH4": 5.0,
+      "Pi": 5.0,
+      "SO4": 5.0,
+      "acetate": 0,
+      "glucose": 1.0,
+      "methane": 0
+    },
+    "model": "sample_projects_intracellular/fba/crossfeeding/config/sbml_models/C_beijerinckii_model_iCB925_trimmed.xml",
+    "model_sha256": "5b861b9a2330fd8fd5852e30c73561ea547d18b1aada09b7a8b9fe8b9d32c83b",
+    "overrides": "{}",
+    "profile": "crossfeeding-c_beijerinckii",
+    "sbml_objective_used": "R_biomass",
+    "source_config": "sample_projects_intracellular/fba/crossfeeding/config/PhysiCell_settings_crossfeeding.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 3,
+    "voxel_um3": 0.5120000000000001
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.09088757396449705,
+        "concentration_mM": 1.0,
+        "field": "glucose",
+        "kinetic_max": 3.75
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "H2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.4544378698224853,
+        "concentration_mM": 5.0,
+        "field": "NH4",
+        "kinetic_max": 14.997000599880023
+      },
+      {
+        "capped_max": 0.4544378698224853,
+        "concentration_mM": 5.0,
+        "field": "Pi",
+        "kinetic_max": 14.997000599880023
+      },
+      {
+        "capped_max": 0.4544378698224853,
+        "concentration_mM": 5.0,
+        "field": "SO4",
+        "kinetic_max": 14.997000599880023
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.0,
+        "concentration_mM": 1.0,
+        "field": "CO2",
+        "kinetic_max": 0.0
+      }
+    ],
+    "configured_objective": "R_biomass",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.004035126093476599,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 1.0,
+      "H2": 0,
+      "NH4": 5.0,
+      "Pi": 5.0,
+      "SO4": 5.0,
+      "acetate": 0,
+      "glucose": 1.0,
+      "methane": 0
+    },
+    "model": "sample_projects_intracellular/fba/crossfeeding/config/sbml_models/C_beijerinckii_model_iCB925_trimmed.xml",
+    "model_sha256": "5b861b9a2330fd8fd5852e30c73561ea547d18b1aada09b7a8b9fe8b9d32c83b",
+    "overrides": "{}",
+    "profile": "crossfeeding-c_beijerinckii",
+    "sbml_objective_used": "R_biomass",
+    "source_config": "sample_projects_intracellular/fba/crossfeeding/config/PhysiCell_settings_crossfeeding.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 3,
+    "voxel_um3": 0.5120000000000001
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 6.564102564102565,
+        "concentration_mM": 1.0,
+        "field": "CO2",
+        "kinetic_max": 99.9900009999
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "H2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "methane",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 9.99980000399992,
+        "concentration_mM": 5.0,
+        "field": "NH4",
+        "kinetic_max": 9.99980000399992
+      },
+      {
+        "capped_max": 9.99980000399992,
+        "concentration_mM": 5.0,
+        "field": "Pi",
+        "kinetic_max": 9.99980000399992
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Mb_biomass_65",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 2.2705686618861126e-06,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.468,
+    "medium_mM": {
+      "CO2": 1.0,
+      "H2": 0,
+      "NH4": 5.0,
+      "Pi": 5.0,
+      "SO4": 5.0,
+      "acetate": 0,
+      "glucose": 1.0,
+      "methane": 0
+    },
+    "model": "sample_projects_intracellular/fba/crossfeeding/config/sbml_models/M_barkeri_model_iMG746_trimmed.xml",
+    "model_sha256": "d219cf19bd063a3b25611f89b37be815eb4424e489a98340db81357a45091507",
+    "overrides": "{}",
+    "profile": "crossfeeding-m_barkeri",
+    "sbml_objective_used": "R_Mb_biomass_65",
+    "source_config": "sample_projects_intracellular/fba/crossfeeding/config/PhysiCell_settings_crossfeeding.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 10,
+    "voxel_um3": 0.5120000000000001
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.6564102564102565,
+        "concentration_mM": 1.0,
+        "field": "CO2",
+        "kinetic_max": 99.9900009999
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "H2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "methane",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 3.282051282051282,
+        "concentration_mM": 5.0,
+        "field": "NH4",
+        "kinetic_max": 9.99980000399992
+      },
+      {
+        "capped_max": 3.282051282051282,
+        "concentration_mM": 5.0,
+        "field": "Pi",
+        "kinetic_max": 9.99980000399992
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Mb_biomass_65",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 2.2705686618861126e-06,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.468,
+    "medium_mM": {
+      "CO2": 1.0,
+      "H2": 0,
+      "NH4": 5.0,
+      "Pi": 5.0,
+      "SO4": 5.0,
+      "acetate": 0,
+      "glucose": 1.0,
+      "methane": 0
+    },
+    "model": "sample_projects_intracellular/fba/crossfeeding/config/sbml_models/M_barkeri_model_iMG746_trimmed.xml",
+    "model_sha256": "d219cf19bd063a3b25611f89b37be815eb4424e489a98340db81357a45091507",
+    "overrides": "{}",
+    "profile": "crossfeeding-m_barkeri",
+    "sbml_objective_used": "R_Mb_biomass_65",
+    "source_config": "sample_projects_intracellular/fba/crossfeeding/config/PhysiCell_settings_crossfeeding.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 10,
+    "voxel_um3": 0.5120000000000001
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.06564102564102565,
+        "concentration_mM": 1.0,
+        "field": "CO2",
+        "kinetic_max": 99.9900009999
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "H2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "methane",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.32820512820512826,
+        "concentration_mM": 5.0,
+        "field": "NH4",
+        "kinetic_max": 9.99980000399992
+      },
+      {
+        "capped_max": 0.32820512820512826,
+        "concentration_mM": 5.0,
+        "field": "Pi",
+        "kinetic_max": 9.99980000399992
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Mb_biomass_65",
+    "dt_minutes": 1,
+    "growth_per_hour": 2.2705686618861126e-06,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.468,
+    "medium_mM": {
+      "CO2": 1.0,
+      "H2": 0,
+      "NH4": 5.0,
+      "Pi": 5.0,
+      "SO4": 5.0,
+      "acetate": 0,
+      "glucose": 1.0,
+      "methane": 0
+    },
+    "model": "sample_projects_intracellular/fba/crossfeeding/config/sbml_models/M_barkeri_model_iMG746_trimmed.xml",
+    "model_sha256": "d219cf19bd063a3b25611f89b37be815eb4424e489a98340db81357a45091507",
+    "overrides": "{}",
+    "profile": "crossfeeding-m_barkeri",
+    "sbml_objective_used": "R_Mb_biomass_65",
+    "source_config": "sample_projects_intracellular/fba/crossfeeding/config/PhysiCell_settings_crossfeeding.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 10,
+    "voxel_um3": 0.5120000000000001
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.6,
+        "concentration_mM": 0.75,
+        "field": "O2",
+        "kinetic_max": 0.6
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.013653092634260204,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 0.75,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{'O2': 0.75}",
+    "profile": "cancer_candidate_o2_0.75",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.6,
+        "concentration_mM": 0.75,
+        "field": "O2",
+        "kinetic_max": 0.6
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.013653092634260204,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 0.75,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{'O2': 0.75}",
+    "profile": "cancer_candidate_o2_0.75",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.19517997039047555,
+        "concentration_mM": 0.75,
+        "field": "O2",
+        "kinetic_max": 0.6
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.0018400994204711889,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 0.75,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{'O2': 0.75}",
+    "profile": "cancer_candidate_o2_0.75",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.6666666666666666,
+        "concentration_mM": 1,
+        "field": "O2",
+        "kinetic_max": 0.6666666666666666
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.013653092634260204,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 1,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{'O2': 1}",
+    "profile": "cancer_candidate_o2_1",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.6666666666666666,
+        "concentration_mM": 1,
+        "field": "O2",
+        "kinetic_max": 0.6666666666666666
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.013653092634260204,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 1,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{'O2': 1}",
+    "profile": "cancer_candidate_o2_1",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.2602399605206341,
+        "concentration_mM": 1,
+        "field": "O2",
+        "kinetic_max": 0.6666666666666666
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.008586043038460424,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 1,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{'O2': 1}",
+    "profile": "cancer_candidate_o2_1",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.8,
+        "concentration_mM": 2,
+        "field": "O2",
+        "kinetic_max": 0.8
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.013653092634260204,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 2,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{'O2': 2}",
+    "profile": "cancer_candidate_o2_2",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.8,
+        "concentration_mM": 2,
+        "field": "O2",
+        "kinetic_max": 0.8
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.013653092634260204,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 2,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{'O2': 2}",
+    "profile": "cancer_candidate_o2_2",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Arginine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Asparagine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Aspartate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Choline",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.09090909090909091,
+        "concentration_mM": 0.5,
+        "field": "D-Glucose",
+        "kinetic_max": 0.09090909090909091
+      },
+      {
+        "capped_max": 0.05,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamine",
+        "kinetic_max": 0.05
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Glutamate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Glycine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Isoleucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "L-Lactate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Leucine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Lysine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "Ammonium",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.5204799210412682,
+        "concentration_mM": 2,
+        "field": "O2",
+        "kinetic_max": 0.8
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Ornithine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Phenylalanine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "Phosphate",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Serine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Threonine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tryptophan",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Tyrosine",
+        "kinetic_max": 0.01
+      },
+      {
+        "capped_max": 0.01,
+        "concentration_mM": 1.0,
+        "field": "L-Valine",
+        "kinetic_max": 0.01
+      }
+    ],
+    "configured_objective": "R_biomass_reaction",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.013653092634260204,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 778.1280000000002,
+    "medium_mM": {
+      "Ammonium": 0,
+      "CO2": 0,
+      "Choline": 1.0,
+      "D-Glucose": 0.5,
+      "Glycine": 1.0,
+      "L-Arginine": 1.0,
+      "L-Asparagine": 1.0,
+      "L-Aspartate": 0,
+      "L-Glutamate": 1.0,
+      "L-Glutamine": 1.0,
+      "L-Isoleucine": 1.0,
+      "L-Lactate": 0,
+      "L-Leucine": 1.0,
+      "L-Lysine": 1.0,
+      "L-Phenylalanine": 1.0,
+      "L-Serine": 1.0,
+      "L-Threonine": 1.0,
+      "L-Tryptophan": 1.0,
+      "L-Tyrosine": 1.0,
+      "L-Valine": 1.0,
+      "O2": 2,
+      "Ornithine": 1.0,
+      "Phosphate": 1.0
+    },
+    "model": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "model_sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "overrides": "{'O2': 2}",
+    "profile": "cancer_candidate_o2_2",
+    "sbml_objective_used": "R_biomass_reaction",
+    "source_config": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 4,
+    "voxel_um3": 3375.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 7.980049875311721,
+        "concentration_mM": 8.0,
+        "field": "glucose",
+        "kinetic_max": 7.980049875311721
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 17.99280287884846,
+        "concentration_mM": 5.0,
+        "field": "oxygen",
+        "kinetic_max": 17.99280287884846
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Biomass_Ecoli_core",
+    "dt_minutes": 0.01,
+    "growth_per_hour": 0.6946356497739774,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 8.0,
+      "oxygen": 5.0
+    },
+    "model": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml",
+    "model_sha256": "9c772d44ca43350e40dc7ee86c7aa148796856be1eea45e5406c6df8f7dcde28",
+    "overrides": "{}",
+    "profile": "iml_benchmark_template",
+    "sbml_objective_used": "R_BIOMASS_Ec_iML1515_core_75p37M",
+    "source_config": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 21,
+    "voxel_um3": 1.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 7.980049875311721,
+        "concentration_mM": 8.0,
+        "field": "glucose",
+        "kinetic_max": 7.980049875311721
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 8.875739644970414,
+        "concentration_mM": 5.0,
+        "field": "oxygen",
+        "kinetic_max": 17.99280287884846
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Biomass_Ecoli_core",
+    "dt_minutes": 0.1,
+    "growth_per_hour": 0.44265392093873773,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 8.0,
+      "oxygen": 5.0
+    },
+    "model": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml",
+    "model_sha256": "9c772d44ca43350e40dc7ee86c7aa148796856be1eea45e5406c6df8f7dcde28",
+    "overrides": "{}",
+    "profile": "iml_benchmark_template",
+    "sbml_objective_used": "R_BIOMASS_Ec_iML1515_core_75p37M",
+    "source_config": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 21,
+    "voxel_um3": 1.0
+  },
+  {
+    "bounds": [
+      {
+        "capped_max": 1.4201183431952664,
+        "concentration_mM": 8.0,
+        "field": "glucose",
+        "kinetic_max": 7.980049875311721
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "acetate",
+        "kinetic_max": 0
+      },
+      {
+        "capped_max": 0.8875739644970414,
+        "concentration_mM": 5.0,
+        "field": "oxygen",
+        "kinetic_max": 17.99280287884846
+      },
+      {
+        "capped_max": 0,
+        "concentration_mM": 0,
+        "field": "CO2",
+        "kinetic_max": 0
+      }
+    ],
+    "configured_objective": "R_Biomass_Ecoli_core",
+    "dt_minutes": 1,
+    "growth_per_hour": 0.005951877317324061,
+    "interpretation": "Uniform local concentrations at source-supply levels; static LP only; no gradients, injections, diffusion, exchange caching, population or time integration tested.",
+    "mass_pg": 0.338,
+    "medium_mM": {
+      "CO2": 0,
+      "acetate": 0,
+      "glucose": 8.0,
+      "oxygen": 5.0
+    },
+    "model": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml",
+    "model_sha256": "9c772d44ca43350e40dc7ee86c7aa148796856be1eea45e5406c6df8f7dcde28",
+    "overrides": "{}",
+    "profile": "iml_benchmark_template",
+    "sbml_objective_used": "R_BIOMASS_Ec_iML1515_core_75p37M",
+    "source_config": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings.xml",
+    "status": "optimal",
+    "unmapped_uptake_reactions": 21,
+    "voxel_um3": 1.0
+  }
+]

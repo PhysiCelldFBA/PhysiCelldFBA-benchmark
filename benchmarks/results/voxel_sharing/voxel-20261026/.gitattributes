@@ -1,0 +1,4 @@
+# Preserve raw evidence and generated CSV bytes, including original line endings.
+# Their whitespace is data, not source-code formatting.
+data/** -text -whitespace
+tables/*.csv -text -whitespace

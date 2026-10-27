@@ -1,0 +1,5 @@
+original_status=1
+original_lower_bound=-0.13011998026031704
+modified_lower_bound=-0.5
+modified_status=0
+modified_objective=-0.013653092327316667

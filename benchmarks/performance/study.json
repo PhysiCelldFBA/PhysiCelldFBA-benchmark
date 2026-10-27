@@ -1,0 +1,23 @@
+{
+  "schema_version": 3,
+  "destination": "supplementary_material",
+  "status": "pending_pilot",
+  "open_decisions": ["Pilot-selected durations and accuracy criteria", "Final approved revision and CI", "Validation of generated workloads, model bounds and reference yield", "MN5 budget and submission authorization"],
+  "simulation_seed": 50,
+  "performance_medium_profiles": {"ecoli_core": "ecoli_colony_fed", "iml1515": "iml_fed", "mcf7_core": "mcf7_uniform_fed"},
+  "performance_diffusion_dt_minutes": 0.01,
+  "performance_medium_validation": "Short serial controls only: growth-20261026, 10 min, 1 and 16 cells. Default performance intracellular dt is also 0.01 min; this is a tested candidate, not an engine constraint or final accuracy selection. Validate target population, duration, extra fields and parallelism before final submission.",
+  "models": {
+    "ecoli_core": {"template": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_mass_conversion.xml", "path": "sample_projects_intracellular/fba/dfba_unit_test/config/Ecoli_core.xml", "project": "dfba_unit_test"},
+    "mcf7_core": {"template": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml", "path": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml", "project": "cancer_core_metabolism"},
+    "iml1515": {"template": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings.xml", "path": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml", "project": "dfba_unit_test"}
+  },
+  "timestep": {"models": ["ecoli_core", "mcf7_core"], "ratios": [1, 2, 10, 100]},
+  "refinement": {"model": "mcf7_core", "factors": [1, 0.5, 0.25]},
+  "voxel": {"cells": [8], "threads": [1, 2, 4, 8], "order_seeds": [11, 23, 37, 51, 71], "repeats": 3, "template": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_n8.xml", "mixed_template": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_mixed.xml"},
+  "pfba": {"model": "mcf7_core", "variants": ["dfba", "pfba"], "fraction_of_optimum": 1.0, "selected_dt_minutes": null},
+  "pilot": {"cells": [100, 1000], "threads": [1, 56], "fields": 4, "repeats": 1},
+  "main": {"cells": [100, 1000, 10000], "threads": [1, 2, 4, 8, 16, 28, 56, 112], "fields": [4, 8, 16, 32], "reference_cells": 1000, "reference_threads": 56, "reference_fields": 4, "repeats": 3},
+  "baseline_variants": ["dfba_disabled", "upstream_physicell"],
+  "notes": ["No production timestep or race fix.", "One order permutation per simulation, independent of simulation RNG.", "Voxel diagnostics freeze positions and population but allow biomass growth.", "Controlled performance also freezes volume; domain grows at fixed voxel size/density.", "Diagnostic output follows intracellular updates; runtime comparisons use matched minimal output.", "FBA timestep study precedes cancer-only pFBA; no full cross-product.", "Failed/flagged diagnostics are retained, never silently clipped or dropped."]
+}

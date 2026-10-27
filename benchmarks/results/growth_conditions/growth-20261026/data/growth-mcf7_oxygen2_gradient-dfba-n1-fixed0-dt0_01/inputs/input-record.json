@@ -1,0 +1,74 @@
+{
+  "case": {
+    "case_id": "growth-mcf7_oxygen2_gradient-dfba-n1-fixed0-dt0_01",
+    "cells_requested": 1,
+    "diffusion_dt_minutes": 0.01,
+    "fields": 23,
+    "fixed_population": true,
+    "fixed_positions": true,
+    "fixed_volume": false,
+    "interpretation": "serial_medium_validation_not_performance_measurement",
+    "intracellular_dt_minutes": 0.01,
+    "layout": "single",
+    "medium_profile": "mcf7_oxygen2_gradient",
+    "mixed": false,
+    "model": "mcf7_core",
+    "nutrient_control": false,
+    "open_decisions": [],
+    "order_seed": null,
+    "output_policy": "diagnostic_endpoints",
+    "phase": "growth_validation",
+    "repeat": 1,
+    "simulation_seed": 50,
+    "status": "ready",
+    "template": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "threads": 1,
+    "validation_record": "Candidate-medium pilot: retain all failures, check geometry, growth, solver status and substrates before accepting the profile.",
+    "variant": "dfba"
+  },
+  "duration_minutes": 10,
+  "medium_profile": {
+    "concentrations_mM": {
+      "O2": 2.0
+    },
+    "model": "mcf7_core",
+    "sbml": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml",
+    "supply": "positive_boundary_override",
+    "template": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml"
+  },
+  "models": {
+    "config/MCF7_Zielinski_2017_core_trimmed.sbml": {
+      "mapped_reactions": [
+        "R_biomass_reaction",
+        "R_EX_arg_L_e",
+        "R_EX_asn_L_e",
+        "R_EX_asp_L_e",
+        "R_EX_chol_e",
+        "R_EX_co2_e",
+        "R_EX_glc_e",
+        "R_EX_gln_L_e",
+        "R_EX_glu_L_e",
+        "R_EX_gly_e",
+        "R_EX_ile_L_e",
+        "R_EX_lac_L_e",
+        "R_EX_leu_L_e",
+        "R_EX_lys_L_e",
+        "R_EX_nh4_e",
+        "R_EX_o2_e",
+        "R_EX_orn_e",
+        "R_EX_phe_L_e",
+        "R_EX_pi_e",
+        "R_EX_ser_L_e",
+        "R_EX_thr_L_e",
+        "R_EX_trp_L_e",
+        "R_EX_tyr_L_e",
+        "R_EX_val_L_e"
+      ],
+      "reactions": 374,
+      "sha256": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+      "species": 360
+    }
+  },
+  "nutrient_multiplier": null,
+  "output_policy": "diagnostic_endpoints"
+}

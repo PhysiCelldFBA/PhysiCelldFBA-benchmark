@@ -1,0 +1,13 @@
+{
+  "active_part": "timestep",
+  "cases": 11,
+  "decisions_pending": [
+    "Final duration after inspecting dynamics",
+    "Accuracy criterion from pilot results",
+    "Verified mass-conversion yield"
+  ],
+  "duration_minutes": 10,
+  "launch_order_seed": 20261028,
+  "preparation_commit": "0e66312f5eea4914d5f7634022b4e6f59e0ae04e",
+  "status": "pilot_only"
+}

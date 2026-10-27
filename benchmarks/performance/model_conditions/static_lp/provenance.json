@@ -1,0 +1,6 @@
+{
+  "binary_sha256": "099a5d70962209ee4660ac67dcead857a47379c45aec3740b39c17c95b422afc",
+  "inventory_sha256": "d8391ea570612b7f3b30681bfa11fbcfab6883cd029f53fd830f7dc3ffcfa062",
+  "note": "Same SBML objective; mapped kinetic bounds with current one-cell voxel-window cap and epsilon; unmapped SBML bounds retained. Growth cap applied as the engine does, irrespective of XML unit label.",
+  "script_sha256": "d1b8178f2187446583ed9506baee77016a7eb76f1faf6f7459ac8d4177d09d23"
+}

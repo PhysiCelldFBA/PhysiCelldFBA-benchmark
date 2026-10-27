@@ -1,0 +1,209 @@
+{
+  "code_evidence": [
+    "addons/dFBA/src/dfba_intracellular.cpp:646",
+    "addons/dFBA/src/dfba_intracellular.cpp:834",
+    "addons/dFBA/src/dfba_intracellular.h:102"
+  ],
+  "conclusion": "Implemented dFBA concentration convention: mM = mmol/L; outer XML unit labels may be inconsistent.",
+  "configurations": [
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/bacterial_colony/config/PhysiCell_settings.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+      "substrate": "D-Glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings_pfba.xml",
+      "substrate": "D-Glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/cancer_metabolism/config/PhysiCell_settings.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/crossfeeding/config/PhysiCell_settings.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/crossfeeding/config/PhysiCell_settings_crossfeeding.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/dfba_unit_test/config/PhysiCell_settings.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_mass_conversion.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM",
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_mixed.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_n1.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_n4.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_n8.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/dfba_unit_test/config/unit_test_mass_conversion_lit_params.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/Ecoli_large_scale.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings_static_condition.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings_static_condition_literature_params.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/metabolic_driven_motility/config/PhysiCell_settings.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/metabolic_driven_motility/config/PhysiCell_settings_motility.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/metabolic_driven_motility/config/PhysiCell_settings_motility_proliferation.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/metabolic_driven_motility/config/PhysiCell_settings_multiple_sources.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    },
+    {
+      "initial_units": "mM",
+      "km_units": [
+        "mM"
+      ],
+      "path": "sample_projects_intracellular/fba/metabolic_driven_motility/config/PhysiCell_settings_no_motility.xml",
+      "substrate": "glucose",
+      "variable_units": "dimensionless"
+    }
+  ]
+}

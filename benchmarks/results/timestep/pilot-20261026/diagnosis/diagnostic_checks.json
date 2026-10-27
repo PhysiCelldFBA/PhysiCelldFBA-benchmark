@@ -1,0 +1,18 @@
+{
+  "original_per_update_csv_identical": true,
+  "source_evidence_checksums_verified": true,
+  "copied_evidence_checksums_verified": true,
+  "original_clp_status": 1,
+  "cold_primal_status": 1,
+  "atp_required_mmol_gDW_h": 1.07,
+  "max_atp_with_failed_bounds_mmol_gDW_h": 0.83241808311966425,
+  "oxygen_original_lower_bound": -0.130119980260317,
+  "oxygen_counterfactual_lower_bound": -0.5,
+  "oxygen_counterfactual_clp_status": 0,
+  "original_results_modified": false,
+  "diagnostic_jobs": [
+    48053410,
+    48053422,
+    48053429
+  ]
+}

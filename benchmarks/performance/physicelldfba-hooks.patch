@@ -1,0 +1,267 @@
+diff --git a/addons/dFBA/src/dfba_Model.cpp b/addons/dFBA/src/dfba_Model.cpp
+index a18e96bf..a6ca73da 100755
+--- a/addons/dFBA/src/dfba_Model.cpp
++++ b/addons/dFBA/src/dfba_Model.cpp
+@@ -11,6 +11,9 @@
+ #include <algorithm>
+ #include <cmath>
+ #include <cstdlib>
++#ifdef PHYSICELL_BENCHMARK
++#include "../../../benchmarks/performance/telemetry.h"
++#endif
+ 
+ /* Default dFBAModel used to initialize the initial cell */
+ dFBAModel default_dFBAModel;
+@@ -584,7 +587,11 @@ void dFBAModel::initProblem()
+     this->problem.scaling(3);
+     this->problem.setMaximumIterations(10000);
+     this->problem.setLogLevel(0);
++#ifdef PHYSICELL_BENCHMARK
++    PCBenchmark::solve(problem, "initial_primary", true, false, [&](){ problem.initialSolve(); });
++#else
+     this->problem.initialSolve();
++#endif
+ 
+     this->is_initialized = true;
+ }
+@@ -603,8 +610,13 @@ void dFBAModel::writeProblem(const char *filename)
+ 
+ dFBASolution dFBAModel::optimize()
+ {
+-
++#ifdef PHYSICELL_BENCHMARK
++    PCBenchmark::count("model_optimization_calls");
++    PCBenchmark::solve(problem, "stage_one", false, false, [&](){ problem.dual(); });
++    if (!problem.isProvenOptimal()) PCBenchmark::count("solver_failures");
++#else
+     this->problem.dual();
++#endif
+ /*     // If Dual fails, try Primal (more robust from scratch) --> if numerical issue occurs, try primal to make sure the cell is really dead
+     if (this->problem.status() != 0) { 
+         this->problem.primal();
+@@ -1002,7 +1014,11 @@ void dFBAModel::buildParsimoniousProblem()
+     this->pfba_problem.scaling(3);
+     this->pfba_problem.setMaximumIterations(10000);
+     this->pfba_problem.setLogLevel(0);
++#ifdef PHYSICELL_BENCHMARK
++    PCBenchmark::solve(pfba_problem, "initial_secondary", true, false, [&](){ pfba_problem.initialSolve(); });
++#else
+     this->pfba_problem.initialSolve();
++#endif
+     this->pfba_built = true;
+ }
+ 
+@@ -1059,8 +1075,14 @@ bool dFBAModel::solveParsimoniousStage(double stage_one_objective)
+     // there is one, would show up.
+     static const bool force_dual = (getenv("DFBA_PFBA_DUAL") != NULL
+                                     && std::string(getenv("DFBA_PFBA_DUAL")) == "1");
++#ifdef PHYSICELL_BENCHMARK
++    PCBenchmark::solve(pfba_problem, "stage_two", false, false, [&](){
++#endif
+     if (force_dual) this->pfba_problem.dual();
+     else            this->pfba_problem.primal();
++#ifdef PHYSICELL_BENCHMARK
++    });
++#endif
+ 
+     // Retry once from a clean basis before giving up.
+     //
+@@ -1080,13 +1102,22 @@ bool dFBAModel::solveParsimoniousStage(double stage_one_objective)
+     if (!this->pfba_problem.isProvenOptimal())
+     {
+         this->pfba_problem.allSlackBasis(true);
++#ifdef PHYSICELL_BENCHMARK
++        PCBenchmark::solve(pfba_problem, "stage_two", false, true, [&](){
++#endif
+         if (force_dual) this->pfba_problem.dual();
+         else            this->pfba_problem.primal();
++#ifdef PHYSICELL_BENCHMARK
++        });
++#endif
+     }
+ 
+     if (!this->pfba_problem.isProvenOptimal())
+     {
+         // Still no. The stage-one fluxes are left untouched on purpose: they
++#ifdef PHYSICELL_BENCHMARK
++        PCBenchmark::count("stage_two_failures");
++#endif
+         // are still optimal, so the cell carries on with them. The status is
+         // kept so the failure is visible to whoever is debugging.
+         this->solution.secondary_status =
+diff --git a/addons/dFBA/src/dfba_intracellular.cpp b/addons/dFBA/src/dfba_intracellular.cpp
+index 00c7deec..da08525e 100644
+--- a/addons/dFBA/src/dfba_intracellular.cpp
++++ b/addons/dFBA/src/dfba_intracellular.cpp
+@@ -729,7 +729,11 @@ void dFBAIntracellular::update_dfba_outputs(PhysiCell::Cell* pCell, PhysiCell::P
+     double fba_growth_rate = this->current_growth_rate;
+     
+     
+-    if (fba_growth_rate > fba_epsilon_tolerance) {
++    if (fba_growth_rate > fba_epsilon_tolerance
++#ifdef PHYSICELL_BENCHMARK
++        && !(PCBenchmark::state().enabled && PCBenchmark::state().fixed_volume)
++#endif
++    ) {
+         // SCALE GROWTH RATE BY this->dfba_time_step
+         double growth_rate = fba_growth_rate * this->dfba_time_step * hours_to_minutes; // growth_rate 1/h * dt (h)
+ 
+diff --git a/addons/dFBA/src/dfba_intracellular.h b/addons/dFBA/src/dfba_intracellular.h
+index d5684d8d..5a08417c 100644
+--- a/addons/dFBA/src/dfba_intracellular.h
++++ b/addons/dFBA/src/dfba_intracellular.h
+@@ -20,6 +20,9 @@
+ 
+ #include "dfba_Model.h"
+ #include "dfba_Reaction.h"
++#ifdef PHYSICELL_BENCHMARK
++#include "../../../benchmarks/performance/telemetry.h"
++#endif
+ 
+ 
+ using namespace std;
+@@ -164,6 +167,9 @@ class dFBAIntracellular : public PhysiCell::Intracellular
+ 			// STEP 4. rescale exchange fluxes from the dfba model and use them to update the net_export_rates
+ 			// STEP 5. remove the internalized substrates if needed
+ 			this->update_dfba_outputs(cell, phenotype, dt);
++#ifdef PHYSICELL_BENCHMARK
++            PCBenchmark::updated(cell->ID, cell);
++#endif
+ 
+ 			this->next_dfba_run = PhysiCell::PhysiCell_globals.current_time + dfba_time_step;
+ 
+diff --git a/core/PhysiCell_cell.cpp b/core/PhysiCell_cell.cpp
+index ed5dd976..5ebc8674 100644
+--- a/core/PhysiCell_cell.cpp
++++ b/core/PhysiCell_cell.cpp
+@@ -66,6 +66,9 @@
+ */
+ 
+ #include "PhysiCell_cell.h"
++#ifdef PHYSICELL_BENCHMARK
++#include "../benchmarks/performance/telemetry.h"
++#endif
+ #include "PhysiCell_cell_container.h"
+ #include "PhysiCell_utilities.h"
+ #include "PhysiCell_constants.h"
+@@ -364,7 +367,11 @@ void Cell::advance_bundled_phenotype_functions( double dt_ )
+ 	phenotype.cell_integrity.advance_damage( dt_ );  
+ 	
+ 	// check for new death events 
+-	if( phenotype.death.check_for_death( dt_ ) == true )
++	if(
++#ifdef PHYSICELL_BENCHMARK
++        !(PCBenchmark::state().enabled && PCBenchmark::state().fixed_population) &&
++#endif
++        phenotype.death.check_for_death( dt_ ) == true )
+ 	{
+ 		// if so, change the cycle model to the current death model 
+ 		phenotype.cycle.sync_to_cycle_model( phenotype.death.current_model() ); 
+@@ -491,18 +498,27 @@ Cell::~Cell()
+ 
+ void Cell::flag_for_division( void )
+ {
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().fixed_population) return;
++#endif
+ 	get_container()->flag_cell_for_division( this );
+ 	return; 
+ }
+ 
+ void Cell::flag_for_removal( void )
+ {
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().fixed_population) return;
++#endif
+ 	get_container()->flag_cell_for_removal( this );
+ 	return;
+ }
+ 
+ void Cell::start_death( int death_model_index )
+ {
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().fixed_population) return;
++#endif
+ 	// set the death data struture to the indicated death model 
+ 	phenotype.death.trigger_death( death_model_index ); 
+ 	// change the cycle model to the current death model 
+diff --git a/core/PhysiCell_cell_container.cpp b/core/PhysiCell_cell_container.cpp
+index b7305075..d6b51d03 100644
+--- a/core/PhysiCell_cell_container.cpp
++++ b/core/PhysiCell_cell_container.cpp
+@@ -69,6 +69,9 @@
+ #include "PhysiCell_constants.h"
+ #include "../BioFVM/BioFVM_vector.h"
+ #include "PhysiCell_cell.h"
++#ifdef PHYSICELL_BENCHMARK
++#include "../benchmarks/performance/telemetry.h"
++#endif
+ 
+ #include <algorithm>
+ #include <iterator> 
+@@ -131,7 +134,15 @@ void Cell_Container::update_all_cells(double t, double phenotype_dt_ , double me
+ 
+ 	bool time_for_phenotype = time_since_last_phenotype > phenotype_threshold;
+ 	bool time_for_mechanics = time_since_last_mechanics > mechanics_threshold;
+-
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().before_exchange)
++        PCBenchmark::state().before_exchange(diffusion_dt_);
++#endif
++
++    {
++#ifdef PHYSICELL_BENCHMARK
++    PCBenchmark::Timer benchmark_exchange("exchange_seconds");
++#endif
+ 	#pragma omp parallel for 
+ 	for( int i=0; i < (*all_cells).size(); i++ )
+ 	{
+@@ -142,10 +153,18 @@ void Cell_Container::update_all_cells(double t, double phenotype_dt_ , double me
+ 	}
+ 
+ 	// intracellular update. called for every diffusion_dt, but actually depends on the intracellular_dt of each cell (as it can be noisy)
++    }
++#ifdef PHYSICELL_BENCHMARK
++    if (PCBenchmark::state().enabled && PCBenchmark::state().after_exchange)
++        PCBenchmark::state().after_exchange();
++#endif
+ 	update_all_cells_intracellular();
+ 	
+ 	if( time_for_phenotype )
+ 	{
++#ifdef PHYSICELL_BENCHMARK
++        PCBenchmark::Timer benchmark_phenotype("phenotype_seconds");
++#endif
+ 		// new as of 1.2.1 -- bundles cell phenotype parameter update, volume update, geometry update, 
+ 		// checking for death, and advancing the cell cycle. Not motility, though. (that's in mechanics)
+ 		#pragma omp parallel for 
+@@ -178,6 +197,9 @@ void Cell_Container::update_all_cells(double t, double phenotype_dt_ , double me
+ 		
+ 	if( time_for_mechanics )
+ 	{
++#ifdef PHYSICELL_BENCHMARK
++        PCBenchmark::Timer benchmark_mechanics("mechanics_seconds");
++#endif
+ 		// new February 2018 
+ 		// if we need gradients, compute them
+ 		if( default_microenvironment_options.calculate_gradients ) 
+@@ -285,6 +307,9 @@ void Cell_Container::update_all_cells(double t, double phenotype_dt_ , double me
+ 
+ void Cell_Container::update_all_cells_intracellular( void )
+ {
++#ifdef PHYSICELL_BENCHMARK
++    PCBenchmark::Timer benchmark_intracellular("intracellular_seconds");
++#endif
+ 	bool anything_to_update = false; // Use a simple boolean for reduction
+ 	// std::vector<bool> is bit-packed: concurrent writes to neighbouring elements from the parallel loop below race and lose flags.
+ 	std::vector<char> ready_to_update_intracellular = std::vector<char>( (*all_cells).size(), 0 );
+@@ -296,6 +321,9 @@ void Cell_Container::update_all_cells_intracellular( void )
+ 			if( (*all_cells)[i]->phenotype.intracellular != NULL  && (*all_cells)[i]->phenotype.intracellular->need_update())
+ 			{
+ 				ready_to_update_intracellular[i] = true;
++#ifdef PHYSICELL_BENCHMARK
++                if (!(*all_cells)[i]->phenotype.death.dead) PCBenchmark::due((*all_cells)[i]->ID);
++#endif
+ 				anything_to_update = true; // Set to true if any cell needs an update
+ 				if ((*all_cells)[i]->functions.pre_update_intracellular != NULL)
+ 				{
