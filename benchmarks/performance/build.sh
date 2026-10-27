@@ -3,6 +3,8 @@
 # Usage: build.sh SOURCE NEW_BUILD_DIR dfba_unit_test|cancer_core_metabolism|template [JOBS]
 # SOURCE is normally the PhysiCelldFBA submodule. DFBA_EXT optionally names an
 # installed addons/dFBA/ext (libSBML, Clp) to link instead of SOURCE's own.
+# EXTRA_PATCHES optionally lists source patches (e.g. proposed-fixes/*.patch) applied
+# after the hooks; they are listed with their digests in applied-patches.txt.
 set -euo pipefail
 source_repo=$(realpath "${1:?source checkout}")
 destination=$(realpath -m "${2:?new build directory}")
@@ -11,6 +13,7 @@ jobs=${4:-4}
 case "$project" in dfba_unit_test|cancer_core_metabolism|template) ;; *) exit 2;; esac
 [[ "$jobs" =~ ^[1-9][0-9]*$ ]] || exit 2
 mkdir "$destination"
+echo "EXTRA_PATCHES='${EXTRA_PATCHES:-}' DFBA_EXT='${DFBA_EXT:-}' bash $0 $*" > "$destination/build-command.txt"
 # Tracked source only; include staged edits for local verification, preserving
 # their exact patch in the evidence. Publication builds must use clean commits.
 git -C "$source_repo" ls-files -z | tar -C "$source_repo" --null -T - -cf - | tar -C "$destination" -xf -
@@ -28,6 +31,11 @@ if ! grep -q PHYSICELL_BENCHMARK "$destination/core/PhysiCell_cell_container.cpp
         patch -l -d "$destination" -p1 < "$here/upstream-hooks.patch"
     fi
 fi
+: > "$destination/applied-patches.txt"
+for extra in ${EXTRA_PATCHES:-}; do
+    patch -d "$destination" -p1 < "$extra"
+    sha256sum "$(realpath "$extra")" >> "$destination/applied-patches.txt"
+done
 if [[ "$project" == template ]]; then
     make -C "$destination" template > "$destination/staging.log" 2>&1
 else
@@ -53,6 +61,7 @@ make -C "$destination" -j"$jobs" > "$destination/build.log" 2>&1
     "${PHYSICELL_CPP:-g++}" --version
     sha256sum "$destination/source.patch" "$here/driver.cpp" "$here/runtime.h" "$here/telemetry.h" "$here/upstream-hooks.patch" "$here/physicelldfba-hooks.patch"
     git -C "$source_repo" status --short
+    echo "extra patches:"; cat "$destination/applied-patches.txt"
     echo "benchmark repository $(git -C "$here" rev-parse HEAD) $(git -C "$here" status --porcelain | wc -l) uncommitted"
 } > "$destination/build-evidence.txt"
 printf 'Built in %s; source.patch records local deviations. No simulation launched.\n' "$destination"

@@ -191,6 +191,9 @@ bash benchmarks/performance/build.sh /path/to/upstream /path/to/new-upstream-bui
 
 The source snapshot includes tracked files and records tracked deviations in
 `source.patch`. Add new benchmark sources to Git before using this builder.
+Set `EXTRA_PATCHES="benchmarks/performance/proposed-fixes/<fix>.patch"` to build a
+candidate fix ([proposed-fixes/](proposed-fixes/README.md)); then write `build.json` with
+`record_build.py BUILD EXECUTABLE --template EARLIER_BUILD_JSON --notes ...`.
 Dependencies are reused from the source checkout (or from `DFBA_EXT`, an installed
 `addons/dFBA/ext`) via a symlink, so retain that
 checkout through compilation. Build logs contain actual compile/link flags.
