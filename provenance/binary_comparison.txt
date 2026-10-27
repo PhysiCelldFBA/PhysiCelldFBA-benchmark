@@ -1,0 +1,20 @@
+== A-postfix-unit: rebuilt 9b35210b6445 vs original c74353427dee (recorded hash re-checked: yes)
+   object files differing from the original build: 0 of 33
+   section layout identical
+   34 sections compared; differing: .note.gnu.build-id
+   stripped files identical apart from the build-id note
+== B-prefix-unit: rebuilt 813501bc92f2 vs original 29bc0c4af380 (recorded hash re-checked: yes)
+   object files differing from the original build: 0 of 33
+   section layout identical
+   34 sections compared; differing: .note.gnu.build-id
+   stripped files identical apart from the build-id note
+== C-prefix-voxel: rebuilt 3b694c02230f vs original 2990326295d1 (recorded hash re-checked: yes)
+   object files differing from the original build: 0 of 33
+   section layout identical
+   34 sections compared; differing: .note.gnu.build-id
+   stripped files identical apart from the build-id note
+== D-prefix-cancer: rebuilt e1b369e9bbe9 vs original e2034f57e36e (recorded hash re-checked: yes)
+   object files differing from the original build: 0 of 33
+   section layout identical
+   34 sections compared; differing: .note.gnu.build-id
+   stripped files identical apart from the build-id note

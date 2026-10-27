@@ -2,3 +2,11 @@
 /venv/
 __pycache__/
 *.pyc
+# Jupyter, editors, OS
+.ipynb_checkpoints/
+.vscode/
+*.swp
+.DS_Store
+# Slurm logs from jobs submitted without --output (campaign logs go to workspaces/)
+/slurm-*.out
+/slurm-*.err

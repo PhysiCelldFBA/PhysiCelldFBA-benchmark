@@ -1,0 +1,24 @@
+repository b0e30cb (+ uncommitted PROVENANCE/provenance files), submodule a2519f06
+test_agreed_matrices (test_workflow.WorkflowTests.test_agreed_matrices) ... ok
+test_conservation_and_competition_media_remain_unchanged (test_workflow.WorkflowTests.test_conservation_and_competition_media_remain_unchanged) ... ok
+test_exchange_check_rejects_excess_removal_without_negative_concentration (test_workflow.WorkflowTests.test_exchange_check_rejects_excess_removal_without_negative_concentration) ... ok
+test_flagged_runs_excluded_from_successful_summaries (test_workflow.WorkflowTests.test_flagged_runs_excluded_from_successful_summaries) ... ok
+test_growth_media_preserve_controls_and_feed_zero_initial_cancer (test_workflow.WorkflowTests.test_growth_media_preserve_controls_and_feed_zero_initial_cancer) ... ok
+test_materialize_all_models_and_disabled_mode (test_workflow.WorkflowTests.test_materialize_all_models_and_disabled_mode) ... ok
+test_performance_profiles_match_disabled_baseline (test_workflow.WorkflowTests.test_performance_profiles_match_disabled_baseline) ... ok
+test_serial_pilot_inputs (test_workflow.WorkflowTests.test_serial_pilot_inputs) ... ok
+test_staging_identity_ignores_repeat_and_thread_labels (test_workflow.WorkflowTests.test_staging_identity_ignores_repeat_and_thread_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.762s
+
+OK
+test_flagged_pairing_retained_but_wrong_order_rejected (test_campaign.CampaignTests.test_flagged_pairing_retained_but_wrong_order_rejected) ... ok
+test_launcher_keeps_all_cases_after_flagged_step_and_stdin_read (test_campaign.CampaignTests.test_launcher_keeps_all_cases_after_flagged_step_and_stdin_read) ... ok
+test_mesh_geometry_and_pairing (test_campaign.CampaignTests.test_mesh_geometry_and_pairing) ... ok
+test_original_n8_matrix_and_inputs (test_campaign.CampaignTests.test_original_n8_matrix_and_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.670s
+
+OK

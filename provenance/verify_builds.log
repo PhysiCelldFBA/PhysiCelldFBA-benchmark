@@ -1,0 +1,25 @@
+== repository b0e30cb, submodule a2519f06, clean: 0 changes
+== unit tests
+OK
+Ran 4 tests in 0.672s
+
+OK
+== dry-run preparation (no jobs) with the post-fix binary; compare with the original campaigns
+Prepared 60 cases at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark-verify/dryrun-voxel; duration 0.1 min. No jobs submitted.
+  input_sources identical: True | protocol identical: True
+  cases.jsonl identical: True
+  bundle comparison keys identical: True (60 bundles)
+Prepared 240 cases at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark-verify/dryrun-mesh; duration 0.1 min. No jobs submitted.
+  input_sources identical: True | protocol identical: True
+  cases.jsonl identical: True
+  bundle comparison keys identical: True (240 bundles)
+== builds from public commits + physicelldfba-hooks.patch
+A-postfix-unit: binary differs (got 9b35210b6445c7fb6bd13b6301d5ba6bc5f85b525ed30cb0904d104bafcafbc8, expected c74353427dee5e54bdc8d362d9076174f5c560851f48aa5407892aaa40ac359f); comparing compiled sources with /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/racefix-20261027-build/unit
+  (end of differing compiled sources)
+B-prefix-unit: binary differs (got 813501bc92f215c5c6d5f96b3a6aac010cfa7ff9f37fb58899179f85f4cae92d, expected 29bc0c4af38076edde9ce48f784022659ab0b8351d7538580bf34073c98882cb); comparing compiled sources with /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-followup-20261026-build/unit
+  (end of differing compiled sources)
+C-prefix-voxel: binary differs (got 3b694c02230ff30d6e927b97df963cbafda09e7bf587eb667abb663af9d96ca1, expected 2990326295d1bd5df798fbc5cb504618f41453192e4936b317dacfec3dea56de); comparing compiled sources with /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/.local-workspace/mn5-20261026/builds/unit
+  (end of differing compiled sources)
+D-prefix-cancer: binary differs (got e1b369e9bbe91344b34aa017b2ad2bb238bd4fcb9da979a8c1c14eebd7100a1f, expected e2034f57e36e1e1d48e8517cd363a30292100eeeb61c95b483d3ec315ddf37fa); comparing compiled sources with /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/benchmarks/workspaces/mesh-followup-20261026-build/cancer
+  (end of differing compiled sources)
+== repository still clean: 0 changes
