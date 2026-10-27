@@ -1,6 +1,6 @@
 # Intracellular timestep: accuracy–cost trade-off
 
-**Status: decisions recorded 2026-10-27 (below); [check stage done](../results/timestep/tradeoff-checks-20261027/README.md); [Part A done](../results/timestep/tradeoff-accuracy-20261027/README.md); Part B pilot running.** Campaigns are
+**Status: decisions recorded 2026-10-27 (below); [check stage done](../results/timestep/tradeoff-checks-20261027/README.md); [Part A done](../results/timestep/tradeoff-accuracy-20261027/README.md); [Part B pilot done](../results/timestep/tradeoff-cost-pilot-20261027/README.md); full Part B awaiting approval.** Campaigns are
 prepared with [`prepare_tradeoff.py`](prepare_tradeoff.py).
 
 ## Question
