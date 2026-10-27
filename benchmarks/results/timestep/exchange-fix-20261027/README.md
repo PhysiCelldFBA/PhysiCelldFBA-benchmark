@@ -16,7 +16,9 @@ constants for `diffusion_dt`.
 
 ![Glucose consumed and biomass change against the timestep ratio, both builds](plots/pilot_builds.png)
 
-[PDF](plots/pilot_builds.pdf) · [all values](tables/builds_by_ratio.csv) · [comparison record](comparison.json)
+[PDF](plots/pilot_builds.pdf) · [all values](tables/builds_by_ratio.csv) · [comparison record](comparison.json) ·
+trajectories per build: [development](../pilot-dev-20261027/plots/timestep_outcomes.png),
+[proposed fix](../pilot-fix-20261027/plots/timestep_outcomes.png)
 
 ## E. coli core (10 mM glucose, single cell, 10 min)
 

@@ -12,3 +12,14 @@ Analysis, figures and interpretation:
 the `analyze.py` export: [plots](plots/), [tables](tables/), compact raw evidence in
 [data/](data/), and `campaign.json`, `protocol.json`, `build.json`, `analysis.json`.
 Simulation job 48112700; export job 48113002.
+
+## Figures
+
+![Minimum glucose and missing intracellular updates per run](plots/diagnostics.png)
+
+- [Diagnostics](plots/diagnostics.png) ([PDF](plots/diagnostics.pdf)): minimum glucose and missing
+  intracellular updates relative to the matched serial run, per order seed and thread count.
+- [Glucose by seed](plots/glucose_by_seed.png) ([PDF](plots/glucose_by_seed.pdf)): minimum-glucose
+  trajectories per order seed; curves for every thread count overlap.
+- The pre-fix equivalents are in the [original report](../voxel-20261026/README.md); the side-by-side
+  view is in the [before/after comparison](../before-after-20261027/plots/before_after.png).

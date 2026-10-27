@@ -13,7 +13,8 @@ is the substrate the cells actually removed, from the exchange ledger.
 
 ![Maximum biomass error and glucose uptake error against k, both builds](plots/accuracy.png)
 
-[PDF](plots/accuracy.pdf) · [all runs](tables/runs.csv) · [1-minute trajectories](tables/trajectories_1min.csv).
+[PDF](plots/accuracy.pdf) · [k = 1 trajectories of A1–A4](plots/checks.png) ([PDF](plots/checks.pdf); the
+two builds coincide at k = 1) · [all runs](tables/runs.csv) · [1-minute trajectories](tables/trajectories_1min.csv).
 Rings mark runs that fail the exchange-ledger check or contain non-optimal LP updates.
 
 | Scenario | Regime | Voxel |

@@ -16,3 +16,18 @@ Analysis, figures and interpretation:
 [per-run diagnostics](tables/mesh_run_diagnostics.csv),
 [same-seed repeats](tables/same_seed_repeats.csv)), plus [mesh_validation.json](mesh_validation.json).
 Simulation job 48112701; export job 48113002.
+
+## Figures
+
+![Missing updates and minimum-glucose difference versus occupancy](plots/mesh_comparison.png)
+
+- [Mesh comparison](plots/mesh_comparison.png) ([PDF](plots/mesh_comparison.pdf)): missing updates and
+  minimum-glucose difference against the matched serial run, versus observed cells per voxel.
+- Per mesh, diagnostics and glucose trajectories by order seed:
+
+| Voxel edge | Cells per voxel | Diagnostics | Glucose by seed |
+|---:|---:|---|---|
+| 16 µm | 8 | [PNG](plots/mesh16/diagnostics.png) · [PDF](plots/mesh16/diagnostics.pdf) | [PNG](plots/mesh16/glucose_by_seed.png) · [PDF](plots/mesh16/glucose_by_seed.pdf) |
+| 8 µm | 4 | [PNG](plots/mesh8/diagnostics.png) · [PDF](plots/mesh8/diagnostics.pdf) | [PNG](plots/mesh8/glucose_by_seed.png) · [PDF](plots/mesh8/glucose_by_seed.pdf) |
+| 4 µm | 2 | [PNG](plots/mesh4/diagnostics.png) · [PDF](plots/mesh4/diagnostics.pdf) | [PNG](plots/mesh4/glucose_by_seed.png) · [PDF](plots/mesh4/glucose_by_seed.pdf) |
+| 2 µm | 1 | [PNG](plots/mesh2/diagnostics.png) · [PDF](plots/mesh2/diagnostics.pdf) | [PNG](plots/mesh2/glucose_by_seed.png) · [PDF](plots/mesh2/glucose_by_seed.pdf) |
