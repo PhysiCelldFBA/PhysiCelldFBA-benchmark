@@ -1,6 +1,6 @@
 # Intracellular timestep: accuracy–cost trade-off
 
-**Status: decisions recorded 2026-10-27 (below); check stage in progress.** Campaigns are
+**Status: decisions recorded 2026-10-27 (below); [check stage done](../results/timestep/tradeoff-checks-20261027/README.md), Part A duration 240 min.** Campaigns are
 prepared with [`prepare_tradeoff.py`](prepare_tradeoff.py).
 
 ## Question
