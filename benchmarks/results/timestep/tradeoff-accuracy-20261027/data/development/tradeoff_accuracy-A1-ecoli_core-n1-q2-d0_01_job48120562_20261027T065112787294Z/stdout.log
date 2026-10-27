@@ -1,0 +1,226 @@
+Using config file settings.xml ... 
+Setting up RNG with seed 50
+0
+dc? 0
+User parameters in XML config file: 
+Bool parameters:: 
+
+Int parameters:: 
+random_seed: 50 [dimensionless]
+number_of_cells: 1 [dimensionless]
+
+Double parameters:: 
+colony_radius: 30 [micron]
+
+String parameters:: 
+
+
+which boundaries?
+0 0 0 0 0 0
+
+Microenvironment summary: microenvironment: 
+
+Mesh information: 
+type: uniform Cartesian
+Domain: [-8,8] micron x [-8,8] micron x [-8,8] micron
+   resolution: dx = 1.6 micron
+   voxels: 1000
+   voxel faces: 0
+   volume: 4096 cubic micron
+Densities: (4 total)
+   oxygen:
+     units: dimensionless
+     diffusion coefficient: 1e+07 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+09 micron
+     initial condition: 1e+08 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   glucose:
+     units: dimensionless
+     diffusion coefficient: 4.02e+07 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 6.34035e+09 micron
+     initial condition: 10 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   acetate:
+     units: dimensionless
+     diffusion coefficient: 36000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 1.89737e+08 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   CO2:
+     units: dimensionless
+     diffusion coefficient: 2233 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 4.72546e+07 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+
+WARNING: Setting the random seed again.
+	You probably have set a user parameter called random_seed.
+	Here, we will use the random seed set in user parameters.
+	HOWEVER, as of PhysiCell 1.14.0, you should set the random seed in the <options><random_seed> element in the config file.
+	Future versions of PhysiCell may throw an error here. Kindly remove the user parameter and just use the <options><random_seed> element.
+Setting up RNG with seed 50
+virtual_wall_at_domain_edge: enabled
+Pre-processing type 0 named ecoli1
+Processing ecoli1 ... 
+  --------- attachment_elastic_constant = 0.01
+===================================================
+Parssing dFBA intracellular model
+Death model not specified. Using default behavior (no metabolic-dependent death).
+Loading SBML model from: config/Ecoli_core.xml
+SBML model correctly loaded: config/Ecoli_core.xml
+Done!
+===================================================
+Signals: 
+=======
+0 : oxygen
+1 : glucose
+2 : acetate
+3 : CO2
+4 : intracellular oxygen
+5 : intracellular glucose
+6 : intracellular acetate
+7 : intracellular CO2
+8 : oxygen gradient
+9 : glucose gradient
+10 : acetate gradient
+11 : CO2 gradient
+12 : pressure
+13 : volume
+14 : contact with ecoli1
+15 : contact with live cell
+16 : contact with dead cell
+17 : contact with apoptotic cell
+18 : contact with necrotic cell
+19 : contact with other dead cell
+20 : contact with basement membrane
+21 : damage
+22 : damage delivered
+23 : attacking
+24 : dead
+25 : total attack time
+26 : time
+27 : custom:oxygen_flux
+28 : custom:glucose_flux
+29 : custom:acetate_flux
+30 : custom:growth_rate
+31 : apoptotic
+32 : necrotic
+
+
+Behaviors: 
+=========
+0 : oxygen secretion
+1 : glucose secretion
+2 : acetate secretion
+3 : CO2 secretion
+4 : oxygen secretion target
+5 : glucose secretion target
+6 : acetate secretion target
+7 : CO2 secretion target
+8 : oxygen uptake
+9 : glucose uptake
+10 : acetate uptake
+11 : CO2 uptake
+12 : oxygen export
+13 : glucose export
+14 : acetate export
+15 : CO2 export
+16 : cycle entry
+17 : exit from cycle phase 1
+18 : exit from cycle phase 2
+19 : exit from cycle phase 3
+20 : exit from cycle phase 4
+21 : exit from cycle phase 5
+22 : apoptosis
+23 : necrosis
+24 : migration speed
+25 : migration bias
+26 : migration persistence time
+27 : chemotactic response to oxygen
+28 : chemotactic response to glucose
+29 : chemotactic response to acetate
+30 : chemotactic response to CO2
+31 : cell-cell adhesion
+32 : cell-cell adhesion elastic constant
+33 : adhesive affinity to ecoli1
+34 : relative maximum adhesion distance
+35 : cell-cell repulsion
+36 : cell-BM adhesion
+37 : cell-BM repulsion
+38 : phagocytose apoptotic cell
+39 : phagocytose necrotic cell
+40 : phagocytose other dead cell
+41 : phagocytose ecoli1
+42 : attack ecoli1
+43 : fuse to ecoli1
+44 : transition to ecoli1
+45 : asymmetric division to ecoli1
+46 : custom:oxygen_flux
+47 : custom:glucose_flux
+48 : custom:acetate_flux
+49 : custom:growth_rate
+50 : is_movable
+51 : immunogenicity to ecoli1
+52 : cell attachment rate
+53 : cell detachment rate
+54 : maximum number of cell attachments
+55 : attack damage rate
+56 : attack duration
+57 : damage rate
+58 : damage repair rate
+
+
+0 :: type:0 name: ecoli1
+	 cycle model: Live (code=5)
+		Phase 0: Live
+		Cycle transitions: 
+		-----------------
+		Live --> Live w mean duration inf min
+	 death models: 
+		0 : Apoptosis (code=100) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Apoptotic --> Debris w mean duration 516 min
+		1 : Necrosis (code=101) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Necrotic (swelling) --> Necrotic (lysed) w mean duration 1e-16 min
+		Necrotic (lysed) --> Debris w mean duration 86400 min
+	 key functions: 
+		 migration bias rule: false
+		 custom rule: false
+		 phenotype rule: false
+		 volume update function: false
+		 mechanics function: true
+		 contact function: false
+		 cell division function: false
+		 cell division direction function: false
+	motility (enabled: false in 2D)
+		speed: 1 micron/min
+		bias: 0.5 
+		persistence time: 1 min
+		chemotaxis (enabled: false)
+			along -1 * grad(oxygen) 
+	mechanics:
+		cell_cell_adhesion_strength: 0.4
+		cell_cell_repulsion_strength: 10
+		rel max adhesion dist: 1.25
+		cell_BM_adhesion_strength: 4
+		cell_BM_repulsion_strength: 100
+		attachment_elastic_constant: 0.01
+		attachment_rate: 0
+		detachment_rate: 0
+	custom data: 
+		oxygen_flux: 0 mM/min
+		glucose_flux: 0 mM/min
+		acetate_flux: 0 mM/min
+		growth_rate: 0 1/min
+	custom vector data: 
+			NOTE: custom vector data will eventually be merged with custom data
+
+Using method diffusion_decay_solver__constant_coefficients_LOD_3D (implicit 3-D LOD with Thomas Algorithm) ... 
+

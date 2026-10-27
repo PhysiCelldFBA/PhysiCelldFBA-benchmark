@@ -151,7 +151,7 @@ def plot_accuracy(out, records):
                     if failed: axes[row, col].scatter(*zip(*failed), s=120, facecolors='none', edgecolors='#333333', linewidths=1.2)
         axes[0, col].set_title(s)
         for row in range(len(metrics)):
-            ax = axes[row, col]; ax.set_xscale('log'); ax.set_yscale('symlog', linthresh=1e-6)
+            ax = axes[row, col]; ax.set_xscale('log'); ax.set_yscale('log')
             ax.set_xticks([2, 5, 10, 20, 50, 100]); ax.set_xticklabels(['2', '5', '10', '20', '50', '100'])
             ax.grid(color='#e5e5e5', linewidth=.5)
             for side in ('top', 'right'): ax.spines[side].set_visible(False)
