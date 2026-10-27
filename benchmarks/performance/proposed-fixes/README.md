@@ -21,3 +21,6 @@ diffusion step. The patch builds the constants for `PhysiCell::diffusion_dt`.
   2.33% and 11.56% of the glucose at k = 1, 2, 10, with the same biomass growth.
 - The uptake cap (`update_dfba_inputs`) already budgets a whole window, so it is
   consistent with the patched exchange.
+- Tested on the 11 serial pilots ([report](../../results/timestep/exchange-fix-20261027/README.md)):
+  glucose use at ratios 2 and 10 matches ratio 1 within 1%, every run passes the
+  exchange balance, and ratio-1 results are bitwise-identical to the unpatched build.

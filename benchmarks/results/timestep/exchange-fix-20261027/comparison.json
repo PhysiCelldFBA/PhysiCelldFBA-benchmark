@@ -1,0 +1,28 @@
+{
+  "labels": [
+    "development",
+    "proposed-fix"
+  ],
+  "note": "Exchange ledger: floating-point accounting tolerance from analyze_growth.exchange_ledger_pass. Ratio-1 trajectories compare dry mass, minimum and mean glucose at every after_cell_step sample.",
+  "ratio1_trajectories_across_builds": {
+    "ecoli_core": {
+      "aligned": true,
+      "max_abs_difference": 0.0,
+      "samples": 1001
+    },
+    "mcf7_core": {
+      "aligned": true,
+      "max_abs_difference": 0.0,
+      "samples": 1001
+    }
+  },
+  "report_analysis_sha256": {
+    "development": "e5676255f12da07a30664ae180fdf1d1d645ea3c597a67b61759594d15d37529",
+    "proposed-fix": "c539e3d5d66a6044d7d4a13d3106e15bd89b24ea2e5886920058bcc8ebd0a199"
+  },
+  "reports": {
+    "development": "benchmarks/results/timestep/pilot-dev-20261027",
+    "proposed-fix": "benchmarks/results/timestep/pilot-fix-20261027"
+  },
+  "script_sha256": "447282bd3aa1d442d404532cbbe7e7c1e00be7056c997db9043359de0b0cb69e"
+}
