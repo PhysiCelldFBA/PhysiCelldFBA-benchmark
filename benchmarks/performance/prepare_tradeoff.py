@@ -4,7 +4,11 @@
 Stages:
   checks    ratio-1 depletion runs of scenarios A1-A4 and iML1515 single-cell runs at k = 1, 10, 100
   accuracy  scenarios A1-A4 at every ratio, plus a diffusion-dt 0.005 reference of A3
-All cases are serial with fixed positions and population; metabolic biomass growth is on.
+  cost-pilot / cost
+            Part B: the 1000-cell performance workloads (lattice, fed medium, fixed volume,
+            minimal output) of E. coli core, MCF7 core and iML1515 at 1 and 56 threads;
+            the pilot uses k = 1, 10, 100 and one repeat, the full stage every ratio and 3 repeats
+Accuracy cases are serial with fixed positions and population; metabolic biomass growth is on.
 """
 import argparse
 import copy
@@ -49,7 +53,28 @@ def case_for(study, base, phase, scenario, ratio, duration, diffusion_dt=DIFFUSI
     return case
 
 
+def cost_cases(study, ratios, repeats, duration):
+    """Copy the validated 1000-cell performance workloads and vary only k and the repeat."""
+    cases = []
+    for base in plan_cases(study, 'pilot'):
+        if base['variant'] != 'dfba' or base['cells_requested'] != 1000 or base['repeat'] != 1: continue
+        for k in ratios:
+            for r in range(1, repeats+1):
+                case = copy.deepcopy(base)
+                case.update(phase='tradeoff_cost', scenario='B-'+base['model'], ratio=k, repeat=r,
+                            intracellular_dt_minutes=base['diffusion_dt_minutes']*k, duration_minutes=duration,
+                            status='ready', open_decisions=[], interpretation='timestep_tradeoff_cost',
+                            validation_record='Performance workload from the validated medium profile; only k and repeat vary. Timing run with minimal output.')
+                case['case_id'] = f"tradeoff_cost-{base['model']}-n1000-p{base['threads']}-f{base['fields']}-q{k}-r{r}"
+                cases.append(case)
+    if {c['threads'] for c in cases} != {1, 56} or len({c['model'] for c in cases}) != 3:
+        raise ValueError('Expected the 1000-cell workloads of three models at 1 and 56 threads')
+    return cases
+
+
 def cases_for_stage(study, name, duration):
+    if name == 'cost-pilot': return cost_cases(study, (1, 10, 100), 1, duration)
+    if name == 'cost': return cost_cases(study, RATIOS, 3, duration)
     base = plan_cases(study, 'timestep')[0]
     if name == 'checks':
         cases = [case_for(study, base, 'tradeoff_check', s, 1, duration) for s in ('A1', 'A2', 'A3', 'A4')]
@@ -62,7 +87,7 @@ def cases_for_stage(study, name, duration):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--stage', choices=('checks', 'accuracy'), required=True)
+    p.add_argument('--stage', choices=('checks', 'accuracy', 'cost-pilot', 'cost'), required=True)
     for name in ('unit-binary', 'unit-build', 'cancer-binary', 'cancer-build', 'output'):
         p.add_argument('--'+name, type=Path, required=True)
     p.add_argument('--duration', type=float, required=True, help='Simulated minutes (iML1515 checks use at most 60)')
