@@ -12,14 +12,14 @@ import xml.etree.ElementTree as ET
 
 HERE=Path(__file__).resolve().parent
 sys.path.insert(0,str(HERE.parent/'performance'))
-from common import REPO, SOURCE as ROOT, config_metadata, digest, read_json, write_json
+from common import REPO, SOURCE as ROOT, config_metadata, digest, read_json, source_path, write_json
 from design import plan_cases
 from inputs import materialize
 from prepare import stage
 
 
 def cases_for_protocol(protocol, study):
-    template=ROOT/protocol['template']
+    template=source_path(protocol['template'])
     metadata=config_metadata(template)
     if int(ET.parse(template).findtext('user_parameters/number_of_cells')) != protocol['cells']:
         raise ValueError('Protocol population differs from original unit test')
@@ -63,7 +63,7 @@ def prepare(args):
     for name, expected in build['benchmark_harness'].items():
         if digest(HERE.parent/'performance'/name)!=expected: raise ValueError(f'Harness changed: {name}')
     # These are experimental inputs; pin their identity independently of binaries.
-    identities={name:digest(ROOT/name) for name in (protocol['template'],study['models']['ecoli_core']['path'])}
+    identities={name:digest(source_path(name)) for name in (protocol['template'],study['models']['ecoli_core']['path'])}
     revision=subprocess.check_output(['git','-C',str(REPO),'rev-parse','HEAD'],text=True).strip()
     if subprocess.check_output(['git','-C',str(REPO),'status','--porcelain'],text=True).strip():
         raise ValueError('Commit preparation sources before staging a campaign')

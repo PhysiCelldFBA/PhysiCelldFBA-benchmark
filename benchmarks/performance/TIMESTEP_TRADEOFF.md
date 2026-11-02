@@ -1,6 +1,8 @@
 # Intracellular timestep: accuracy–cost trade-off
 
-**Status: decisions recorded 2026-10-27 (below); [check stage done](../results/timestep/tradeoff-checks-20261027/README.md); [Part A done](../results/timestep/tradeoff-accuracy-20261027/README.md); [Part B pilot done](../results/timestep/tradeoff-cost-pilot-20261027/README.md); full Part B awaiting approval.** Campaigns are
+**Status:** decisions recorded 2026-10-27 (below); [check stage](../results/timestep/tradeoff-checks-20261027/README.md),
+[Part A](../results/timestep/tradeoff-accuracy-20261027/README.md) and [Part B pilot](../results/timestep/tradeoff-cost-pilot-20261027/README.md)
+done on the proposed-fix patch; **final runs in progress** ([plan](#final-runs-2026-11-02)). Campaigns are
 prepared with [`prepare_tradeoff.py`](prepare_tradeoff.py).
 
 ## Question
@@ -89,3 +91,23 @@ Population is fixed: there is no division and positions are frozen, so biomass k
 growing inside each cell (about 18× for E. coli over 240 min). This keeps ratio
 comparisons deterministic. It is a numerical test of the metabolic coupling, not a
 colony simulation.
+
+## Final runs (2026-11-02)
+
+The earlier stages ran PhysiCelldFBA `a2519f06` with the exchange fix as a local patch. The final
+runs use the fix as submitted upstream, without patches:
+
+- **Source:** PhysiCelldFBA PR `fix/intracellular-dt-exchange`, commit `c59daa81` (one commit on
+  `development` @ `7f2b1d0a`). After the merge, the merged tree is compared with `c59daa81` and the
+  result is recorded in [PROVENANCE.md](../../PROVENANCE.md); a difference in the engine or in the
+  templates used means re-running the affected parts.
+- **Unfixed comparison:** Part A also runs on `7f2b1d0a`, which has the defect, to document it in
+  the same study.
+- **Diffusion dt 0.01 and 0.001 min**, both for Part A (both builds) and Part B (fixed build).
+  Diffusion dt is set explicitly per case (`--diffusion-dt`); voxel sizes come from the final
+  sample configurations (A1 is now 2 µm, the unit-test default since `7f2b1d0a`).
+- **iML1515** comes from [`benchmarks/assets/iml1515/`](../assets/iml1515/README.md), because it is
+  no longer shipped with PhysiCelldFBA.
+- **Part B jobs:** one Slurm job per model, thread count and k (`launch-<model>-p<threads>-q<k>.txt`,
+  pinned in `campaign.sha256`, passed as the launcher's fourth argument). The 3 repeats of a group
+  share one exclusive node, and all groups run on identical GPP nodes.

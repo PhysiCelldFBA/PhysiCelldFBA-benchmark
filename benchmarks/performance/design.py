@@ -1,7 +1,7 @@
 """Agreed experiment matrix; no simulation or submission side effects."""
 import itertools
 from pathlib import Path
-from common import config_metadata, read_json
+from common import config_metadata, read_json, source_path
 from common import SOURCE as ROOT
 PHASES = ('pilot', 'main', 'timestep', 'refinement', 'voxel', 'voxel_mixed', 'voxel_rich', 'cancer_application', 'pfba', 'pfba_application')
 
@@ -16,7 +16,7 @@ def plan_cases(study, phase):
             if profile['model']!=model: raise ValueError('Performance profile/model mismatch')
             template=profile['template']
         template = template or study['models'][model]['template']
-        meta = config_metadata(ROOT / template)
+        meta = config_metadata(source_path(template))
         fields = max(fields or meta['fields'], meta['fields'])
         diffusion_dt=study.get('performance_diffusion_dt_minutes',meta['diffusion_dt_minutes']) if performance else meta['diffusion_dt_minutes']
         layout = layout or ('lattice' if performance else 'shared' if phase.startswith('voxel') else 'single')
@@ -52,7 +52,7 @@ def plan_cases(study, phase):
             if c['layout']=='application': c['open_decisions'].append('Set cells_requested from application CSV')
     else:
         s=study[phase]
-        common_fields=max(config_metadata(ROOT/m['template'])['fields'] for m in study['models'].values())
+        common_fields=max(config_metadata(source_path(m['template']))['fields'] for m in study['models'].values())
         if phase=='pilot': points=set(itertools.product(s['cells'],s['threads'],[max(common_fields,s['fields'])]))
         else:
             f=max(common_fields,s['reference_fields'])

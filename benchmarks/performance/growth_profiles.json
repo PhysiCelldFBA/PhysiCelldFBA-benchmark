@@ -8,15 +8,15 @@
   },
   "iml_batch": {
     "model": "iml1515",
-    "template": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings.xml",
-    "sbml": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml",
+    "template": "benchmarks/assets/iml1515/PhysiCell_settings.xml",
+    "sbml": "benchmarks/assets/iml1515/iML1515.xml",
     "supply": "template",
     "concentrations_mM": {}
   },
   "iml_fed": {
     "model": "iml1515",
-    "template": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings.xml",
-    "sbml": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml",
+    "template": "benchmarks/assets/iml1515/PhysiCell_settings.xml",
+    "sbml": "benchmarks/assets/iml1515/iML1515.xml",
     "supply": "boundary",
     "concentrations_mM": {"glucose": 8.0, "oxygen": 5.0}
   },

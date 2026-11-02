@@ -45,7 +45,7 @@ class CampaignTests(unittest.TestCase):
         self.assertEqual(len({c['case_id'] for c in cases}),60)
         self.assertEqual({c['cells_requested'] for c in cases},{8})
         self.assertEqual({c['threads'] for c in cases},{1,2,4,8})
-        original=ET.parse(campaign.ROOT/protocol['template']).getroot()
+        original=ET.parse(campaign.source_path(protocol['template'])).getroot()
         self.assertEqual(duration,float(original.findtext('overall/max_time')))
         with tempfile.TemporaryDirectory() as directory:
             output=Path(directory)/'inputs'; materialize(cases[0],study,output,duration)

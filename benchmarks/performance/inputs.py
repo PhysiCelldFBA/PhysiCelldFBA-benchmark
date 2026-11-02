@@ -6,7 +6,7 @@ import math
 from pathlib import Path
 import shutil
 import xml.etree.ElementTree as ET
-from common import read_json, write_json, positive, digest
+from common import read_json, write_json, positive, digest, source_path
 
 from common import SOURCE as ROOT
 
@@ -77,7 +77,7 @@ def materialize(case, study, destination, duration, output_policy=None, nutrient
     positive(duration,'duration')
     out=Path(destination)
     if out.exists(): raise ValueError('Input directory must be new')
-    source=ROOT/case['template']
+    source=source_path(case['template'])
     root=ET.parse(source).getroot()
     profile=None
     if case.get('medium_profile'):
@@ -119,9 +119,11 @@ def materialize(case, study, destination, duration, output_policy=None, nutrient
     controls.set('diagnostics',str(policy!='minimal').lower())
     for path,value in [('overall/max_time',duration),('overall/dt_diffusion',case['diffusion_dt_minutes']),
                        ('parallel/omp_num_threads',case['threads']),('save/folder','output'),
-                       ('options/random_seed',case['simulation_seed']),('user_parameters/random_seed',case['simulation_seed']),
+                       ('options/random_seed',case['simulation_seed']),
                        ('save/full_data/enable',str(policy!='minimal').lower()),('save/full_data/interval',duration if policy=='diagnostic_endpoints' else case['intracellular_dt_minutes']),
                        ('save/SVG/enable','false'),('save/legacy_data/enable','false')]: set_text(root,path,value)
+    # PhysiCelldFBA seeds from <options> only since PR #27; keep a legacy user parameter consistent if a template has one.
+    if root.find('user_parameters/random_seed') is not None: set_text(root,'user_parameters/random_seed',case['simulation_seed'])
     copied={}
     model_info={}
     for cell in root.findall('cell_definitions/cell_definition'):
@@ -129,7 +131,7 @@ def materialize(case, study, destination, duration, output_policy=None, nutrient
         if model is None: raise ValueError('Every explicit definition must supply model/density for matched controls')
         density=positive(model.findtext('growth_model/cell_density'),'cell_density')
         ET.SubElement(controls,'cell_type',name=cell.get('name'),density_g_ml=str(density))
-        sbml=ROOT/(profile['sbml'] if profile else study['models'][case['model']]['path'])
+        sbml=source_path(profile['sbml'] if profile else study['models'][case['model']]['path'])
         reactions,species,objectives=sbml_metadata(sbml)
         if case['model']=='iml1515':
             if len(objectives)!=1 or objectives[0][1]!=1: raise ValueError('Explicit reviewed objective mapping required')
@@ -141,9 +143,11 @@ def materialize(case, study, destination, duration, output_policy=None, nutrient
         set_text(model,'settings/intracellular_dt',case['intracellular_dt_minutes'])
         old=model.find('settings/time_step')
         if old is not None: model.find('settings').remove(old)
-        secondary=model.find('secondary_objective')
-        if secondary is not None: model.remove(secondary)
-        ET.SubElement(model,'secondary_objective',enabled=str(case['variant']=='pfba').lower(),type='parsimonious',fraction_of_optimum='1.0')
+        # The secondary objective belongs inside <growth_model> (PhysiCelldFBA PR #21); both positions at once are an error.
+        for parent in (model,model.find('growth_model')):
+            secondary=parent.find('secondary_objective')
+            if secondary is not None: parent.remove(secondary)
+        ET.SubElement(model.find('growth_model'),'secondary_objective',enabled=str(case['variant']=='pfba').lower(),type='parsimonious',fraction_of_optimum='1.0')
         model_info[asset]=dict(reactions=len(reactions),species=species,sha256=digest(sbml),mapped_reactions=used)
         if case['variant'] in ('dfba_disabled','upstream_physicell'): cell.find('phenotype').remove(model)
         if case['fixed_population']:

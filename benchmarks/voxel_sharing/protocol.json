@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "template": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_n8.xml",
+  "template": "sample_projects_intracellular/fba/dfba_unit_test/config/voxel_sharing_test/Unit_test_voxel_sharing_n8.xml",
   "cells": 8,
   "initial_position": [0, 0, 0],
   "threads": [1, 2, 4, 8],

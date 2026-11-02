@@ -9,7 +9,7 @@ from pathlib import Path
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
-from common import read_json, write_json, digest, config_metadata
+from common import read_json, write_json, digest, config_metadata, source_path
 from design import plan_cases
 from inputs import materialize
 from prepare import stage
@@ -96,7 +96,7 @@ class WorkflowTests(unittest.TestCase):
                 self.assertEqual(root.findtext('save/full_data/interval'),'10')
                 self.assertEqual(root.find('benchmark').get('diagnostics'),'true')
                 for asset,meta in record['models'].items():
-                    self.assertEqual(meta['sha256'],digest(ROOT/record['medium_profile']['sbml']))
+                    self.assertEqual(meta['sha256'],digest(source_path(record['medium_profile']['sbml'])))
                 fields={v.get('name'):v for v in root.findall('microenvironment_setup/variable')}
                 if name=='mcf7_uniform_fed':
                     self.assertEqual(len(fields),23)
@@ -108,7 +108,7 @@ class WorkflowTests(unittest.TestCase):
                     faces={f.get('ID'):float(f.text) for f in fields['O2'].findall('Dirichlet_options/boundary_value')}
                     self.assertEqual((faces['xmin'],faces['xmax']),(2,0))
                 if name=='mcf7_native':
-                    original=ET.parse(ROOT/c['template']).getroot()
+                    original=ET.parse(source_path(c['template'])).getroot()
                     for i,v in enumerate(original.findall('microenvironment_setup/variable')):
                         v.set('ID',str(i))
                     self.assertEqual(ET.tostring(root.find('microenvironment_setup')),ET.tostring(original.find('microenvironment_setup')))
@@ -124,10 +124,10 @@ class WorkflowTests(unittest.TestCase):
                 c=next(c for c in plan_cases(self.study,phase) if c['model']=='ecoli_core')
                 out=Path(directory)/phase; materialize(c,self.study,out,10)
                 root=ET.parse(out/'settings.xml').getroot()
-                original=ET.parse(ROOT/c['template']).getroot()
+                original=ET.parse(source_path(c['template'])).getroot()
                 for i,v in enumerate(original.findall('microenvironment_setup/variable')): v.set('ID',str(i))
                 self.assertEqual(ET.tostring(root.find('microenvironment_setup')),ET.tostring(original.find('microenvironment_setup')))
-                self.assertEqual(digest(out/'config/Ecoli_core.xml'),digest(ROOT/self.study['models']['ecoli_core']['path']))
+                self.assertEqual(digest(out/'config/Ecoli_core.xml'),digest(source_path(self.study['models']['ecoli_core']['path'])))
 
     def test_performance_profiles_match_disabled_baseline(self):
         cases=plan_cases(self.study,'pilot')

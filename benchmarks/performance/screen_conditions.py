@@ -5,7 +5,7 @@ import copy
 import csv
 from pathlib import Path
 import subprocess
-from common import digest,read_json,write_json
+from common import digest,read_json,source_path,write_json
 
 from common import SOURCE as ROOT
 
@@ -60,7 +60,7 @@ def main():
                 limits.append((ex['reaction'],-rate))
                 changes.append(dict(field=ex['field'],concentration_mM=concentration,kinetic_max=kinetic,capped_max=rate))
             bounds=directory/'bounds.tsv';bounds.write_text(''.join(f'{rxn}\t{lb:.17g}\n' for rxn,lb in limits))
-            cmd=[str(a.binary.resolve()),str(ROOT/model['path']),objective,c['growth_settings']['max_growth_rate'],str(bounds.resolve()),str((directory/'solution.tsv').resolve())]
+            cmd=[str(a.binary.resolve()),str(source_path(model['path'])),objective,c['growth_settings']['max_growth_rate'],str(bounds.resolve()),str((directory/'solution.tsv').resolve())]
             result=subprocess.run(cmd,capture_output=True,text=True)
             (directory/'stdout.log').write_text(result.stdout);(directory/'stderr.log').write_text(result.stderr)
             if result.returncode: raise ValueError(f'LP check failed: {name}: {result.returncode}')

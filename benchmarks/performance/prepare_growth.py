@@ -5,7 +5,7 @@ import copy
 import json
 from pathlib import Path
 import subprocess
-from common import digest, read_json, write_json, config_metadata
+from common import digest, read_json, write_json, config_metadata, source_path
 from design import plan_cases
 from inputs import materialize
 from prepare import stage
@@ -24,7 +24,7 @@ def growth_cases(study, population=16):
         case.update(phase='growth_validation',model=profile['model'],template=profile['template'],
                     medium_profile=name,cells_requested=n,threads=1,variant=variant,
                     layout='single' if n==1 else 'lattice',fixed_volume=fixed,
-                    fields=config_metadata(ROOT/profile['template'])['fields'],
+                    fields=config_metadata(source_path(profile['template']))['fields'],
                     diffusion_dt_minutes=.01,intracellular_dt_minutes=dt,
                     output_policy='diagnostic_endpoints',status='ready',open_decisions=[],
                     interpretation='serial_medium_validation_not_performance_measurement',

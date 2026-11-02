@@ -10,11 +10,11 @@
   "models": {
     "ecoli_core": {"template": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_mass_conversion.xml", "path": "sample_projects_intracellular/fba/dfba_unit_test/config/Ecoli_core.xml", "project": "dfba_unit_test"},
     "mcf7_core": {"template": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml", "path": "sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml", "project": "cancer_core_metabolism"},
-    "iml1515": {"template": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/PhysiCell_settings.xml", "path": "sample_projects_intracellular/fba/ecoli_acetic_switch/config/iML1515.xml", "project": "dfba_unit_test"}
+    "iml1515": {"template": "benchmarks/assets/iml1515/PhysiCell_settings.xml", "path": "benchmarks/assets/iml1515/iML1515.xml", "project": "dfba_unit_test"}
   },
   "timestep": {"models": ["ecoli_core", "mcf7_core"], "ratios": [1, 2, 10, 100]},
   "refinement": {"model": "mcf7_core", "factors": [1, 0.5, 0.25]},
-  "voxel": {"cells": [8], "threads": [1, 2, 4, 8], "order_seeds": [11, 23, 37, 51, 71], "repeats": 3, "template": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_n8.xml", "mixed_template": "sample_projects_intracellular/fba/dfba_unit_test/config/Unit_test_voxel_sharing_mixed.xml"},
+  "voxel": {"cells": [8], "threads": [1, 2, 4, 8], "order_seeds": [11, 23, 37, 51, 71], "repeats": 3, "template": "sample_projects_intracellular/fba/dfba_unit_test/config/voxel_sharing_test/Unit_test_voxel_sharing_n8.xml", "mixed_template": "sample_projects_intracellular/fba/dfba_unit_test/config/voxel_sharing_test/Unit_test_voxel_sharing_mixed.xml"},
   "pfba": {"model": "mcf7_core", "variants": ["dfba", "pfba"], "fraction_of_optimum": 1.0, "selected_dt_minutes": null},
   "pilot": {"cells": [100, 1000], "threads": [1, 56], "fields": 4, "repeats": 1},
   "main": {"cells": [100, 1000, 10000], "threads": [1, 2, 4, 8, 16, 28, 56, 112], "fields": [4, 8, 16, 32], "reference_cells": 1000, "reference_threads": 56, "reference_fields": 4, "repeats": 3},

@@ -13,6 +13,11 @@ REPO = Path(__file__).resolve().parents[2]
 SOURCE = Path(os.environ.get("PHYSICELLDFBA_SOURCE") or REPO / "PhysiCelldFBA").resolve()
 
 
+def source_path(relative):
+    """A config or model named in a protocol: assets kept in this repository (benchmarks/...), else the PhysiCelldFBA source."""
+    return REPO / relative if str(relative).startswith("benchmarks/") else SOURCE / relative
+
+
 def read_json(path):
     return json.loads(Path(path).read_text())
 
@@ -51,7 +56,9 @@ def config_metadata(path):
         step = model.findtext("settings/intracellular_dt")
         if step is None:
             step = model.findtext("settings/time_step")
-        secondary = model.find("secondary_objective")
+        secondary = model.find("growth_model/secondary_objective")
+        if secondary is None:
+            secondary = model.find("secondary_objective")   # position before PhysiCelldFBA PR #21
         pfba_enabled = secondary is not None and secondary.get("enabled", "true").lower() in ("true", "1")
         steps[cell.get("name", "unnamed")] = {
             "declared": step,
