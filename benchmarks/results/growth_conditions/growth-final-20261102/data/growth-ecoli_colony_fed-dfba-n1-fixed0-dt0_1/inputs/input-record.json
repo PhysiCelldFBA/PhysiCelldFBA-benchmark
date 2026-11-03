@@ -1,0 +1,54 @@
+{
+  "case": {
+    "case_id": "growth-ecoli_colony_fed-dfba-n1-fixed0-dt0_1",
+    "cells_requested": 1,
+    "diffusion_dt_minutes": 0.01,
+    "fields": 5,
+    "fixed_population": true,
+    "fixed_positions": true,
+    "fixed_volume": false,
+    "interpretation": "serial_medium_validation_not_performance_measurement",
+    "intracellular_dt_minutes": 0.1,
+    "layout": "single",
+    "medium_profile": "ecoli_colony_fed",
+    "mixed": false,
+    "model": "ecoli_core",
+    "nutrient_control": false,
+    "open_decisions": [],
+    "order_seed": null,
+    "output_policy": "diagnostic_endpoints",
+    "phase": "growth_validation",
+    "repeat": 1,
+    "simulation_seed": 50,
+    "status": "ready",
+    "template": "sample_projects_intracellular/fba/bacterial_colony/config/PhysiCell_settings.xml",
+    "threads": 1,
+    "validation_record": "Candidate-medium pilot: retain all failures, check geometry, growth, solver status and substrates before accepting the profile.",
+    "variant": "dfba"
+  },
+  "duration_minutes": 10,
+  "medium_profile": {
+    "concentrations_mM": {},
+    "model": "ecoli_core",
+    "sbml": "sample_projects_intracellular/fba/bacterial_colony/config/Ecoli_core.xml",
+    "supply": "template",
+    "template": "sample_projects_intracellular/fba/bacterial_colony/config/PhysiCell_settings.xml"
+  },
+  "models": {
+    "config/Ecoli_core.xml": {
+      "mapped_reactions": [
+        "R_Biomass_Ecoli_core",
+        "R_EX_glc__D_e",
+        "R_EX_ac_e",
+        "R_EX_lac__D_e",
+        "R_EX_o2_e",
+        "R_EX_co2_e"
+      ],
+      "reactions": 95,
+      "sha256": "5e0e011badcb1135d8a61e73beb2521cf5ac570ea75ced37010c7d8416f4aedf",
+      "species": 72
+    }
+  },
+  "nutrient_multiplier": null,
+  "output_policy": "diagnostic_endpoints"
+}

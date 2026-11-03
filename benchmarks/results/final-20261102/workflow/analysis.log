@@ -1,0 +1,1075 @@
+srun: job 48453462 queued and waiting for resources
+srun: job 48453462 has been allocated resources
+load HDF5/1.14.1-2 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, HDF5_DIR, HDF5_ROOT,CFLAGS, CPPFLAGS, LDFLAGS) 
+load PYTHON/3.12.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME, PYTHONPATH) 
+load SQLITE3/3.45.2 (PATH)
+=== voxel
+=== mesh
+=== mesh-summary
+Validated 240 runs and 180 matched serial/parallel comparisons.
+{'mesh_id': 'mesh16', 'voxel_um': 16.0, 'occupancy': 8, 'threads': 8, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': 0.15794559085175416, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 3.943512183468556e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh16', 'voxel_um': 16.0, 'occupancy': 8, 'threads': 4, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': 0.15794559085175416, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 3.943512183468556e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh16', 'voxel_um': 16.0, 'occupancy': 8, 'threads': 2, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': 0.15794559085175416, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 3.943512183468556e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh16', 'voxel_um': 16.0, 'occupancy': 8, 'threads': 1, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': 0, 'missing_updates_median': 0, 'missing_updates_max': 0, 'glucose_min_mM': 0.15794559085175416, 'glucose_delta_vs_serial_min_mM': 0, 'glucose_delta_vs_serial_max_mM': 0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 3.943512183468556e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh8', 'voxel_um': 8.0, 'occupancy': 4, 'threads': 8, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': 0.13697932592432335, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 5.595524044110789e-14, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh8', 'voxel_um': 8.0, 'occupancy': 4, 'threads': 4, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': 0.13697932592432335, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 5.595524044110789e-14, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh8', 'voxel_um': 8.0, 'occupancy': 4, 'threads': 2, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': 0.13697932592432335, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 5.595524044110789e-14, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh8', 'voxel_um': 8.0, 'occupancy': 4, 'threads': 1, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': 0, 'missing_updates_median': 0, 'missing_updates_max': 0, 'glucose_min_mM': 0.13697932592432335, 'glucose_delta_vs_serial_min_mM': 0, 'glucose_delta_vs_serial_max_mM': 0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 5.595524044110789e-14, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh4', 'voxel_um': 4.0, 'occupancy': 2, 'threads': 8, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': 0.057887565234007975, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 1.6608936448392342e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh4', 'voxel_um': 4.0, 'occupancy': 2, 'threads': 4, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': 0.057887565234007975, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 1.6608936448392342e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh4', 'voxel_um': 4.0, 'occupancy': 2, 'threads': 2, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': 0.057887565234007975, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 1.6608936448392342e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh4', 'voxel_um': 4.0, 'occupancy': 2, 'threads': 1, 'runs': 15, 'flagged_runs': 0, 'negative_glucose_runs': 0, 'missed_update_runs': 0, 'missing_updates_min': 0, 'missing_updates_median': 0, 'missing_updates_max': 0, 'glucose_min_mM': 0.057887565234007975, 'glucose_delta_vs_serial_min_mM': 0, 'glucose_delta_vs_serial_max_mM': 0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 1.6608936448392342e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh2', 'voxel_um': 2.0, 'occupancy': 1, 'threads': 8, 'runs': 15, 'flagged_runs': 15, 'negative_glucose_runs': 15, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': -1.1883362427411726e-06, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 2.9398705692074145e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh2', 'voxel_um': 2.0, 'occupancy': 1, 'threads': 4, 'runs': 15, 'flagged_runs': 15, 'negative_glucose_runs': 15, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': -1.1883362427411726e-06, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 2.9398705692074145e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh2', 'voxel_um': 2.0, 'occupancy': 1, 'threads': 2, 'runs': 15, 'flagged_runs': 15, 'negative_glucose_runs': 15, 'missed_update_runs': 0, 'missing_updates_min': -0.0, 'missing_updates_median': -0.0, 'missing_updates_max': -0.0, 'glucose_min_mM': -1.1883362427411726e-06, 'glucose_delta_vs_serial_min_mM': 0.0, 'glucose_delta_vs_serial_max_mM': 0.0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 2.9398705692074145e-13, 'nonoptimal_cell_updates': 0}
+{'mesh_id': 'mesh2', 'voxel_um': 2.0, 'occupancy': 1, 'threads': 1, 'runs': 15, 'flagged_runs': 15, 'negative_glucose_runs': 15, 'missed_update_runs': 0, 'missing_updates_min': 0, 'missing_updates_median': 0, 'missing_updates_max': 0, 'glucose_min_mM': -1.1883362427411726e-06, 'glucose_delta_vs_serial_min_mM': 0, 'glucose_delta_vs_serial_max_mM': 0, 'biomass_delta_vs_serial_min_percent': 0.0, 'biomass_delta_vs_serial_max_percent': 0.0, 'exchange_mismatch_runs': 0, 'max_exchange_abs_residual': 2.9398705692074145e-13, 'nonoptimal_cell_updates': 0}
+=== voxel-vs-20261027
+{'build': 'a2519f06-pr19', 'mesh_id': 'original', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -3.7803191410903936e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'original', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -3.7803191410903936e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'original', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -3.7803191410903936e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'original', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -3.7803191410903936e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh16', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.15794559085175416, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh16', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.15794559085175416, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh16', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.15794559085175416, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh16', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.15794559085175416, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh8', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.13697932592432335, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh8', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.13697932592432335, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh8', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.13697932592432335, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh8', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.13697932592432335, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh4', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.057887565234007975, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh4', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.057887565234007975, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh4', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.057887565234007975, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh4', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.057887565234007975, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh2', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -1.1883362427411726e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh2', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -1.1883362427411726e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh2', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -1.1883362427411726e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'a2519f06-pr19', 'mesh_id': 'mesh2', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -1.1883362427411726e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'original', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -3.7803191410903936e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'original', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -3.7803191410903936e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'original', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -3.7803191410903936e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'original', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -3.7803191410903936e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh16', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.15794559085175416, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh16', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.15794559085175416, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh16', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.15794559085175416, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh16', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.15794559085175416, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh8', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.13697932592432335, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh8', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.13697932592432335, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh8', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.13697932592432335, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh8', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.13697932592432335, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh4', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.057887565234007975, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh4', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.057887565234007975, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh4', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.057887565234007975, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh4', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 0, 'glucose_min_mM': 0.057887565234007975, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh2', 'threads': 1, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -1.1883362427411726e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh2', 'threads': 2, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -1.1883362427411726e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh2', 'threads': 4, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -1.1883362427411726e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+{'build': 'c59daa81-final', 'mesh_id': 'mesh2', 'threads': 8, 'runs': 15, 'validated_pairs': 15, 'thread_count_mismatches': 0, 'missed_update_runs': 0, 'missing_updates_max': 0, 'exchange_mismatch_runs': 0, 'negative_glucose_runs': 15, 'glucose_min_mM': -1.1883362427411726e-06, 'identical_to_serial_runs': 15, 'glucose_trajectory_max_abs_diff_mM': 0.0, 'cell_dry_mass_max_rel_diff': 0.0}
+Serial runs identical across builds: 75 of 75
+=== accuracy-d0_01
+{'build': 'development-7f2b1d0a', 'scenario': 'A1', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 24000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 1109.0775301309338, 'glucose_uptake_mM_um3': 40897.84151051153, 'glucose_min_mM': 0.007593312348317334, 'oxygen_min_mM': 99999983.80505887, 'glucose_domain_50pct_minute': 154.2400000000047, 'glucose_domain_10pct_minute': 197.15999999996566, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 0.0, 'glucose_uptake_rel_error': 0.0, 'wall_seconds': 3.31}
+{'build': 'development-7f2b1d0a', 'scenario': 'A1', 'ratio': 2, 'status': 'completed', 'flags': '', 'updates': 12000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 555.3429235505058, 'glucose_uptake_mM_um3': 40959.51188398966, 'glucose_min_mM': 2.86266937915146e-06, 'oxygen_min_mM': 99999982.98309562, 'glucose_domain_50pct_minute': 109.04000000001888, 'glucose_domain_10pct_minute': 147.60000000001074, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.45798105810506856, 'glucose_uptake_rel_error': 0.0015079126721707953, 'wall_seconds': 2.83}
+{'build': 'development-7f2b1d0a', 'scenario': 'A1', 'ratio': 5, 'status': 'completed_flagged', 'flags': 'negative_concentration', 'updates': 4800, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 222.10309425187359, 'glucose_uptake_mM_um3': 40960.00009901846, 'glucose_min_mM': -0.0002898900997798659, 'oxygen_min_mM': 99999982.0373237, 'glucose_domain_50pct_minute': 61.339999999996365, 'glucose_domain_10pct_minute': 91.40000000000985, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.7335959967621, 'glucose_uptake_rel_error': 0.0015198500999364542, 'wall_seconds': 2.37}
+{'build': 'development-7f2b1d0a', 'scenario': 'A1', 'ratio': 10, 'status': 'completed_flagged', 'flags': 'negative_concentration', 'updates': 2400, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 111.0223254394891, 'glucose_uptake_mM_um3': 40960.00145333285, 'glucose_min_mM': -0.001675767061040112, 'oxygen_min_mM': 99999981.44860734, 'glucose_domain_50pct_minute': 36.34000000000134, 'glucose_domain_10pct_minute': 59.45999999999674, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.8254683259090615, 'glucose_uptake_rel_error': 0.0015198832145052635, 'wall_seconds': 2.42}
+{'build': 'development-7f2b1d0a', 'scenario': 'A1', 'ratio': 20, 'status': 'completed_flagged', 'flags': 'negative_concentration', 'updates': 1200, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 55.48459176635443, 'glucose_uptake_mM_um3': 40960.01396927597, 'glucose_min_mM': -0.003971731775889303, 'oxygen_min_mM': 99999981.07632844, 'glucose_domain_50pct_minute': 20.300000000000374, 'glucose_domain_10pct_minute': 38.41000000000093, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.8714022981226716, 'glucose_uptake_rel_error': 0.0015201892439351014, 'wall_seconds': 2.29}
+{'build': 'development-7f2b1d0a', 'scenario': 'A1', 'ratio': 50, 'status': 'completed_flagged', 'flags': 'negative_concentration', 'updates': 480, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 22.169975836690845, 'glucose_uptake_mM_um3': 40960.043876351614, 'glucose_min_mM': -0.056637119484974074, 'oxygen_min_mM': 99999980.4856676, 'glucose_domain_50pct_minute': 9.339999999999845, 'glucose_domain_10pct_minute': 25.78000000000123, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.898956044759627, 'glucose_uptake_rel_error': 0.001520920506870748, 'wall_seconds': 2.18}
+{'build': 'development-7f2b1d0a', 'scenario': 'A1', 'ratio': 100, 'status': 'completed_flagged', 'flags': 'negative_concentration', 'updates': 240, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 11.068044468258908, 'glucose_uptake_mM_um3': 40960.09798900624, 'glucose_min_mM': -0.7845544386632697, 'oxygen_min_mM': 99999978.70336737, 'glucose_domain_50pct_minute': 7.779999999999879, 'glucose_domain_10pct_minute': 23.22000000000083, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.9081381948631275, 'glucose_uptake_rel_error': 0.0015222436244883186, 'wall_seconds': 2.2}
+{'build': 'pr-c59daa81', 'scenario': 'A1', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 24000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 1109.0775301309338, 'glucose_uptake_mM_um3': 40897.84151051153, 'glucose_min_mM': 0.007593312348317334, 'oxygen_min_mM': 99999983.80505887, 'glucose_domain_50pct_minute': 154.2400000000047, 'glucose_domain_10pct_minute': 197.15999999996566, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 0.0, 'glucose_uptake_rel_error': 0.0, 'wall_seconds': 3.2}
+{'build': 'pr-c59daa81', 'scenario': 'A1', 'ratio': 2, 'status': 'completed', 'flags': '', 'updates': 12000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 1103.0295761494865, 'glucose_uptake_mM_um3': 40676.72120381205, 'glucose_min_mM': 0.046116498078597246, 'oxygen_min_mM': 99999984.04077515, 'glucose_domain_50pct_minute': 154.2400000000047, 'glucose_domain_10pct_minute': 199.00999999996398, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.005002122552713687, 'glucose_uptake_rel_error': -0.005406649801864149, 'wall_seconds': 2.68}
+{'build': 'pr-c59daa81', 'scenario': 'A1', 'ratio': 5, 'status': 'completed', 'flags': '', 'updates': 4800, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 1066.0230189470421, 'glucose_uptake_mM_um3': 39315.72140512342, 'glucose_min_mM': 0.33454406411025017, 'oxygen_min_mM': 99999984.71205997, 'glucose_domain_50pct_minute': 154.26000000000468, 'glucose_domain_10pct_minute': 211.98999999995218, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.03560938824099164, 'glucose_uptake_rel_error': -0.03868468474018301, 'wall_seconds': 2.51}
+{'build': 'pr-c59daa81', 'scenario': 'A1', 'ratio': 10, 'status': 'completed', 'flags': '', 'updates': 2400, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 987.8929130080688, 'glucose_uptake_mM_um3': 36437.28457747279, 'glucose_min_mM': 1.0037966235858942, 'oxygen_min_mM': 99999986.04601, 'glucose_domain_50pct_minute': 154.29000000000465, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.10022898788776731, 'glucose_uptake_rel_error': -0.10906582764012836, 'wall_seconds': 2.32}
+{'build': 'pr-c59daa81', 'scenario': 'A1', 'ratio': 20, 'status': 'completed', 'flags': '', 'updates': 1200, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 850.033767366022, 'glucose_uptake_mM_um3': 31355.013433430104, 'glucose_min_mM': 2.2332577520360886, 'oxygen_min_mM': 99999988.4965621, 'glucose_domain_50pct_minute': 158.7400000000006, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.2142490918153606, 'glucose_uptake_rel_error': -0.23333329399862665, 'wall_seconds': 2.2}
+{'build': 'pr-c59daa81', 'scenario': 'A1', 'ratio': 50, 'status': 'completed', 'flags': '', 'updates': 480, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 597.960049240871, 'glucose_uptake_mM_um3': 22057.203641472177, 'glucose_min_mM': 4.524329268020174, 'oxygen_min_mM': 99999993.0630943, 'glucose_domain_50pct_minute': 219.12999999994568, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.42273342126762775, 'glucose_uptake_rel_error': -0.4606756047063498, 'wall_seconds': 2.17}
+{'build': 'pr-c59daa81', 'scenario': 'A1', 'ratio': 100, 'status': 'completed', 'flags': '', 'updates': 240, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 399.6560048184766, 'glucose_uptake_mM_um3': 14736.572221654838, 'glucose_min_mM': 6.338642570792756, 'oxygen_min_mM': 99999996.679317, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.5867460999259762, 'glucose_uptake_rel_error': -0.6396735945620197, 'wall_seconds': 2.17}
+{'build': 'development-7f2b1d0a', 'scenario': 'A2', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 384000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 2531.0669311979213, 'glucose_uptake_mM_um3': 1721817.0282789068, 'glucose_min_mM': 1.710282885439549, 'oxygen_min_mM': 2.1413090949413136, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': 204.10999999995934, 'final_biomass_rel_error': 0.0, 'glucose_uptake_rel_error': 0.0, 'wall_seconds': 18.14}
+{'build': 'development-7f2b1d0a', 'scenario': 'A2', 'ratio': 2, 'status': 'completed_flagged', 'flags': 'negative_concentration;primary_solver_failure', 'updates': 192000, 'nonoptimal_updates': 280, 'exchange_ledger_pass': False, 'biomass_change_percent': 1906.9614785622334, 'glucose_uptake_mM_um3': 2876591.6016681655, 'glucose_min_mM': 0.7228238024116589, 'oxygen_min_mM': -0.8207802264359758, 'glucose_domain_50pct_minute': 190.87999999997137, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': 152.08000000000666, 'final_biomass_rel_error': -0.237206224302144, 'glucose_uptake_rel_error': 0.6706720600524829, 'wall_seconds': 10.78}
+{'build': 'development-7f2b1d0a', 'scenario': 'A2', 'ratio': 5, 'status': 'completed_flagged', 'flags': 'negative_concentration;primary_solver_failure', 'updates': 76800, 'nonoptimal_updates': 2936, 'exchange_ledger_pass': False, 'biomass_change_percent': 1059.6935165463688, 'glucose_uptake_mM_um3': 4277526.010804773, 'glucose_min_mM': -1.1320339120704213, 'oxygen_min_mM': -1.6632501856853295, 'glucose_domain_50pct_minute': 124.88000000002698, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': 85.79000000000698, 'final_biomass_rel_error': -0.5592307049298965, 'glucose_uptake_rel_error': 1.4843092736052803, 'wall_seconds': 5.17}
+{'build': 'development-7f2b1d0a', 'scenario': 'A2', 'ratio': 10, 'status': 'completed_flagged', 'flags': 'negative_concentration;primary_solver_failure', 'updates': 38400, 'nonoptimal_updates': 2468, 'exchange_ledger_pass': False, 'biomass_change_percent': 610.0304880905234, 'glucose_uptake_mM_um3': 5232450.176088092, 'glucose_min_mM': -1.3593528730216118, 'oxygen_min_mM': -1.6833135784089337, 'glucose_domain_50pct_minute': 74.84000000000138, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': 35.83000000000144, 'final_biomass_rel_error': -0.7301359081096248, 'glucose_uptake_rel_error': 2.0389118530894903, 'wall_seconds': 3.27}
+{'build': 'development-7f2b1d0a', 'scenario': 'A2', 'ratio': 20, 'status': 'completed_flagged', 'flags': 'negative_concentration;primary_solver_failure', 'updates': 19200, 'nonoptimal_updates': 4288, 'exchange_ledger_pass': False, 'biomass_change_percent': 331.77333878949236, 'glucose_uptake_mM_um3': 5874708.159194341, 'glucose_min_mM': -1.3650687624204974, 'oxygen_min_mM': -1.6925966862370627, 'glucose_domain_50pct_minute': 24.230000000000988, 'glucose_domain_10pct_minute': 156.2100000000029, 'oxygen_domain_50pct_minute': 0.21000000000000005, 'final_biomass_rel_error': -0.8358942018275047, 'glucose_uptake_rel_error': 2.411923603210371, 'wall_seconds': 2.59}
+{'build': 'development-7f2b1d0a', 'scenario': 'A2', 'ratio': 50, 'status': 'completed_flagged', 'flags': 'negative_concentration;primary_solver_failure', 'updates': 7680, 'nonoptimal_updates': 3840, 'exchange_ledger_pass': False, 'biomass_change_percent': 135.17088254747972, 'glucose_uptake_mM_um3': 6127307.739271194, 'glucose_min_mM': -1.3821281972859611, 'oxygen_min_mM': -1.7128291334806294, 'glucose_domain_50pct_minute': 0.5100000000000002, 'glucose_domain_10pct_minute': 0.5200000000000002, 'oxygen_domain_50pct_minute': 0.5100000000000002, 'final_biomass_rel_error': -0.9106176738573477, 'glucose_uptake_rel_error': 2.5586288430402653, 'wall_seconds': 1.56}
+{'build': 'development-7f2b1d0a', 'scenario': 'A2', 'ratio': 100, 'status': 'completed_flagged', 'flags': 'negative_concentration;primary_solver_failure', 'updates': 3840, 'nonoptimal_updates': 1920, 'exchange_ledger_pass': False, 'biomass_change_percent': 59.48253559934298, 'glucose_uptake_mM_um3': 6167946.528175291, 'glucose_min_mM': -1.3826992295859286, 'oxygen_min_mM': -1.7102650043417449, 'glucose_domain_50pct_minute': 1.0100000000000007, 'glucose_domain_10pct_minute': 1.0100000000000007, 'oxygen_domain_50pct_minute': 1.0100000000000007, 'final_biomass_rel_error': -0.9393848428148004, 'glucose_uptake_rel_error': 2.582231112176097, 'wall_seconds': 1.39}
+{'build': 'pr-c59daa81', 'scenario': 'A2', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 384000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 2531.0669311979213, 'glucose_uptake_mM_um3': 1721817.0282789068, 'glucose_min_mM': 1.710282885439549, 'oxygen_min_mM': 2.1413090949413136, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': 204.10999999995934, 'final_biomass_rel_error': 0.0, 'glucose_uptake_rel_error': 0.0, 'wall_seconds': 17.83}
+{'build': 'pr-c59daa81', 'scenario': 'A2', 'ratio': 2, 'status': 'completed', 'flags': '', 'updates': 192000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 2225.9321385392304, 'glucose_uptake_mM_um3': 1612049.9380577363, 'glucose_min_mM': 2.396129821105988, 'oxygen_min_mM': 2.998307954258748, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.115973785782699, 'glucose_uptake_rel_error': -0.06375072868857123, 'wall_seconds': 9.89}
+{'build': 'pr-c59daa81', 'scenario': 'A2', 'ratio': 5, 'status': 'completed', 'flags': '', 'updates': 76800, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 1532.7675792775628, 'glucose_uptake_mM_um3': 1198419.2630579467, 'glucose_min_mM': 3.1549460001242013, 'oxygen_min_mM': 3.945755298777222, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.3794275774907155, 'glucose_uptake_rel_error': -0.3039798983427048, 'wall_seconds': 4.72}
+{'build': 'pr-c59daa81', 'scenario': 'A2', 'ratio': 10, 'status': 'completed', 'flags': '', 'updates': 38400, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 1001.1365285202412, 'glucose_uptake_mM_um3': 828598.4541800274, 'glucose_min_mM': 3.5273332666062855, 'oxygen_min_mM': 4.41043446842089, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.5814866906411631, 'glucose_uptake_rel_error': -0.5187650949135534, 'wall_seconds': 3.03}
+{'build': 'pr-c59daa81', 'scenario': 'A2', 'ratio': 20, 'status': 'completed', 'flags': '', 'updates': 19200, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 586.8720192357287, 'glucose_uptake_mM_um3': 517594.96418112516, 'glucose_min_mM': 3.748585641034425, 'oxygen_min_mM': 4.686317736941566, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.7389378388321742, 'glucose_uptake_rel_error': -0.699390262913997, 'wall_seconds': 2.14}
+{'build': 'pr-c59daa81', 'scenario': 'A2', 'ratio': 50, 'status': 'completed', 'flags': '', 'updates': 7680, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 242.28856766662008, 'glucose_uptake_mM_um3': 240107.93915172882, 'glucose_min_mM': 3.8951652185012677, 'oxygen_min_mM': 4.865743417330374, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.869905032210345, 'glucose_uptake_rel_error': -0.8605496779226677, 'wall_seconds': 1.55}
+{'build': 'pr-c59daa81', 'scenario': 'A2', 'ratio': 100, 'status': 'completed', 'flags': '', 'updates': 3840, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 107.52055587492802, 'glucose_uptake_mM_um3': 121426.27609689045, 'glucose_min_mM': 3.946173007704122, 'oxygen_min_mM': 4.932897349956567, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.9211268427213882, 'glucose_uptake_rel_error': -0.9294778283042853, 'wall_seconds': 1.34}
+{'build': 'development-7f2b1d0a', 'scenario': 'A3', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 48000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.612545171040839, 'glucose_uptake_mM_um3': 289871.1583631056, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 5.391882422152968e-06, 'glucose_uptake_rel_error': 0.0032807486496170876, 'wall_seconds': 30.54}
+{'build': 'development-7f2b1d0a', 'scenario': 'A3', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 24000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.61197572368537, 'glucose_uptake_mM_um3': 288923.27372299595, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 0.0, 'glucose_uptake_rel_error': 0.0, 'wall_seconds': 15.84}
+{'build': 'development-7f2b1d0a', 'scenario': 'A3', 'ratio': 2, 'status': 'completed', 'flags': '', 'updates': 12000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 5.6108369187879426, 'glucose_uptake_mM_um3': 574088.4198720721, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -1.0782914434074509e-05, 'glucose_uptake_rel_error': 0.9869926450524615, 'wall_seconds': 11.69}
+{'build': 'development-7f2b1d0a', 'scenario': 'A3', 'ratio': 5, 'status': 'completed', 'flags': '', 'updates': 4800, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 5.607421224355402, 'glucose_uptake_mM_um3': 1407687.912832237, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -4.3124837867687526e-05, 'glucose_uptake_rel_error': 3.8721859429775543, 'wall_seconds': 9.43}
+{'build': 'development-7f2b1d0a', 'scenario': 'A3', 'ratio': 10, 'status': 'completed', 'flags': '', 'updates': 2400, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 5.601730813236583, 'glucose_uptake_mM_um3': 2727753.7581041884, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -9.7005196414466e-05, 'glucose_uptake_rel_error': 8.441100825679456, 'wall_seconds': 8.87}
+{'build': 'development-7f2b1d0a', 'scenario': 'A3', 'ratio': 20, 'status': 'completed', 'flags': '', 'updates': 1200, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 5.556199706938969, 'glucose_uptake_mM_um3': 4968196.628655227, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.0005281220843017115, 'glucose_uptake_rel_error': 16.195557023275548, 'wall_seconds': 8.5}
+{'build': 'development-7f2b1d0a', 'scenario': 'A3', 'ratio': 50, 'status': 'completed_flagged', 'flags': 'negative_concentration;primary_solver_failure', 'updates': 480, 'nonoptimal_updates': 240, 'exchange_ledger_pass': False, 'biomass_change_percent': 1.686435262708419, 'glucose_uptake_mM_um3': 7134150.592969252, 'glucose_min_mM': 0.0, 'oxygen_min_mM': -3.5776459214154066e-05, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.03716946334994642, 'glucose_uptake_rel_error': 23.692197693319407, 'wall_seconds': 8.07}
+{'build': 'development-7f2b1d0a', 'scenario': 'A3', 'ratio': 100, 'status': 'completed_flagged', 'flags': 'primary_solver_failure', 'updates': 240, 'nonoptimal_updates': 240, 'exchange_ledger_pass': True, 'biomass_change_percent': 0.0, 'glucose_uptake_mM_um3': 0.0, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.05313768334727584, 'glucose_uptake_rel_error': -1.0, 'wall_seconds': 7.9}
+{'build': 'pr-c59daa81', 'scenario': 'A3', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 48000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.612545171040839, 'glucose_uptake_mM_um3': 289871.1583631056, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 5.391882422152968e-06, 'glucose_uptake_rel_error': 0.0032807486496170876, 'wall_seconds': 30.9}
+{'build': 'pr-c59daa81', 'scenario': 'A3', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 24000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.61197572368537, 'glucose_uptake_mM_um3': 288923.27372299595, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 0.0, 'glucose_uptake_rel_error': 0.0, 'wall_seconds': 15.82}
+{'build': 'pr-c59daa81', 'scenario': 'A3', 'ratio': 2, 'status': 'completed', 'flags': '', 'updates': 12000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.61197577115129, 'glucose_uptake_mM_um3': 288911.310177869, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 4.4943685745523507e-10, 'glucose_uptake_rel_error': -4.140734310807681e-05, 'wall_seconds': 11.95}
+{'build': 'pr-c59daa81', 'scenario': 'A3', 'ratio': 5, 'status': 'completed', 'flags': '', 'updates': 4800, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.61197591351783, 'glucose_uptake_mM_um3': 288875.41954366735, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 1.797452075141866e-09, 'glucose_uptake_rel_error': -0.0001656293683508465, 'wall_seconds': 9.73}
+{'build': 'pr-c59daa81', 'scenario': 'A3', 'ratio': 10, 'status': 'completed', 'flags': '', 'updates': 2400, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.611976150820319, 'glucose_uptake_mM_um3': 288815.6018241454, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 4.0443797427788456e-09, 'glucose_uptake_rel_error': -0.00037266606273387605, 'wall_seconds': 9.11}
+{'build': 'pr-c59daa81', 'scenario': 'A3', 'ratio': 20, 'status': 'completed', 'flags': '', 'updates': 1200, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.611976625399073, 'glucose_uptake_mM_um3': 288695.96640047943, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 8.537987173797583e-09, 'glucose_uptake_rel_error': -0.0007867393982751405, 'wall_seconds': 8.6}
+{'build': 'pr-c59daa81', 'scenario': 'A3', 'ratio': 50, 'status': 'completed', 'flags': '', 'updates': 480, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 3.1004079747930513, 'glucose_uptake_mM_um3': 284961.7312740629, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.02378108857146454, 'glucose_uptake_rel_error': -0.013711399562539828, 'wall_seconds': 8.53}
+{'build': 'pr-c59daa81', 'scenario': 'A3', 'ratio': 100, 'status': 'completed_flagged', 'flags': 'primary_solver_failure', 'updates': 240, 'nonoptimal_updates': 240, 'exchange_ledger_pass': True, 'biomass_change_percent': 0.0, 'glucose_uptake_mM_um3': 0.0, 'glucose_min_mM': 0.0, 'oxygen_min_mM': 0.0, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.05313768334727584, 'glucose_uptake_rel_error': -1.0, 'wall_seconds': 8.01}
+{'build': 'development-7f2b1d0a', 'scenario': 'A4', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 384000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.611975723685325, 'glucose_uptake_mM_um3': 4622772.379561894, 'glucose_min_mM': 0.4963352855965214, 'oxygen_min_mM': 1.9849992163905263, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 0.0, 'glucose_uptake_rel_error': 0.0, 'wall_seconds': 117.4}
+{'build': 'development-7f2b1d0a', 'scenario': 'A4', 'ratio': 2, 'status': 'completed', 'flags': '', 'updates': 192000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 5.610836918787898, 'glucose_uptake_mM_um3': 9185414.717947252, 'glucose_min_mM': 0.49271927389125164, 'oxygen_min_mM': 1.9699831992170194, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -1.078291443407451e-05, 'glucose_uptake_rel_error': 0.9869926450537818, 'wall_seconds': 60.88}
+{'build': 'development-7f2b1d0a', 'scenario': 'A4', 'ratio': 5, 'status': 'completed', 'flags': '', 'updates': 76800, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 5.60742122435538, 'glucose_uptake_mM_um3': 22523006.605309878, 'glucose_min_mM': 0.4821548213347009, 'oxygen_min_mM': 1.9248471952250628, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -4.312483786754919e-05, 'glucose_uptake_rel_error': 3.872185942982642, 'wall_seconds': 27.0}
+{'build': 'development-7f2b1d0a', 'scenario': 'A4', 'ratio': 10, 'status': 'completed', 'flags': '', 'updates': 38400, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 5.601730813236516, 'glucose_uptake_mM_um3': 43644060.12966055, 'glucose_min_mM': 0.46506641047704433, 'oxygen_min_mM': 1.8493469772852866, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -9.70051964147427e-05, 'glucose_uptake_rel_error': 8.441100825690395, 'wall_seconds': 15.55}
+{'build': 'development-7f2b1d0a', 'scenario': 'A4', 'ratio': 20, 'status': 'completed', 'flags': '', 'updates': 19200, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 5.590359130024036, 'glucose_uptake_mM_um3': 82135342.64204404, 'glucose_min_mM': 0.4301312310975896, 'oxygen_min_mM': 1.6974540975004546, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.00020467937952272839, 'glucose_uptake_rel_error': 16.767550702945947, 'wall_seconds': 9.8}
+{'build': 'development-7f2b1d0a', 'scenario': 'A4', 'ratio': 50, 'status': 'completed', 'flags': '', 'updates': 7680, 'nonoptimal_updates': 0, 'exchange_ledger_pass': False, 'biomass_change_percent': 5.556318986861664, 'glucose_uptake_mM_um3': 174015172.55313075, 'glucose_min_mM': 0.325316153277555, 'oxygen_min_mM': 1.2367351204945025, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': -0.000526992667661846, 'glucose_uptake_rel_error': 36.64303285242489, 'wall_seconds': 6.35}
+{'build': 'development-7f2b1d0a', 'scenario': 'A4', 'ratio': 100, 'status': 'completed_flagged', 'flags': 'primary_solver_failure', 'updates': 3840, 'nonoptimal_updates': 464, 'exchange_ledger_pass': False, 'biomass_change_percent': 2.7474821379898318, 'glucose_uptake_mM_um3': 248025775.497479, 'glucose_min_mM': 0.14302916630028173, 'oxygen_min_mM': 0.5800569459818221, 'glucose_domain_50pct_minute': 1.0100000000000007, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': 1.0100000000000007, 'final_biomass_rel_error': -0.02712281032588511, 'glucose_uptake_rel_error': 52.65303656179254, 'wall_seconds': 6.84}
+{'build': 'pr-c59daa81', 'scenario': 'A4', 'ratio': 1, 'status': 'completed', 'flags': '', 'updates': 384000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.611975723685325, 'glucose_uptake_mM_um3': 4622772.379561894, 'glucose_min_mM': 0.4963352855965214, 'oxygen_min_mM': 1.9849992163905263, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 0.0, 'glucose_uptake_rel_error': 0.0, 'wall_seconds': 116.47}
+{'build': 'pr-c59daa81', 'scenario': 'A4', 'ratio': 2, 'status': 'completed', 'flags': '', 'updates': 192000, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.6119757711512674, 'glucose_uptake_mM_um3': 4622580.96283997, 'glucose_min_mM': 0.4963352938214155, 'oxygen_min_mM': 1.9849992505464298, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 4.4943699579466327e-10, 'glucose_uptake_rel_error': -4.14073430847611e-05, 'wall_seconds': 60.56}
+{'build': 'pr-c59daa81', 'scenario': 'A4', 'ratio': 5, 'status': 'completed', 'flags': '', 'updates': 76800, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.611975913517786, 'glucose_uptake_mM_um3': 4622006.71269274, 'glucose_min_mM': 0.49633531849599116, 'oxygen_min_mM': 1.9849993530168444, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 1.7974519368024382e-09, 'glucose_uptake_rel_error': -0.000165629368328499, 'wall_seconds': 26.78}
+{'build': 'pr-c59daa81', 'scenario': 'A4', 'ratio': 10, 'status': 'completed', 'flags': '', 'updates': 38400, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.611976150820319, 'glucose_uptake_mM_um3': 4621049.629180426, 'glucose_min_mM': 0.4963353596199239, 'oxygen_min_mM': 1.9849995237958933, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 4.04438015779713e-09, 'glucose_uptake_rel_error': -0.00037266606270394204, 'wall_seconds': 15.31}
+{'build': 'pr-c59daa81', 'scenario': 'A4', 'ratio': 20, 'status': 'completed', 'flags': '', 'updates': 19200, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.611976625399007, 'glucose_uptake_mM_um3': 4619135.462401619, 'glucose_min_mM': 0.4963354418664437, 'oxygen_min_mM': 1.9849998653507708, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 8.537986897118727e-09, 'glucose_uptake_rel_error': -0.0007867393982783847, 'wall_seconds': 9.73}
+{'build': 'pr-c59daa81', 'scenario': 'A4', 'ratio': 50, 'status': 'completed', 'flags': '', 'updates': 7680, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.611978049166599, 'glucose_uptake_mM_um3': 4613392.964036493, 'glucose_min_mM': 0.49633568859522886, 'oxygen_min_mM': 1.985000889966298, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 2.2019105789908864e-08, 'glucose_uptake_rel_error': -0.002028958978570758, 'wall_seconds': 6.32}
+{'build': 'pr-c59daa81', 'scenario': 'A4', 'ratio': 100, 'status': 'completed', 'flags': '', 'updates': 3840, 'nonoptimal_updates': 0, 'exchange_ledger_pass': True, 'biomass_change_percent': 5.611980422081819, 'glucose_uptake_mM_um3': 4603822.140000671, 'glucose_min_mM': 0.4963360997739633, 'oxygen_min_mM': 1.9850025975038115, 'glucose_domain_50pct_minute': None, 'glucose_domain_10pct_minute': None, 'oxygen_domain_50pct_minute': None, 'final_biomass_rel_error': 4.448734588894363e-08, 'glucose_uptake_rel_error': -0.004099323523910652, 'wall_seconds': 5.13}
+=== cost-d0_01
+ecoli_core p1   k=1    loop     45.77s  intra     43.74s  diff    0.12s  speedup   1.00  amdahl  22.61  flagged 0  thread mismatch 0
+ecoli_core p1   k=2    loop     24.02s  intra     22.01s  diff    0.12s  speedup   1.91  amdahl  22.61  flagged 0  thread mismatch 0
+ecoli_core p1   k=5    loop     10.79s  intra      8.79s  diff    0.12s  speedup   4.24  amdahl  22.61  flagged 0  thread mismatch 0
+ecoli_core p1   k=10   loop      6.44s  intra      4.45s  diff    0.12s  speedup   7.11  amdahl  22.61  flagged 0  thread mismatch 0
+ecoli_core p1   k=20   loop      4.21s  intra      2.24s  diff    0.12s  speedup  10.86  amdahl  22.61  flagged 0  thread mismatch 0
+ecoli_core p1   k=50   loop      2.88s  intra      0.90s  diff    0.12s  speedup  15.90  amdahl  22.61  flagged 0  thread mismatch 0
+ecoli_core p1   k=100  loop      2.46s  intra      0.48s  diff    0.12s  speedup  18.60  amdahl  22.61  flagged 0  thread mismatch 0
+ecoli_core p56  k=1    loop      1.86s  intra      1.00s  diff    0.06s  speedup   1.00  amdahl   2.17  flagged 0  thread mismatch 0
+ecoli_core p56  k=2    loop      1.28s  intra      0.52s  diff    0.06s  speedup   1.45  amdahl   2.17  flagged 0  thread mismatch 0
+ecoli_core p56  k=5    loop      1.06s  intra      0.29s  diff    0.06s  speedup   1.75  amdahl   2.17  flagged 0  thread mismatch 0
+ecoli_core p56  k=10   loop      0.86s  intra      0.13s  diff    0.06s  speedup   2.17  amdahl   2.17  flagged 0  thread mismatch 0
+ecoli_core p56  k=20   loop      0.83s  intra      0.10s  diff    0.06s  speedup   2.25  amdahl   2.17  flagged 0  thread mismatch 0
+ecoli_core p56  k=50   loop      0.86s  intra      0.06s  diff    0.06s  speedup   2.18  amdahl   2.17  flagged 0  thread mismatch 0
+ecoli_core p56  k=100  loop      0.81s  intra      0.04s  diff    0.06s  speedup   2.31  amdahl   2.17  flagged 0  thread mismatch 0
+iml1515    p1   k=1    loop   1673.63s  intra   1672.34s  diff    0.13s  speedup   1.00  amdahl 1296.05  flagged 0  thread mismatch 0
+iml1515    p1   k=2    loop    865.91s  intra    864.78s  diff    0.12s  speedup   1.93  amdahl 1296.05  flagged 0  thread mismatch 0
+iml1515    p1   k=5    loop    373.65s  intra    372.60s  diff    0.12s  speedup   4.48  amdahl 1296.05  flagged 0  thread mismatch 0
+iml1515    p1   k=10   loop    219.18s  intra    218.17s  diff    0.12s  speedup   7.64  amdahl 1296.05  flagged 0  thread mismatch 0
+iml1515    p1   k=20   loop    135.84s  intra    134.87s  diff    0.12s  speedup  12.32  amdahl 1296.05  flagged 0  thread mismatch 0
+iml1515    p1   k=50   loop     96.35s  intra     95.41s  diff    0.12s  speedup  17.37  amdahl 1296.05  flagged 0  thread mismatch 0
+iml1515    p1   k=100  loop     79.64s  intra     78.70s  diff    0.11s  speedup  21.02  amdahl 1296.05  flagged 0  thread mismatch 0
+iml1515    p56  k=1    loop     43.20s  intra     42.93s  diff    0.07s  speedup   1.00  amdahl 161.42  flagged 0  thread mismatch 0
+iml1515    p56  k=2    loop     22.28s  intra     22.02s  diff    0.06s  speedup   1.94  amdahl 161.42  flagged 0  thread mismatch 0
+iml1515    p56  k=5    loop      9.63s  intra      9.38s  diff    0.06s  speedup   4.48  amdahl 161.42  flagged 0  thread mismatch 0
+iml1515    p56  k=10   loop      5.50s  intra      5.23s  diff    0.05s  speedup   7.86  amdahl 161.42  flagged 0  thread mismatch 0
+iml1515    p56  k=20   loop      3.36s  intra      3.12s  diff    0.05s  speedup  12.85  amdahl 161.42  flagged 0  thread mismatch 0
+iml1515    p56  k=50   loop      2.26s  intra      2.03s  diff    0.05s  speedup  19.13  amdahl 161.42  flagged 0  thread mismatch 0
+iml1515    p56  k=100  loop      1.82s  intra      1.60s  diff    0.05s  speedup  23.71  amdahl 161.42  flagged 0  thread mismatch 0
+mcf7_core  p1   k=1    loop    256.35s  intra    255.60s  diff    0.22s  speedup   1.00  amdahl 340.02  flagged 0  thread mismatch 0
+mcf7_core  p1   k=2    loop    128.94s  intra    128.22s  diff    0.21s  speedup   1.99  amdahl 340.02  flagged 0  thread mismatch 0
+mcf7_core  p1   k=5    loop     52.61s  intra     51.93s  diff    0.21s  speedup   4.87  amdahl 340.02  flagged 0  thread mismatch 0
+mcf7_core  p1   k=10   loop     27.01s  intra     26.35s  diff    0.21s  speedup   9.49  amdahl 340.02  flagged 0  thread mismatch 0
+mcf7_core  p1   k=20   loop     14.27s  intra     13.63s  diff    0.21s  speedup  17.96  amdahl 340.02  flagged 0  thread mismatch 0
+mcf7_core  p1   k=50   loop      6.65s  intra      6.00s  diff    0.21s  speedup  38.57  amdahl 340.02  flagged 0  thread mismatch 0
+mcf7_core  p1   k=100  loop      4.08s  intra      3.44s  diff    0.21s  speedup  62.88  amdahl 340.02  flagged 0  thread mismatch 0
+mcf7_core  p56  k=1    loop      6.38s  intra      6.06s  diff    0.13s  speedup   1.00  amdahl  19.96  flagged 0  thread mismatch 0
+mcf7_core  p56  k=2    loop      3.31s  intra      3.04s  diff    0.12s  speedup   1.93  amdahl  19.96  flagged 0  thread mismatch 0
+mcf7_core  p56  k=5    loop      1.55s  intra      1.26s  diff    0.12s  speedup   4.13  amdahl  19.96  flagged 0  thread mismatch 0
+mcf7_core  p56  k=10   loop      0.92s  intra      0.65s  diff    0.12s  speedup   6.90  amdahl  19.96  flagged 0  thread mismatch 0
+mcf7_core  p56  k=20   loop      0.65s  intra      0.35s  diff    0.12s  speedup   9.79  amdahl  19.96  flagged 0  thread mismatch 0
+mcf7_core  p56  k=50   loop      0.44s  intra      0.17s  diff    0.12s  speedup  14.48  amdahl  19.96  flagged 0  thread mismatch 0
+mcf7_core  p56  k=100  loop      0.39s  intra      0.11s  diff    0.12s  speedup  16.53  amdahl  19.96  flagged 0  thread mismatch 0
+=== accuracy-d0_001
+benchmarks/workspaces/final-20261102/analyze_final.sh: line 8: 3213003 Killed                  "$@"
+!!! step failed (exit 137)
+=== cost-d0_001
+ecoli_core p1   k=1    loop    457.84s  intra    437.64s  diff    1.18s  speedup   1.00  amdahl  22.66  flagged 0  thread mismatch 0
+ecoli_core p1   k=2    loop    238.61s  intra    218.56s  diff    1.17s  speedup   1.92  amdahl  22.66  flagged 0  thread mismatch 0
+ecoli_core p1   k=5    loop    107.50s  intra     87.50s  diff    1.17s  speedup   4.26  amdahl  22.66  flagged 0  thread mismatch 0
+ecoli_core p1   k=10   loop     63.59s  intra     43.74s  diff    1.16s  speedup   7.20  amdahl  22.66  flagged 0  thread mismatch 0
+ecoli_core p1   k=20   loop     41.79s  intra     21.95s  diff    1.16s  speedup  10.96  amdahl  22.66  flagged 0  thread mismatch 0
+ecoli_core p1   k=50   loop     28.67s  intra      8.94s  diff    1.16s  speedup  15.97  amdahl  22.66  flagged 0  thread mismatch 0
+ecoli_core p1   k=100  loop     24.31s  intra      4.57s  diff    1.16s  speedup  18.84  amdahl  22.66  flagged 0  thread mismatch 0
+ecoli_core p56  k=1    loop     20.86s  intra     13.11s  diff    0.65s  speedup   1.00  amdahl   2.69  flagged 0  thread mismatch 0
+ecoli_core p56  k=2    loop     12.86s  intra      5.04s  diff    0.62s  speedup   1.62  amdahl   2.69  flagged 0  thread mismatch 0
+ecoli_core p56  k=5    loop     10.27s  intra      2.80s  diff    0.60s  speedup   2.03  amdahl   2.69  flagged 0  thread mismatch 0
+ecoli_core p56  k=10   loop      9.07s  intra      1.17s  diff    0.60s  speedup   2.30  amdahl   2.69  flagged 0  thread mismatch 0
+ecoli_core p56  k=20   loop      8.30s  intra      0.85s  diff    0.60s  speedup   2.51  amdahl   2.69  flagged 0  thread mismatch 0
+ecoli_core p56  k=50   loop      7.91s  intra      0.40s  diff    0.59s  speedup   2.64  amdahl   2.69  flagged 0  thread mismatch 0
+ecoli_core p56  k=100  loop      7.81s  intra      0.30s  diff    0.59s  speedup   2.67  amdahl   2.69  flagged 0  thread mismatch 0
+iml1515    p1   k=1    loop  16351.70s  intra  16346.69s  diff    1.28s  speedup   1.00  amdahl 3265.58  flagged 0  thread mismatch 0
+iml1515    p1   k=2    loop   8237.50s  intra   8232.75s  diff    1.24s  speedup   1.99  amdahl 3265.58  flagged 0  thread mismatch 0
+iml1515    p1   k=5    loop   3323.92s  intra   3319.91s  diff    1.18s  speedup   4.92  amdahl 3265.58  flagged 0  thread mismatch 0
+iml1515    p1   k=10   loop   1689.66s  intra   1685.95s  diff    1.16s  speedup   9.68  amdahl 3265.58  flagged 0  thread mismatch 0
+iml1515    p1   k=20   loop    870.48s  intra    866.93s  diff    1.15s  speedup  18.78  amdahl 3265.58  flagged 0  thread mismatch 0
+iml1515    p1   k=50   loop    376.16s  intra    372.70s  diff    1.14s  speedup  43.47  amdahl 3265.58  flagged 0  thread mismatch 0
+iml1515    p1   k=100  loop    215.64s  intra    212.20s  diff    1.14s  speedup  75.83  amdahl 3265.58  flagged 0  thread mismatch 0
+iml1515    p56  k=1    loop    424.65s  intra    423.49s  diff    0.69s  speedup   1.00  amdahl 364.66  flagged 0  thread mismatch 0
+iml1515    p56  k=2    loop    214.06s  intra    213.05s  diff    0.61s  speedup   1.98  amdahl 364.66  flagged 0  thread mismatch 0
+iml1515    p56  k=5    loop     86.78s  intra     85.79s  diff    0.61s  speedup   4.89  amdahl 364.66  flagged 0  thread mismatch 0
+iml1515    p56  k=10   loop     45.29s  intra     44.37s  diff    0.54s  speedup   9.38  amdahl 364.66  flagged 0  thread mismatch 0
+iml1515    p56  k=20   loop     23.21s  intra     22.32s  diff    0.52s  speedup  18.30  amdahl 364.66  flagged 0  thread mismatch 0
+iml1515    p56  k=50   loop     10.29s  intra      9.38s  diff    0.52s  speedup  41.25  amdahl 364.66  flagged 0  thread mismatch 0
+iml1515    p56  k=100  loop      6.38s  intra      5.51s  diff    0.51s  speedup  66.52  amdahl 364.66  flagged 0  thread mismatch 0
+mcf7_core  p1   k=1    loop   2567.39s  intra   2562.63s  diff    2.21s  speedup   1.00  amdahl 539.18  flagged 0  thread mismatch 0
+mcf7_core  p1   k=2    loop   1281.17s  intra   1276.79s  diff    2.12s  speedup   2.00  amdahl 539.18  flagged 0  thread mismatch 0
+mcf7_core  p1   k=5    loop    513.98s  intra    509.85s  diff    2.07s  speedup   5.00  amdahl 539.18  flagged 0  thread mismatch 0
+mcf7_core  p1   k=10   loop    259.57s  intra    255.48s  diff    2.07s  speedup   9.89  amdahl 539.18  flagged 0  thread mismatch 0
+mcf7_core  p1   k=20   loop    132.60s  intra    128.58s  diff    2.05s  speedup  19.36  amdahl 539.18  flagged 0  thread mismatch 0
+mcf7_core  p1   k=50   loop     55.99s  intra     52.02s  diff    2.04s  speedup  45.86  amdahl 539.18  flagged 0  thread mismatch 0
+mcf7_core  p1   k=100  loop     30.54s  intra     26.59s  diff    2.05s  speedup  84.06  amdahl 539.18  flagged 0  thread mismatch 0
+mcf7_core  p56  k=1    loop     61.47s  intra     59.88s  diff    1.25s  speedup   1.00  amdahl  38.51  flagged 0  thread mismatch 0
+mcf7_core  p56  k=2    loop     31.56s  intra     29.95s  diff    1.21s  speedup   1.95  amdahl  38.51  flagged 0  thread mismatch 0
+mcf7_core  p56  k=5    loop     13.76s  intra     12.19s  diff    1.21s  speedup   4.47  amdahl  38.51  flagged 0  thread mismatch 0
+mcf7_core  p56  k=10   loop      7.79s  intra      6.22s  diff    1.20s  speedup   7.89  amdahl  38.51  flagged 0  thread mismatch 0
+mcf7_core  p56  k=20   loop      4.75s  intra      3.22s  diff    1.18s  speedup  12.94  amdahl  38.51  flagged 0  thread mismatch 0
+mcf7_core  p56  k=50   loop      2.96s  intra      1.41s  diff    1.21s  speedup  20.75  amdahl  38.51  flagged 0  thread mismatch 0
+mcf7_core  p56  k=100  loop      2.34s  intra      0.81s  diff    1.19s  speedup  26.29  amdahl  38.51  flagged 0  thread mismatch 0
+=== growth
+[
+  {
+    "case_id": "growth-ecoli_colony_fed-dfba-n1-fixed0-dt0_01",
+    "medium_profile": "ecoli_colony_fed",
+    "model": "ecoli_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 1000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.8313975801286988,
+    "growth_mean_per_hour": 0.8313993178456628,
+    "biomass_change_percent": 14.862612351128025,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 3.4798095516208605e-09,
+    "exchange_max_relative_residual": 4.8308579359002124e-14,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 31.65,
+    "peak_rss_kib": 222632.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 4.0,
+    "initial_local_glucose_max_mM": 4.0,
+    "final_local_oxygen_min_mM": 4.837847018011946,
+    "final_local_oxygen_max_mM": 4.837847018011946,
+    "final_local_glucose_min_mM": 3.9186202364912344,
+    "final_local_glucose_max_mM": 3.9186202364912344
+  },
+  {
+    "case_id": "growth-ecoli_colony_fed-dfba-n1-fixed0-dt0_1",
+    "medium_profile": "ecoli_colony_fed",
+    "model": "ecoli_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 100,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.8313976122172749,
+    "growth_mean_per_hour": 0.831399529496204,
+    "biomass_change_percent": 14.862616402917395,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 3.547526716829452e-09,
+    "exchange_max_relative_residual": 4.93916866747636e-14,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 31.12,
+    "peak_rss_kib": 220936.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 4.0,
+    "initial_local_glucose_max_mM": 4.0,
+    "final_local_oxygen_min_mM": 4.838048931512953,
+    "final_local_oxygen_max_mM": 4.838048931512953,
+    "final_local_glucose_min_mM": 3.9187214575283607,
+    "final_local_glucose_max_mM": 3.9187214575283607
+  },
+  {
+    "case_id": "growth-ecoli_colony_fed-dfba-n1-fixed0-dt1",
+    "medium_profile": "ecoli_colony_fed",
+    "model": "ecoli_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 10,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.3014910001663,
+    "growth_mean_per_hour": 0.31114874816929994,
+    "biomass_change_percent": 5.322630510948301,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 3.4185618780213645e-09,
+    "exchange_max_relative_residual": 1.0452749776845849e-13,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 31.04,
+    "peak_rss_kib": 222244.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 4.0,
+    "initial_local_glucose_max_mM": 4.0,
+    "final_local_oxygen_min_mM": 4.95011536839371,
+    "final_local_oxygen_max_mM": 4.95011536839371,
+    "final_local_glucose_min_mM": 3.9598457482049194,
+    "final_local_glucose_max_mM": 3.9598457482049194
+  },
+  {
+    "case_id": "growth-ecoli_colony_fed-dfba-n16-fixed1-dt0_01",
+    "medium_profile": "ecoli_colony_fed",
+    "model": "ecoli_core",
+    "variant": "dfba",
+    "cells": 16,
+    "fixed_volume": true,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 16000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.8313935576285296,
+    "growth_mean_per_hour": 0.8313992355437737,
+    "biomass_change_percent": 0.0,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 1.723066134218243e-13,
+    "exchange_max_relative_residual": 3.47049565903794e-16,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.79,
+    "peak_rss_kib": 16128.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 4.0,
+    "initial_local_glucose_max_mM": 4.0,
+    "final_local_oxygen_min_mM": 4.812033053348691,
+    "final_local_oxygen_max_mM": 4.859181156644042,
+    "final_local_glucose_min_mM": 3.90599377281207,
+    "final_local_glucose_max_mM": 3.929762066627136
+  },
+  {
+    "case_id": "growth-ecoli_colony_fed-dfba-n16-fixed1-dt1",
+    "medium_profile": "ecoli_colony_fed",
+    "model": "ecoli_core",
+    "variant": "dfba",
+    "cells": 16,
+    "fixed_volume": true,
+    "dt_minutes": 1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 160,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.31890874730381374,
+    "growth_mean_per_hour": 0.3204463475755842,
+    "biomass_change_percent": 0.0,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 2.531308496145357e-13,
+    "exchange_max_relative_residual": 8.258674243648089e-16,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.14,
+    "peak_rss_kib": 16128.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 4.0,
+    "initial_local_glucose_max_mM": 4.0,
+    "final_local_oxygen_min_mM": 4.934138369796408,
+    "final_local_oxygen_max_mM": 4.9504950495049505,
+    "final_local_glucose_min_mM": 3.947170380893929,
+    "final_local_glucose_max_mM": 3.9603960396039604
+  },
+  {
+    "case_id": "growth-iml_batch-dfba-n1-fixed0-dt0_01",
+    "medium_profile": "iml_batch",
+    "model": "iml1515",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 1000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.6945152535978841,
+    "growth_mean_per_hour": 0.6945226432862931,
+    "biomass_change_percent": 12.271939525737219,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 1.075784572535099e-09,
+    "exchange_max_relative_residual": 3.0191544939288843e-14,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 55.17,
+    "peak_rss_kib": 596736.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 8.0,
+    "initial_local_glucose_max_mM": 8.0,
+    "final_local_oxygen_min_mM": 3.8663349000144303,
+    "final_local_oxygen_max_mM": 3.8663349000144303,
+    "final_local_glucose_min_mM": 7.493873087434619,
+    "final_local_glucose_max_mM": 7.493873087434619
+  },
+  {
+    "case_id": "growth-iml_fed-dfba-n1-fixed0-dt0_01",
+    "medium_profile": "iml_fed",
+    "model": "iml1515",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 1000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.6945154251948528,
+    "growth_mean_per_hour": 0.6945227075865156,
+    "biomass_change_percent": 12.271940728922704,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 9.096960962295952e-10,
+    "exchange_max_relative_residual": 3.01063506514187e-14,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 55.65,
+    "peak_rss_kib": 595044.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 8.0,
+    "initial_local_glucose_max_mM": 8.0,
+    "final_local_oxygen_min_mM": 3.8679819450595385,
+    "final_local_oxygen_max_mM": 3.8679819450595385,
+    "final_local_glucose_min_mM": 7.494543840860652,
+    "final_local_glucose_max_mM": 7.494543840860652
+  },
+  {
+    "case_id": "growth-iml_fed-dfba-n1-fixed0-dt0_1",
+    "medium_profile": "iml_fed",
+    "model": "iml1515",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 100,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.3977773433883972,
+    "growth_mean_per_hour": 0.40667919380537404,
+    "biomass_change_percent": 7.012971022303738,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 1.3504282692089475e-09,
+    "exchange_max_relative_residual": 6.782310094180545e-14,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 53.66,
+    "peak_rss_kib": 597004.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 8.0,
+    "initial_local_glucose_max_mM": 8.0,
+    "final_local_oxygen_min_mM": 4.5447817285301575,
+    "final_local_oxygen_max_mM": 4.5447817285301575,
+    "final_local_glucose_min_mM": 7.518476175612835,
+    "final_local_glucose_max_mM": 7.518476175612835
+  },
+  {
+    "case_id": "growth-iml_fed-dfba-n1-fixed0-dt1",
+    "medium_profile": "iml_fed",
+    "model": "iml1515",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 10,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.005250191044172299,
+    "growth_mean_per_hour": 0.005340408038634118,
+    "biomass_change_percent": 0.08904642345148872,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 8.398995873792892e-10,
+    "exchange_max_relative_residual": 2.7941750898339254e-14,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 52.89,
+    "peak_rss_kib": 598944.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 8.0,
+    "initial_local_glucose_max_mM": 8.0,
+    "final_local_oxygen_min_mM": 4.950443571345025,
+    "final_local_oxygen_max_mM": 4.950443571345025,
+    "final_local_glucose_min_mM": 7.920646041750302,
+    "final_local_glucose_max_mM": 7.920646041750302
+  },
+  {
+    "case_id": "growth-iml_fed-dfba-n16-fixed1-dt0_01",
+    "medium_profile": "iml_fed",
+    "model": "iml1515",
+    "variant": "dfba",
+    "cells": 16,
+    "fixed_volume": true,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 16000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.6944910120100238,
+    "growth_mean_per_hour": 0.6945201119509681,
+    "biomass_change_percent": 0.0,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 1.0395240224170266e-11,
+    "exchange_max_relative_residual": 6.789472980771292e-16,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 29.69,
+    "peak_rss_kib": 218624.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 8.0,
+    "initial_local_glucose_max_mM": 8.0,
+    "final_local_oxygen_min_mM": 3.6563440676058168,
+    "final_local_oxygen_max_mM": 3.992543222774798,
+    "final_local_glucose_min_mM": 7.400303785481189,
+    "final_local_glucose_max_mM": 7.550523915812517
+  },
+  {
+    "case_id": "growth-iml_fed-dfba-n16-fixed1-dt1",
+    "medium_profile": "iml_fed",
+    "model": "iml1515",
+    "variant": "dfba",
+    "cells": 16,
+    "fixed_volume": true,
+    "dt_minutes": 1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 160,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.005077545622037483,
+    "growth_mean_per_hour": 0.005319256473846165,
+    "biomass_change_percent": 0.0,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 7.425171588693047e-13,
+    "exchange_max_relative_residual": 6.530365720570338e-16,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 5.11,
+    "peak_rss_kib": 218624.0,
+    "initial_local_oxygen_min_mM": 5.0,
+    "initial_local_oxygen_max_mM": 5.0,
+    "initial_local_glucose_min_mM": 8.0,
+    "initial_local_glucose_max_mM": 8.0,
+    "final_local_oxygen_min_mM": 4.934188883334328,
+    "final_local_oxygen_max_mM": 4.9504950495049505,
+    "final_local_glucose_min_mM": 7.894662842380539,
+    "final_local_glucose_max_mM": 7.920792079207921
+  },
+  {
+    "case_id": "growth-mcf7_native-dfba-n1-fixed0-dt0_01",
+    "medium_profile": "mcf7_native",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 1000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.013650463186587155,
+    "growth_mean_per_hour": 0.013650468795393958,
+    "biomass_change_percent": 0.22776680865688181,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 1.961935058858444e-10,
+    "exchange_max_relative_residual": 1.8272856230097846e-15,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.77,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 0.5,
+    "initial_local_oxygen_max_mM": 0.5,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 0.48576435300324616,
+    "final_local_oxygen_max_mM": 0.48576435300324616,
+    "final_local_glucose_min_mM": 0.4965209332251334,
+    "final_local_glucose_max_mM": 0.4965209332251334
+  },
+  {
+    "case_id": "growth-mcf7_native-dfba-n1-fixed0-dt0_1",
+    "medium_profile": "mcf7_native",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 100,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.013650463240895142,
+    "growth_mean_per_hour": 0.0136504924263473,
+    "biomass_change_percent": 0.2277672034026068,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 1.9267519524301946e-10,
+    "exchange_max_relative_residual": 1.488078614881532e-15,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.5,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 0.5,
+    "initial_local_oxygen_max_mM": 0.5,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 0.4857646447180521,
+    "final_local_oxygen_max_mM": 0.4857646447180521,
+    "final_local_glucose_min_mM": 0.4965210035476356,
+    "final_local_glucose_max_mM": 0.4965210035476356
+  },
+  {
+    "case_id": "growth-mcf7_native-dfba-n1-fixed0-dt1",
+    "medium_profile": "mcf7_native",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed_flagged",
+    "flags": "primary_solver_failure",
+    "primary_nonoptimal_updates": 10,
+    "solver_failures": 10,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 10,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.0,
+    "growth_mean_per_hour": 0.0,
+    "biomass_change_percent": 0.0,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 0.0,
+    "exchange_max_relative_residual": 0.0,
+    "exchange_ledger_pass": true,
+    "short_control_pass": false,
+    "wall_seconds": 0.46,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 0.5,
+    "initial_local_oxygen_max_mM": 0.5,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 0.5,
+    "final_local_oxygen_max_mM": 0.5,
+    "final_local_glucose_min_mM": 0.5,
+    "final_local_glucose_max_mM": 0.5
+  },
+  {
+    "case_id": "growth-mcf7_native-pfba-n1-fixed0-dt0_01",
+    "medium_profile": "mcf7_native",
+    "model": "mcf7_core",
+    "variant": "pfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 1000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.013650463187435718,
+    "growth_mean_per_hour": 0.013650468795462693,
+    "biomass_change_percent": 0.22776680865759236,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 1.961935058858444e-10,
+    "exchange_max_relative_residual": 1.9021990520929227e-15,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 1.08,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 0.5,
+    "initial_local_oxygen_max_mM": 0.5,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 0.4877096486184591,
+    "final_local_oxygen_max_mM": 0.4877096486184591,
+    "final_local_glucose_min_mM": 0.497267180117735,
+    "final_local_glucose_max_mM": 0.497267180117735
+  },
+  {
+    "case_id": "growth-mcf7_oxygen2_gradient-dfba-n1-fixed0-dt0_01",
+    "medium_profile": "mcf7_oxygen2_gradient",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 1000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.013650463186587155,
+    "growth_mean_per_hour": 0.013650468795393958,
+    "biomass_change_percent": 0.22776680865688181,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 2.2330937099468429e-10,
+    "exchange_max_relative_residual": 1.8272856230097846e-15,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.77,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 2.0,
+    "initial_local_oxygen_max_mM": 2.0,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 1.9857643530032463,
+    "final_local_oxygen_max_mM": 1.9857643530032463,
+    "final_local_glucose_min_mM": 0.4965209332251334,
+    "final_local_glucose_max_mM": 0.4965209332251334
+  },
+  {
+    "case_id": "growth-mcf7_oxygen2_gradient-dfba-n1-fixed0-dt0_1",
+    "medium_profile": "mcf7_oxygen2_gradient",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 100,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.013650463240895142,
+    "growth_mean_per_hour": 0.0136504924263473,
+    "biomass_change_percent": 0.2277672034026068,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 2.2225776774575934e-10,
+    "exchange_max_relative_residual": 1.488078614881532e-15,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.59,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 2.0,
+    "initial_local_oxygen_max_mM": 2.0,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 1.9857646447180521,
+    "final_local_oxygen_max_mM": 1.9857646447180521,
+    "final_local_glucose_min_mM": 0.4965210035476356,
+    "final_local_glucose_max_mM": 0.4965210035476356
+  },
+  {
+    "case_id": "growth-mcf7_oxygen2_gradient-dfba-n1-fixed0-dt1",
+    "medium_profile": "mcf7_oxygen2_gradient",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 10,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.01365046377888365,
+    "growth_mean_per_hour": 0.01365072873508306,
+    "biomass_change_percent": 0.22777115085221844,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 1.7546852859595674e-10,
+    "exchange_max_relative_residual": 1.3167000226154958e-15,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.5,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 2.0,
+    "initial_local_oxygen_max_mM": 2.0,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 1.9857675615394468,
+    "final_local_oxygen_max_mM": 1.9857675615394468,
+    "final_local_glucose_min_mM": 0.49652170669650664,
+    "final_local_glucose_max_mM": 0.49652170669650664
+  },
+  {
+    "case_id": "growth-mcf7_uniform_fed-dfba-n1-fixed0-dt0_01",
+    "medium_profile": "mcf7_uniform_fed",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 1000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.013650463186587155,
+    "growth_mean_per_hour": 0.013650468795393958,
+    "biomass_change_percent": 0.22776680865688181,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 3.1042191039887257e-10,
+    "exchange_max_relative_residual": 1.1987521743426238e-16,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.85,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 2.0,
+    "initial_local_oxygen_max_mM": 2.0,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 1.9857643530032463,
+    "final_local_oxygen_max_mM": 1.9857643530032463,
+    "final_local_glucose_min_mM": 0.4965209332251334,
+    "final_local_glucose_max_mM": 0.4965209332251334
+  },
+  {
+    "case_id": "growth-mcf7_uniform_fed-dfba-n1-fixed0-dt0_1",
+    "medium_profile": "mcf7_uniform_fed",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 0.1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 100,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.013650463240895142,
+    "growth_mean_per_hour": 0.0136504924263473,
+    "biomass_change_percent": 0.2277672034026068,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 3.105640189460246e-10,
+    "exchange_max_relative_residual": 1.1981636533411443e-16,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.53,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 2.0,
+    "initial_local_oxygen_max_mM": 2.0,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 1.9857646447180521,
+    "final_local_oxygen_max_mM": 1.9857646447180521,
+    "final_local_glucose_min_mM": 0.4965210035476356,
+    "final_local_glucose_max_mM": 0.4965210035476356
+  },
+  {
+    "case_id": "growth-mcf7_uniform_fed-dfba-n1-fixed0-dt1",
+    "medium_profile": "mcf7_uniform_fed",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 1,
+    "fixed_volume": false,
+    "dt_minutes": 1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 10,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.01365046377888365,
+    "growth_mean_per_hour": 0.01365072873508306,
+    "biomass_change_percent": 0.22777115085221844,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 2.901927587117825e-10,
+    "exchange_max_relative_residual": 1.1905154502826153e-16,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.5,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 2.0,
+    "initial_local_oxygen_max_mM": 2.0,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 1.9857675615394468,
+    "final_local_oxygen_max_mM": 1.9857675615394468,
+    "final_local_glucose_min_mM": 0.49652170669650664,
+    "final_local_glucose_max_mM": 0.49652170669650664
+  },
+  {
+    "case_id": "growth-mcf7_uniform_fed-dfba-n16-fixed1-dt0_01",
+    "medium_profile": "mcf7_uniform_fed",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 16,
+    "fixed_volume": true,
+    "dt_minutes": 0.01,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 16000,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.01365046865302557,
+    "growth_mean_per_hour": 0.013650471779738393,
+    "biomass_change_percent": 0.0,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 5.434230843093246e-11,
+    "exchange_max_relative_residual": 5.031695225086339e-16,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 5.03,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 2.0,
+    "initial_local_oxygen_max_mM": 2.0,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 1.9857966871389288,
+    "final_local_oxygen_max_mM": 1.9857966871389288,
+    "final_local_glucose_min_mM": 0.4965287816182859,
+    "final_local_glucose_max_mM": 0.4965287816182859
+  },
+  {
+    "case_id": "growth-mcf7_uniform_fed-dfba-n16-fixed1-dt1",
+    "medium_profile": "mcf7_uniform_fed",
+    "model": "mcf7_core",
+    "variant": "dfba",
+    "cells": 16,
+    "fixed_volume": true,
+    "dt_minutes": 1,
+    "final_time_minutes": 10.009999999999831,
+    "status": "completed",
+    "flags": "",
+    "primary_nonoptimal_updates": 0,
+    "solver_failures": 0,
+    "stage_two_failures": 0,
+    "update_mismatch": 0,
+    "intracellular_updates": 160,
+    "max_cells_per_voxel": 1,
+    "growth_min_per_hour": 0.01365046865302557,
+    "growth_mean_per_hour": 0.013650731423752744,
+    "biomass_change_percent": 0.0,
+    "min_field_concentration_mM": 0,
+    "negative_fields": "",
+    "exchange_max_abs_residual": 5.434230843093246e-11,
+    "exchange_max_relative_residual": 5.031695225086339e-16,
+    "exchange_ledger_pass": true,
+    "short_control_pass": true,
+    "wall_seconds": 0.41,
+    "peak_rss_kib": 37632.0,
+    "initial_local_oxygen_min_mM": 2.0,
+    "initial_local_oxygen_max_mM": 2.0,
+    "initial_local_glucose_min_mM": 0.5,
+    "initial_local_glucose_max_mM": 0.5,
+    "final_local_oxygen_min_mM": 1.9857966871389288,
+    "final_local_oxygen_max_mM": 1.9857966871389288,
+    "final_local_glucose_min_mM": 0.4965287816182859,
+    "final_local_glucose_max_mM": 0.4965287816182859
+  }
+]
+=== done
+[2026-11-03T15:10:38.748] error: Detected 1 oom_kill event in StepId=48453462.0. Some of the step tasks have been OOM Killed.
+srun: error: gs08r1b66: task 0: Out Of Memory
+srun: Terminating StepId=48453462.0

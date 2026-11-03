@@ -1,0 +1,33 @@
+{
+  "attempts": 600,
+  "builds": {
+    "a2519f06-pr19": [
+      "23f456b0ee5e9d6c5110412d87b03b568f68ee6e"
+    ],
+    "c59daa81-final": [
+      "c59daa81bc13c459b9421b3fb5dbb7b6200b3b8b"
+    ]
+  },
+  "ledger_check_script_sha256": "1e896934f4153c48a3f6e6a3abbe29594705e16db2d1bddcb66dc0582c8dc845",
+  "note": "Glucose differences use after_cell_step voxel minima; dry-mass differences use each cell's last recorded update. No tolerance is applied; zero means bitwise equal recorded values.",
+  "report_analysis_sha256": {
+    "benchmarks/results/voxel_sharing/mesh-20261027": "bf38d4c7aae87ae2fa65ad5befc2a937d0040c21f50e6020b5d281e04a00b9ac",
+    "benchmarks/results/voxel_sharing/mesh-final-20261102": "11c09c3151a0155a971d43db2115f10be921c37ff0b44e41df7f55e5630ca031",
+    "benchmarks/results/voxel_sharing/voxel-20261027": "642ef8a1af1c385b16c869f3ed178f88d09fe9d8f5378fbc704107947b208e6d",
+    "benchmarks/results/voxel_sharing/voxel-final-20261102": "3b0fa0ed5820857e624fc6c48167e92f0b620a8cc9e22e7b5e6d04fac69550eb"
+  },
+  "reports": {
+    "a2519f06-pr19": [
+      "benchmarks/results/voxel_sharing/voxel-20261027",
+      "benchmarks/results/voxel_sharing/mesh-20261027"
+    ],
+    "c59daa81-final": [
+      "benchmarks/results/voxel_sharing/voxel-final-20261102",
+      "benchmarks/results/voxel_sharing/mesh-final-20261102"
+    ]
+  },
+  "script_sha256": "30c11f8becdb8a2f02df892cd515baf88649f1d4c20864ca731b2ed2d74bbfc6",
+  "serial_identical_across_builds": 75,
+  "serial_pairs_across_builds": 75,
+  "unvalidated_pairs": 0
+}

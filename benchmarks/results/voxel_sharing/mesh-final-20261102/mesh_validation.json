@@ -1,0 +1,37 @@
+{
+  "expected_cases": 240,
+  "final_times": [
+    0.10999999999999999
+  ],
+  "ledger_check_script_sha256": "1e896934f4153c48a3f6e6a3abbe29594705e16db2d1bddcb66dc0582c8dc845",
+  "matched_pairs": 180,
+  "note": "Descriptive ranges across 5 initialization orders and 3 same-seed repeats; no causal attribution or independence assumption. Ledger precision tolerance is inherited from the growth analysis.",
+  "observed_attempts": 240,
+  "orders_per_seed": {
+    "11": [
+      "82b05c6a745a7f1f7632dedbeb464ea624c23d99f5b502e8a31b1e1940ec7d32"
+    ],
+    "23": [
+      "e7cd5d6efb8b1f71544575c3e35b2e259210cfb7502f1fe161c3a3661f1fbd07"
+    ],
+    "37": [
+      "90c116f962848cd60c066004013cefb4b2edca033aa94f1cc877befd398f67c4"
+    ],
+    "51": [
+      "ad6dfe9d1ae2d27ae9dada73a04ee2efab5701b0ac30fc6394c222e28ff58721"
+    ],
+    "71": [
+      "203ad7e7cb774b861b1f8406551fcead282e94fd7b8d110ccfd6c2d9a316dd73"
+    ]
+  },
+  "script_sha256": "a9c826b43f5d566bdc83213cc186222bc9923911f343cba5c4028ee484d16388",
+  "serial_update_counts": [
+    80
+  ],
+  "source_evidence_files_verified": 3840,
+  "statuses": {
+    "completed": 180,
+    "completed_flagged": 60
+  },
+  "unique_geometries": 1
+}

@@ -2,7 +2,7 @@
 
 **Status:** decisions recorded 2026-10-27 (below); [check stage](../results/timestep/tradeoff-checks-20261027/README.md),
 [Part A](../results/timestep/tradeoff-accuracy-20261027/README.md) and [Part B pilot](../results/timestep/tradeoff-cost-pilot-20261027/README.md)
-done on the proposed-fix patch; **final runs in progress** ([plan](#final-runs-2026-11-02)). Campaigns are
+done on the proposed-fix patch; **final runs done** ([plan](#final-runs-2026-11-02), [results](../results/final-20261102/README.md)). Campaigns are
 prepared with [`prepare_tradeoff.py`](prepare_tradeoff.py).
 
 ## Question

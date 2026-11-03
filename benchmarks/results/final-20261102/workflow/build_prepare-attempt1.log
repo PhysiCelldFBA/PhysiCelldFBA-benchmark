@@ -1,0 +1,22 @@
+srun: job 48393323 queued and waiting for resources
+srun: job 48393323 has been allocated resources
+load HDF5/1.14.1-2 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, HDF5_DIR, HDF5_ROOT,CFLAGS, CPPFLAGS, LDFLAGS) 
+load PYTHON/3.12.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME, PYTHONPATH) 
+load SQLITE3/3.45.2 (PATH)
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 2.640s
+
+OK
+Staged fixture-1 at /scratch/tmp/48393323/tmp5zkvhhij/bundle-1. Timesteps preserved; no job submitted.
+Staged fixture-2 at /scratch/tmp/48393323/tmp5zkvhhij/bundle-2. Timesteps preserved; no job submitted.
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.633s
+
+OK
+mkdir: cannot create directory '/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/fix/unit': No such file or directory
+srun: error: gs01r2b64: task 0: Exited with exit code 1
+srun: Terminating StepId=48393323.0

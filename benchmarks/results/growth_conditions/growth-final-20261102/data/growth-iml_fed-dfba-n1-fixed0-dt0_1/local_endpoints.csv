@@ -1,0 +1,9 @@
+phase,time_minutes,cell_id,field,concentration_mM
+initial,0.0,0,oxygen,5.0
+initial,0.0,0,glucose,8.0
+initial,0.0,0,acetate,0.0
+initial,0.0,0,CO2,0.0
+final,10.01,0,oxygen,4.5447817285301575
+final,10.01,0,glucose,7.518476175612835
+final,10.01,0,acetate,0.5531573412738618
+final,10.01,0,CO2,0.21593875274668828

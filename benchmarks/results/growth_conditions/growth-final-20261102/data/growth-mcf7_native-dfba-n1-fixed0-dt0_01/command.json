@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/usr/bin/time",
+    "-o",
+    "/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/growth-final-20261102/runs/growth-mcf7_native-dfba-n1-fixed0-dt0_01_job48393482_20261102T053049429012Z/resource.tsv",
+    "-f",
+    "elapsed_seconds=%e\nuser_seconds=%U\nsystem_seconds=%S\npeak_rss_kib=%M\ntime_exit_status=%x",
+    "/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/growth-final-20261102/runs/growth-mcf7_native-dfba-n1-fixed0-dt0_01_job48393482_20261102T053049429012Z/simulation",
+    "settings.xml"
+  ],
+  "cwd": "/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/growth-final-20261102/runs/growth-mcf7_native-dfba-n1-fixed0-dt0_01_job48393482_20261102T053049429012Z/inputs"
+}

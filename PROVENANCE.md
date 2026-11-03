@@ -54,3 +54,14 @@ commit `b0e30cb`. Script and log: [`provenance/verify_builds.sh`](provenance/ver
 
 The recorded binary hashes of the original executables were re-checked on the same day
 and still match the reports.
+
+## Final runs (2026-11-02)
+
+The [final results](benchmarks/results/final-20261102/README.md) were built from PhysiCelldFBA
+commit `c59daa81` (PR `fix/intracellular-dt-exchange`: `development` @ `7f2b1d0a` plus the exchange
+fix) and, for the unfixed comparison, `7f2b1d0a`. Both are public, and no patches beyond the
+benchmark hooks were applied (`source_patches` is empty in every build record). Build records:
+[`benchmarks/results/final-20261102/builds/`](benchmarks/results/final-20261102/builds/).
+
+**Pending:** when the PR is merged, compare the merged tree with `c59daa81` (engine sources and
+the sample configurations the benchmark reads) and record the outcome here.

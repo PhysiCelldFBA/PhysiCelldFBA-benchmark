@@ -1,0 +1,66 @@
+srun: job 48393326 queued and waiting for resources
+srun: job 48393326 has been allocated resources
+load HDF5/1.14.1-2 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, HDF5_DIR, HDF5_ROOT,CFLAGS, CPPFLAGS, LDFLAGS) 
+load PYTHON/3.12.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME, PYTHONPATH) 
+load SQLITE3/3.45.2 (PATH)
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 2.440s
+
+OK
+Staged fixture-1 at /scratch/tmp/48393326/tmpxe4bz_q_/bundle-1. Timesteps preserved; no job submitted.
+Staged fixture-2 at /scratch/tmp/48393326/tmpxe4bz_q_/bundle-2. Timesteps preserved; no job submitted.
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.627s
+
+OK
+patching file addons/dFBA/src/dfba_Model.cpp
+patching file addons/dFBA/src/dfba_intracellular.cpp
+Hunk #1 succeeded at 744 (offset 15 lines).
+patching file addons/dFBA/src/dfba_intracellular.h
+patching file core/PhysiCell_cell.cpp
+patching file core/PhysiCell_cell_container.cpp
+Built in /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/fix/unit; source.patch records local deviations. No simulation launched.
+patching file addons/dFBA/src/dfba_Model.cpp
+patching file addons/dFBA/src/dfba_intracellular.cpp
+Hunk #1 succeeded at 744 (offset 15 lines).
+patching file addons/dFBA/src/dfba_intracellular.h
+patching file core/PhysiCell_cell.cpp
+patching file core/PhysiCell_cell_container.cpp
+Built in /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/fix/cancer; source.patch records local deviations. No simulation launched.
+patching file addons/dFBA/src/dfba_Model.cpp
+patching file addons/dFBA/src/dfba_intracellular.cpp
+Hunk #1 succeeded at 744 (offset 15 lines).
+patching file addons/dFBA/src/dfba_intracellular.h
+patching file core/PhysiCell_cell.cpp
+patching file core/PhysiCell_cell_container.cpp
+Built in /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/dev/unit; source.patch records local deviations. No simulation launched.
+patching file addons/dFBA/src/dfba_Model.cpp
+patching file addons/dFBA/src/dfba_intracellular.cpp
+Hunk #1 succeeded at 744 (offset 15 lines).
+patching file addons/dFBA/src/dfba_intracellular.h
+patching file core/PhysiCell_cell.cpp
+patching file core/PhysiCell_cell_container.cpp
+Built in /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/dev/cancer; source.patch records local deviations. No simulation launched.
+Recorded /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/fix/unit/build.json
+Recorded /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/fix/cancer/build.json
+Recorded /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/dev/unit/build.json
+Recorded /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/dev/cancer/build.json
+Prepared 60 cases at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/voxel-final-20261102; duration 0.1 min. No jobs submitted.
+Prepared 240 cases at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/mesh-final-20261102; duration 0.1 min. No jobs submitted.
+Prepared 29 accuracy cases (pr-c59daa81) at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/tradeoff-accuracy-fix-d0_01-final-20261102; no jobs submitted.
+Prepared 29 accuracy cases (development-7f2b1d0a) at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/tradeoff-accuracy-dev-d0_01-final-20261102; no jobs submitted.
+Prepared 126 cost cases (pr-c59daa81) at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/tradeoff-cost-fix-d0_01-final-20261102; no jobs submitted.
+Prepared 29 accuracy cases (pr-c59daa81) at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/tradeoff-accuracy-fix-d0_001-final-20261102; no jobs submitted.
+Prepared 29 accuracy cases (development-7f2b1d0a) at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/tradeoff-accuracy-dev-d0_001-final-20261102; no jobs submitted.
+Prepared 126 cost cases (pr-c59daa81) at /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/tradeoff-cost-fix-d0_001-final-20261102; no jobs submitted.
+preflight voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1: completed_flagged threads 8 updates 80 flags ['negative_concentration']
+preflight mesh2-voxel-ecoli_core-dfba-n8-p8-f4-q1-h1-o11-r1: completed_flagged threads 8 updates 80 flags ['negative_concentration']
+preflight tradeoff_accuracy-A1-ecoli_core-n1-q10-d0_01: completed threads 1 updates 2400 flags []
+preflight tradeoff_accuracy-A1-ecoli_core-n1-q10-d0_001: completed threads 1 updates 24000 flags []
+ls: cannot access '/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/preflight/tradeoff_cost-iml1515-n1000-p56-f23-q100-d0_01-r1_*/': No such file or directory
+srun: error: gs01r2b64: task 0: Exited with exit code 2
+srun: Terminating StepId=48393326.0

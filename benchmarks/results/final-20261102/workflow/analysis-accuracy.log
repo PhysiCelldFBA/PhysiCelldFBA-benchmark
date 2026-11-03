@@ -1,0 +1,10 @@
+srun: job 48453988 queued and waiting for resources
+srun: job 48453988 has been allocated resources
+load HDF5/1.14.1-2 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, HDF5_DIR, HDF5_ROOT,CFLAGS, CPPFLAGS, LDFLAGS) 
+load PYTHON/3.12.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME, PYTHONPATH) 
+load SQLITE3/3.45.2 (PATH)
+regression: 58 runs, 33 columns; columns differing beyond 1e-12 relative: {'max_biomass_rel_error': 2.1768213074012, 'trajectory_samples_compared': 2399.1}
+accuracy d0_01 done
+accuracy d0_001 done

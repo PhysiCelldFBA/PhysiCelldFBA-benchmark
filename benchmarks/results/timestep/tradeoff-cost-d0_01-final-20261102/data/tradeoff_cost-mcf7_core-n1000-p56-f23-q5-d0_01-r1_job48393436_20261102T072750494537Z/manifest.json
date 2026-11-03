@@ -1,0 +1,131 @@
+{
+  "build": {
+    "approved_development_commit": "b0d810b4387304c1b79bd9ce627a66bdc2060dee",
+    "benchmark_harness": {
+      "driver.cpp": "bdcdae45a67ec71b86716e282e5bcae94324717c60ad97e5641b9988a780adbe",
+      "physicelldfba-hooks.patch": "01c6b0027334189a32732a7612ddb4b0df216332dcb4096e0e52f931c47352b3",
+      "runtime.h": "05a08effbad1b2493f7e1cc3afb03b1dee26a8531ee8501dd820f4c55db4ef67",
+      "telemetry.h": "fb6366a058795533390de71646a33dc99aa82f3af7b6dd2e9ecba440e14cbb8f",
+      "upstream-hooks.patch": "72778a13e8b781d19cc9ab09c06e79feb9e8310d67c6b622e07c9274ee2832c8"
+    },
+    "benchmark_repository_commit": "52ab3b1bec8416d8bb2455d17da4733b67b7e1bb",
+    "binary_sha256": "15439660433d90ee644888148fcfe61790e8e87a9c876545ad8a28611a950830",
+    "build_command": "EXTRA_PATCHES='' DFBA_EXT='/gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA/addons/dFBA/ext' bash benchmarks/performance/build.sh PhysiCelldFBA /gpfs/scratch/bsc08/bsc219297/PhysiCelldFBA-benchmark/benchmarks/workspaces/final-20261102/fix/cancer cancer_core_metabolism 16",
+    "build_host": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           46 bits physical, 57 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  224\nOn-line CPU(s) list:                     0-223\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Xeon(R) Platinum 8480+\nCPU family:                              6\nModel:                                   143\nThread(s) per core:                      2\nCore(s) per socket:                      56\nSocket(s):                               2\nStepping:                                8\nCPU(s) scaling MHz:                      98%\nCPU max MHz:                             3800.0000\nCPU min MHz:                             800.0000\nBogoMIPS:                                4000.00\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect user_shstk avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts vnmi avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr ibt amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                          VT-x\nL1d cache:                               5.3 MiB (112 instances)\nL1i cache:                               3.5 MiB (112 instances)\nL2 cache:                                224 MiB (112 instances)\nL3 cache:                                210 MiB (2 instances)\nNUMA node(s):                            2\nNUMA node0 CPU(s):                       0-55,112-167\nNUMA node1 CPU(s):                       56-111,168-223\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Vulnerable\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB before exit to userspace",
+    "build_log_sha256": "e0747b16248a1b0fb70b26c394cbbf5bdd43efbca272bad4f8761db6d65336e0",
+    "compiler": "g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "compiler_flags": "g++ -march=native  -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11   -MMD -MP -DPHYSICELL_BENCHMARK",
+    "compiler_target": "The following options are target specific:\n  -m128bit-long-double        \t\t[enabled]\n  -m16                        \t\t[disabled]\n  -m32                        \t\t[disabled]\n  -m3dnow                     \t\t[disabled]\n  -m3dnowa                    \t\t[disabled]\n  -m64                        \t\t[enabled]\n  -m80387                     \t\t[enabled]\n  -m8bit-idiv                 \t\t[disabled]\n  -m96bit-long-double         \t\t[disabled]\n  -mabi=                      \t\tsysv\n  -mabm                       \t\t[enabled]\n  -maccumulate-outgoing-args  \t\t[disabled]\n  -maddress-mode=             \t\tlong\n  -madx                       \t\t[enabled]\n  -maes                       \t\t[enabled]\n  -malign-data=               \t\tcompat\n  -malign-double              \t\t[disabled]\n  -malign-functions=          \t\t0\n  -malign-jumps=              \t\t0\n  -malign-loops=              \t\t0\n  -malign-stringops           \t\t[enabled]\n  -mamx-bf16                  \t\t[enabled]\n  -mamx-int8                  \t\t[enabled]\n  -mamx-tile                  \t\t[enabled]\n  -mandroid                   \t\t[disabled]\n  -march=                     \t\tsapphirerapids\n  -masm=                      \t\tatt\n  -mavx                       \t\t[enabled]\n  -mavx2                      \t\t[enabled]\n  -mavx256-split-unaligned-load \t[disabled]\n  -mavx256-split-unaligned-store \t[disabled]\n  -mavx5124fmaps              \t\t[disabled]\n  -mavx5124vnniw              \t\t[disabled]\n  -mavx512bf16                \t\t[enabled]\n  -mavx512bitalg              \t\t[enabled]\n  -mavx512bw                  \t\t[enabled]\n  -mavx512cd                  \t\t[enabled]\n  -mavx512dq                  \t\t[enabled]\n  -mavx512er                  \t\t[disabled]\n  -mavx512f                   \t\t[enabled]\n  -mavx512ifma                \t\t[enabled]\n  -mavx512pf                  \t\t[disabled]\n  -mavx512vbmi                \t\t[enabled]\n  -mavx512vbmi2               \t\t[enabled]\n  -mavx512vl                  \t\t[enabled]\n  -mavx512vnni                \t\t[enabled]\n  -mavx512vp2intersect        \t\t[disabled]\n  -mavx512vpopcntdq           \t\t[enabled]\n  -mavxvnni                   \t\t[enabled]\n  -mbionic                    \t\t[disabled]\n  -mbmi                       \t\t[enabled]\n  -mbmi2                      \t\t[enabled]\n  -mbranch-cost=<0,5>         \t\t3\n  -mcall-ms2sysv-xlogues      \t\t[disabled]\n  -mcet-switch                \t\t[disabled]\n  -mcld                       \t\t[disabled]\n  -mcldemote                  \t\t[enabled]\n  -mclflushopt                \t\t[enabled]\n  -mclwb                      \t\t[enabled]\n  -mclzero                    \t\t[disabled]\n  -mcmodel=                   \t\tsmall\n  -mcpu=                      \t\t\n  -mcrc32                     \t\t[enabled]\n  -mcx16                      \t\t[enabled]\n  -mdaz-ftz                   \t\t[disabled]\n  -mdispatch-scheduler        \t\t[disabled]\n  -mdump-tune-features        \t\t[disabled]\n  -menqcmd                    \t\t[enabled]\n  -mf16c                      \t\t[enabled]\n  -mfancy-math-387            \t\t[enabled]\n  -mfentry                    \t\t[disabled]\n  -mfentry-name=              \t\t\n  -mfentry-section=           \t\t\n  -mfma                       \t\t[enabled]\n  -mfma4                      \t\t[disabled]\n  -mforce-drap                \t\t[disabled]\n  -mforce-indirect-call       \t\t[disabled]\n  -mfp-ret-in-387             \t\t[enabled]\n  -mfpmath=                   \t\tsse\n  -mfsgsbase                  \t\t[enabled]\n  -mfunction-return=          \t\tkeep\n  -mfused-madd                \t\t-ffp-contract=fast\n  -mfxsr                      \t\t[enabled]\n  -mgather                    \t\t-mtune-ctrl=use_gather\n  -mgeneral-regs-only         \t\t[disabled]\n  -mgfni                      \t\t[enabled]\n  -mglibc                     \t\t[enabled]\n  -mhard-float                \t\t[enabled]\n  -mharden-sls=               \t\tnone\n  -mhle                       \t\t[enabled]\n  -mhreset                    \t\t[disabled]\n  -miamcu                     \t\t[disabled]\n  -mieee-fp                   \t\t[enabled]\n  -mincoming-stack-boundary=  \t\t0\n  -mindirect-branch-cs-prefix \t\t[disabled]\n  -mindirect-branch-register  \t\t[disabled]\n  -mindirect-branch=          \t\tkeep\n  -minline-all-stringops      \t\t[disabled]\n  -minline-stringops-dynamically \t[disabled]\n  -minstrument-return=        \t\tnone\n  -mintel-syntax              \t\t-masm=intel\n  -mkl                        \t\t[disabled]\n  -mlarge-data-threshold=<number> \t65536\n  -mlong-double-128           \t\t[disabled]\n  -mlong-double-64            \t\t[disabled]\n  -mlong-double-80            \t\t[enabled]\n  -mlwp                       \t\t[disabled]\n  -mlzcnt                     \t\t[enabled]\n  -mmanual-endbr              \t\t[disabled]\n  -mmemcpy-strategy=          \t\t\n  -mmemset-strategy=          \t\t\n  -mmitigate-rop              \t\t[disabled]\n  -mmmx                       \t\t[enabled]\n  -mmovbe                     \t\t[enabled]\n  -mmovdir64b                 \t\t[enabled]\n  -mmovdiri                   \t\t[enabled]\n  -mmpx                       \t\t[disabled]\n  -mms-bitfields              \t\t[disabled]\n  -mmusl                      \t\t[disabled]\n  -mmwait                     \t\t[enabled]\n  -mmwaitx                    \t\t[disabled]\n  -mneeded                    \t\t[disabled]\n  -mno-align-stringops        \t\t[disabled]\n  -mno-default                \t\t[disabled]\n  -mno-fancy-math-387         \t\t[disabled]\n  -mno-push-args              \t\t[disabled]\n  -mno-red-zone               \t\t[disabled]\n  -mno-sse4                   \t\t[disabled]\n  -mnop-mcount                \t\t[disabled]\n  -momit-leaf-frame-pointer   \t\t[disabled]\n  -mpc32                      \t\t[disabled]\n  -mpc64                      \t\t[disabled]\n  -mpc80                      \t\t[disabled]\n  -mpclmul                    \t\t[enabled]\n  -mpcommit                   \t\t[disabled]\n  -mpconfig                   \t\t[enabled]\n  -mpku                       \t\t[enabled]\n  -mpopcnt                    \t\t[enabled]\n  -mprefer-avx128             \t\t-mprefer-vector-width=128\n  -mprefer-vector-width=      \t\t256\n  -mpreferred-stack-boundary= \t\t0\n  -mprefetchwt1               \t\t[disabled]\n  -mprfchw                    \t\t[enabled]\n  -mptwrite                   \t\t[enabled]\n  -mpush-args                 \t\t[enabled]\n  -mrdpid                     \t\t[enabled]\n  -mrdrnd                     \t\t[enabled]\n  -mrdseed                    \t\t[enabled]\n  -mrecip                     \t\t[disabled]\n  -mrecip=                    \t\t\n  -mrecord-mcount             \t\t[disabled]\n  -mrecord-return             \t\t[disabled]\n  -mred-zone                  \t\t[enabled]\n  -mregparm=                  \t\t6\n  -mrtd                       \t\t[disabled]\n  -mrtm                       \t\t[disabled]\n  -msahf                      \t\t[enabled]\n  -mserialize                 \t\t[enabled]\n  -msgx                       \t\t[enabled]\n  -msha                       \t\t[enabled]\n  -mshstk                     \t\t[enabled]\n  -mskip-rax-setup            \t\t[disabled]\n  -msoft-float                \t\t[disabled]\n  -msse                       \t\t[enabled]\n  -msse2                      \t\t[enabled]\n  -msse2avx                   \t\t[disabled]\n  -msse3                      \t\t[enabled]\n  -msse4                      \t\t[enabled]\n  -msse4.1                    \t\t[enabled]\n  -msse4.2                    \t\t[enabled]\n  -msse4a                     \t\t[disabled]\n  -msse5                      \t\t-mavx\n  -msseregparm                \t\t[disabled]\n  -mssse3                     \t\t[enabled]\n  -mstack-arg-probe           \t\t[disabled]\n  -mstack-protector-guard-offset= \t\n  -mstack-protector-guard-reg= \t\t\n  -mstack-protector-guard-symbol= \t\n  -mstack-protector-guard=    \t\ttls\n  -mstackrealign              \t\t[disabled]\n  -mstringop-strategy=        \t\t[default]\n  -mstv                       \t\t[enabled]\n  -mtbm                       \t\t[disabled]\n  -mtls-dialect=              \t\tgnu\n  -mtls-direct-seg-refs       \t\t[enabled]\n  -mtsxldtrk                  \t\t[enabled]\n  -mtune-ctrl=                \t\t\n  -mtune=                     \t\tsapphirerapids\n  -muclibc                    \t\t[disabled]\n  -muintr                     \t\t[enabled]\n  -mvaes                      \t\t[enabled]\n  -mveclibabi=                \t\t[default]\n  -mvect8-ret-in-mem          \t\t[disabled]\n  -mvpclmulqdq                \t\t[enabled]\n  -mvzeroupper                \t\t[disabled]\n  -mwaitpkg                   \t\t[enabled]\n  -mwbnoinvd                  \t\t[enabled]\n  -mwidekl                    \t\t[disabled]\n  -mx32                       \t\t[disabled]\n  -mxop                       \t\t[disabled]\n  -mxsave                     \t\t[enabled]\n  -mxsavec                    \t\t[enabled]\n  -mxsaveopt                  \t\t[enabled]\n  -mxsaves                    \t\t[enabled]\n\n  Known assembler dialects (for use with the -masm= option):\n    att intel\n\n  Known ABIs (for use with the -mabi= option):\n    ms sysv\n\n  Known code models (for use with the -mcmodel= option):\n    32 kernel large medium small\n\n  Valid arguments to -mfpmath=:\n    387 387+sse 387,sse both sse sse+387 sse,387\n\n  Known choices for mitigation against straight line speculation with -mharden-sls=:\n    all indirect-jmp none return\n\n  Known indirect branch choices (for use with the -mindirect-branch=/-mfunction-return= options):\n    keep thunk thunk-extern thunk-inline\n\n  Known choices for return instrumentation with -minstrument-return=:\n    call none nop5\n\n  Known data alignment choices (for use with the -malign-data= option):\n    abi cacheline compat\n\n  Known vectorization library ABIs (for use with the -mveclibabi= option):\n    acml svml\n\n  Known address mode (for use with the -maddress-mode= option):\n    long short\n\n  Known preferred register vector length (to use with the -mprefer-vector-width= option):\n    128 256 512 none\n\n  Known stack protector guard (for use with the -mstack-protector-guard= option):\n    global tls\n\n  Valid arguments to -mstringop-strategy=:\n    byte_loop libcall loop rep_4byte rep_8byte rep_byte unrolled_loop\n    vector_loop\n\n  Known TLS dialects (for use with the -mtls-dialect= option):\n    gnu gnu2\n\n  Known valid arguments for -march= option:\n    i386 i486 i586 pentium lakemont pentium-mmx winchip-c6 winchip2 c3 samuel-2 c3-2 nehemiah c7 esther i686 pentiumpro pentium2 pentium3 pentium3m pentium-m pentium4 pentium4m prescott nocona core2 nehalem corei7 westmere sandybridge corei7-avx ivybridge core-avx-i haswell core-avx2 broadwell skylake skylake-avx512 cannonlake icelake-client rocketlake icelake-server cascadelake tigerlake cooperlake sapphirerapids alderlake bonnell atom silvermont slm goldmont goldmont-plus tremont knl knm intel geode k6 k6-2 k6-3 athlon athlon-tbird athlon-4 athlon-xp athlon-mp x86-64 x86-64-v2 x86-64-v3 x86-64-v4 eden-x2 nano nano-1000 nano-2000 nano-3000 nano-x2 eden-x4 nano-x4 k8 k8-sse3 opteron opteron-sse3 athlon64 athlon64-sse3 athlon-fx amdfam10 barcelona bdver1 bdver2 bdver3 bdver4 znver1 znver2 znver3 znver4 btver1 btver2 generic native\n\n  Known valid arguments for -mtune= option:\n    generic i386 i486 pentium lakemont pentiumpro pentium4 nocona core2 nehalem sandybridge haswell bonnell silvermont goldmont goldmont-plus tremont knl knm skylake skylake-avx512 cannonlake icelake-client icelake-server cascadelake tigerlake cooperlake sapphirerapids alderlake rocketlake intel geode k6 athlon k8 amdfam10 bdver1 bdver2 bdver3 bdver4 btver1 btver2 znver1 znver2 znver3 znver4",
+    "libraries": {
+      "dynamic_links": "linux-vdso.so.1 (0x00007ffd3d32e000)\n\tlibxml2.so.2 => /lib64/libxml2.so.2 (0x00007fc532ee7000)\n\tlibbz2.so.1 => /lib64/libbz2.so.1 (0x00007fc532ed2000)\n\tlibz.so.1 => /lib64/libz.so.1 (0x00007fc532eb8000)\n\tliblapack.so.3 => /lib64/liblapack.so.3 (0x00007fc532789000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007fc532560000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007fc532485000)\n\tlibgomp.so.1 => /lib64/libgomp.so.1 (0x00007fc53243f000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fc532423000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007fc53221c000)\n\tliblzma.so.5 => /lib64/liblzma.so.5 (0x00007fc5321f0000)\n\tlibblas.so.3 => /lib64/libblas.so.3 (0x00007fc532166000)\n\tlibgfortran.so.5 => /lib64/libgfortran.so.5 (0x00007fc531eab000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fc533081000)\n\tlibquadmath.so.0 => /lib64/libquadmath.so.0 (0x00007fc531e5f000)",
+      "static_archives": {
+        "coin-or/lib/libClp.a": "63aa041a715007c95b4ef0466b729e1114b71dc4bae68af621970cad93939401",
+        "coin-or/lib/libCoinUtils.a": "8385a77e13ebfa1414077c7fc24ee42fec18550a95d8c0f6118b6d4d4400f208",
+        "libsbml/lib/libsbml-static.a": "d63ac7f2283aff424626aab9e8d130dd78468bdd38cc169363bef7d95d837b49"
+      },
+      "versions": {
+        "Clp": "1.17.10",
+        "CoinUtils": "2.11.12",
+        "libSBML": "5.20.4"
+      }
+    },
+    "notes": "PhysiCelldFBA PR fix/intracellular-dt-exchange @ c59daa81 (development 7f2b1d0a + exchange fix) with benchmark hooks; no extra patches.",
+    "solver_settings": {
+      "blas_threads": 1,
+      "dual_tolerance": 1e-07,
+      "fraction_of_optimum": 1,
+      "primal_tolerance": 1e-07,
+      "primary": "Clp dual simplex; initialSolve at initialization",
+      "secondary": "primal simplex; DFBA_PFBA_DUAL=0"
+    },
+    "source_commit": "c59daa81bc13c459b9421b3fb5dbb7b6200b3b8b",
+    "source_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_patches": [],
+    "upstream_commit": "49d7cc54d9367431ae3f51814621258fdbbb736d"
+  },
+  "case": {
+    "case_id": "tradeoff_cost-mcf7_core-n1000-p56-f23-q5-d0_01-r1",
+    "cells_requested": 1000,
+    "diffusion_dt_minutes": 0.01,
+    "duration_minutes": 10.0,
+    "fields": 23,
+    "fixed_population": true,
+    "fixed_positions": true,
+    "fixed_volume": true,
+    "interpretation": "timestep_tradeoff_cost",
+    "intracellular_dt_minutes": 0.05,
+    "layout": "lattice",
+    "medium_profile": "mcf7_uniform_fed",
+    "mixed": false,
+    "model": "mcf7_core",
+    "nutrient_control": false,
+    "open_decisions": [],
+    "order_seed": null,
+    "output_policy": "minimal",
+    "phase": "tradeoff_cost",
+    "ratio": 5,
+    "repeat": 1,
+    "scenario": "B-mcf7_core",
+    "simulation_seed": 50,
+    "status": "ready",
+    "template": "sample_projects_intracellular/fba/cancer_core_metabolism/config/PhysiCell_settings.xml",
+    "threads": 56,
+    "validation_record": "Performance workload from the validated medium profile; only k and repeat vary. Timing run with minimal output.",
+    "variant": "dfba"
+  },
+  "comparison_key": "31f573a4b303267dbfc6bf820175015f79d5f9d98ff88ea131a09d890c33466b",
+  "configuration": {
+    "benchmark": {
+      "cells": "1000",
+      "diagnostics": "false",
+      "enabled": "true",
+      "equilibration_minutes": "3.0",
+      "fixed_population": "true",
+      "fixed_positions": "true",
+      "fixed_volume": "true",
+      "layout": "lattice",
+      "mixed": "false",
+      "permute": "false"
+    },
+    "benchmark_order_seed": null,
+    "diffusion_dt_minutes": 0.01,
+    "domain": {
+      "dx": "15.0",
+      "dy": "15.0",
+      "dz": "15.0",
+      "use_2D": "false",
+      "x_max": "75.0",
+      "x_min": "-75.0",
+      "y_max": "75.0",
+      "y_min": "-75.0",
+      "z_max": "75.0",
+      "z_min": "-75.0"
+    },
+    "fields": 23,
+    "intracellular": {
+      "MCF7_core": {
+        "declared": "0.05",
+        "effective_minutes": 0.05,
+        "fraction_of_optimum": "1.0",
+        "pfba_enabled": false,
+        "sbml": "config/MCF7_Zielinski_2017_core_trimmed.sbml",
+        "secondary_objective_type": "parsimonious"
+      }
+    },
+    "max_time_minutes": 10.0,
+    "mechanics_dt_minutes": "0.1",
+    "phenotype_dt_minutes": "6",
+    "seed_options": "50",
+    "seed_user_parameter": null,
+    "threads": 56
+  },
+  "files": {
+    "inputs/config/MCF7_Zielinski_2017_core_trimmed.sbml": "49abdc729ba6fdc3cc10a5f6d323a1e24eb36b19b25a7106d1a56f97ed5975c4",
+    "inputs/input-record.json": "23a9deae9e1d92829f45e8caf4ae13319ec4c9464fb8aad863c7b17a7b4e5221",
+    "inputs/settings.xml": "7e7a0581da395c5f8833d2f3f65384f0a44342b46858bf61f853f216ae0fef94",
+    "simulation": "15439660433d90ee644888148fcfe61790e8e87a9c876545ad8a28611a950830",
+    "tools/common.py": "91367cca7dfe53f8c835eae8d69cece1c7326d06cd5db96725ea0f0cd1e7932a",
+    "tools/run_case.py": "2b2190bd7a05d27879c4320f9c8e0767ec40ffae575a9b015fe9dc9cc06b0899"
+  },
+  "schema_version": 1
+}

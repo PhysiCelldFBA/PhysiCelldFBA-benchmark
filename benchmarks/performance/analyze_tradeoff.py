@@ -3,7 +3,7 @@
 
 Uptake is the substrate the cells actually removed: the sum of the exchange ledger's
 observed changes during the cell-exchange step, so boundary supply does not hide it.
-Errors are relative to k = 1 of the same build and scenario at diffusion dt 0.01 min.
+Errors are relative to k = 1 of the same build and scenario at the campaign's diffusion dt.
 Every attempt is retained; nothing is clipped or dropped.
 """
 import argparse
@@ -18,11 +18,19 @@ from analyze_growth import exchange_ledger_pass
 
 NUTRIENTS = ('glucose', 'd-glucose', 'oxygen', 'o2')
 SAMPLE_EVERY_MINUTES = 1.0
+GRID_MINUTES = 0.01      # biomass grid for errors: a multiple of every diffusion dt used (0.01, 0.005, 0.001, 0.0005)
 
 
 def rows(path):
-    if not path.is_file(): return []
-    with path.open() as stream: return list(csv.DictReader(stream))
+    """Rows one at a time: per-step tables reach millions of rows at diffusion dt 0.001."""
+    if not path.is_file(): return
+    with path.open() as stream: yield from csv.DictReader(stream)
+
+
+def on_grid(time, step):
+    """Time rounded to the nearest multiple of step (minutes), or None if it is not one."""
+    n = round(time/step)
+    return round(n*step, 6) if abs(time/step - n) < 1e-6 else None
 
 
 def write_table(path, records):
@@ -41,41 +49,50 @@ def inspect(run, label):
     metrics = read_json(run/'metrics.json'); t = metrics.get('telemetry') or {}
     root = ET.parse(run/'inputs/settings.xml').getroot()
     names = {int(v.get('ID')): v.get('name') for v in root.findall('microenvironment_setup/variable')}
-    population = [r for r in rows(run/'inputs/benchmark_population.csv') if r['phase'] in ('initial', 'after_cell_step', 'final')]
-    mass = {float(r['time_minutes']): float(r['total_dry_mass_pg']) for r in population}
-    ledger = rows(run/'inputs/benchmark_exchange_balance.csv')
+    # Biomass on a 0.01-min grid (shared by every diffusion dt used) for the error comparison; first and last values kept.
+    mass = {}; m0 = mf = None
+    for r in rows(run/'inputs/benchmark_population.csv'):
+        if r['phase'] not in ('initial', 'after_cell_step', 'final'): continue
+        value = float(r['total_dry_mass_pg']); m0 = value if m0 is None else m0; mf = value
+        key = on_grid(float(r['time_minutes']), GRID_MINUTES)
+        if key is not None: mass[key] = value
     uptake = defaultdict(float); cumulative = defaultdict(dict)
-    for r in ledger:
+    for r in rows(run/'inputs/benchmark_exchange_balance.csv'):
         n = nutrient(names[int(r['field_index'])])
-        if n: uptake[n] -= float(r['observed_delta']); cumulative[n][float(r['time_minutes'])] = uptake[n]
-    minimum = defaultdict(lambda: math.inf); amount = defaultdict(dict)
+        if not n: continue
+        uptake[n] -= float(r['observed_delta'])
+        key = on_grid(float(r['time_minutes']), SAMPLE_EVERY_MINUTES)
+        if key is not None: cumulative[n][key] = uptake[n]
+    ledger_pass = exchange_ledger_pass(rows(run/'inputs/benchmark_exchange_balance.csv'))
+    minimum = defaultdict(lambda: math.inf); amount = defaultdict(dict); initial = {}; depleted = defaultdict(dict)
     for r in rows(run/'inputs/benchmark_substrates.csv'):
         n = nutrient(r['field_name'])
         if not n: continue
         minimum[n] = min(minimum[n], float(r['min_concentration']))
-        if r['phase'] in ('initial', 'after_cell_step'): amount[n][float(r['time_minutes'])] = float(r['amount_concentration_um3'])
-    cells = rows(run/'inputs/benchmark_cells.csv')
-    m0, mf = mass[min(mass)], mass[max(mass)]
+        if r['phase'] not in ('initial', 'after_cell_step'): continue
+        time, value = float(r['time_minutes']), float(r['amount_concentration_um3'])
+        initial.setdefault(n, value)
+        for level in (50, 10):
+            if level not in depleted[n] and initial[n] > 0 and value <= initial[n]*level/100: depleted[n][level] = time
+        key = on_grid(time, SAMPLE_EVERY_MINUTES)
+        if key is not None: amount[n][key] = value
+    nonoptimal = sum(c['primary_status'] != 'optimal' for c in rows(run/'inputs/benchmark_cells.csv'))
     record = dict(build=label, scenario=case['scenario'], model=case['model'], cells=case['cells_requested'], ratio=case['ratio'],
         diffusion_dt_minutes=case['diffusion_dt_minutes'], intracellular_dt_minutes=case['intracellular_dt_minutes'],
         duration_minutes=case['duration_minutes'], status=metrics['status'], flags=';'.join(t.get('diagnostic_flags', [])),
-        updates=t.get('intracellular_updates'), nonoptimal_updates=sum(c['primary_status'] != 'optimal' for c in cells),
-        solver_failures=t.get('solver_failures', 0), exchange_ledger_pass=exchange_ledger_pass(ledger),
+        updates=t.get('intracellular_updates'), nonoptimal_updates=nonoptimal,
+        solver_failures=t.get('solver_failures', 0), exchange_ledger_pass=ledger_pass,
         initial_dry_mass_pg=m0, final_dry_mass_pg=mf, biomass_change_percent=100*(mf/m0-1),
         wall_seconds=metrics.get('resource', {}).get('elapsed_seconds'), attempt=run.name, case_id=case['case_id'])
     for n in ('glucose', 'oxygen'):
         record[f'{n}_uptake_mM_um3'] = uptake[n] if n in uptake else None
         record[f'{n}_min_mM'] = minimum[n] if n in minimum else None
-        a = amount.get(n, {})
-        if a:
-            a0 = a[min(a)]
-            for level in (50, 10):
-                hit = next((time for time in sorted(a) if a0 > 0 and a[time] <= a0*level/100), None)
-                record[f'{n}_domain_{level}pct_minute'] = hit
+        if n in initial:
+            for level in (50, 10): record[f'{n}_domain_{level}pct_minute'] = depleted[n].get(level)
     record['yield_pg_per_mM_um3_glucose'] = (mf-m0)/uptake['glucose'] if uptake.get('glucose') else None
     samples = []
     for time in sorted(mass):
-        if abs(time/SAMPLE_EVERY_MINUTES - round(time/SAMPLE_EVERY_MINUTES)) > 1e-9: continue
+        if on_grid(time, SAMPLE_EVERY_MINUTES) is None: continue
         s = dict(build=label, scenario=case['scenario'], ratio=case['ratio'], diffusion_dt_minutes=case['diffusion_dt_minutes'],
                  time_minutes=time, dry_mass_pg=mass[time])
         for n in ('glucose', 'oxygen'):
@@ -90,7 +107,11 @@ def relative(a, b):
 
 
 def errors(records, masses):
-    reference = {(r['build'], r['scenario']): r for r in records if r['ratio'] == 1 and r['diffusion_dt_minutes'] == 0.01}
+    # Reference: k = 1 at the campaign's diffusion dt (the largest among a scenario's k = 1 runs; the other is the dt/2 check).
+    reference = {}
+    for r in records:
+        key = (r['build'], r['scenario'])
+        if r['ratio'] == 1 and (key not in reference or r['diffusion_dt_minutes'] > reference[key]['diffusion_dt_minutes']): reference[key] = r
     for r in records:
         ref = reference.get((r['build'], r['scenario']))
         if ref is None: continue
@@ -127,7 +148,7 @@ def plot_checks(out, records, samples):
             for side in ('top', 'right'): axes[row, col].spines[side].set_visible(False)
     axes[0, 0].set_ylabel('Total dry mass (pg)'); axes[1, 0].set_ylabel('Domain amount / initial')
     axes[2, 0].set_ylabel('Cumulative cell uptake (mM·µm³)')
-    fig.suptitle('Trade-off check runs at k = 1 (diffusion dt 0.01 min)', fontsize=10)
+    fig.suptitle(f"Trade-off runs at k = 1 (diffusion dt {max(r['diffusion_dt_minutes'] for r in records):g} min)", fontsize=10)
     fig.tight_layout(); fig.savefig(out/'checks.png', dpi=160); fig.savefig(out/'checks.pdf'); plt.close(fig)
 
 
@@ -142,7 +163,7 @@ def plot_accuracy(out, records):
     fig, axes = plt.subplots(len(metrics), len(scenarios), figsize=(4.2*len(scenarios), 7), squeeze=False)
     for col, s in enumerate(scenarios):
         for b in builds:
-            data = sorted((r for r in records if r['scenario'] == s and r['build'] == b and r['diffusion_dt_minutes'] == 0.01 and r['ratio'] > 1), key=lambda r: r['ratio'])
+            data = sorted((r for r in records if r['scenario'] == s and r['build'] == b and r['diffusion_dt_minutes'] == max(x['diffusion_dt_minutes'] for x in records) and r['ratio'] > 1), key=lambda r: r['ratio'])
             for row, (key, _) in enumerate(metrics):
                 pts = [(r['ratio'], abs(r[key])) for r in data if r.get(key) is not None]
                 if pts:
@@ -189,7 +210,7 @@ def main():
     write_table(a.output/'tables/trajectories_1min.csv', samples)
     write_json(a.output/'analysis.json', dict(script_sha256=digest(__file__), campaigns={l: str(Path(p).resolve()) for l, p in a.campaign},
         attempts=len(records), evidence_sha256=copied,
-        note='Uptake = -sum(observed_delta) of the exchange ledger; errors relative to k = 1, diffusion dt 0.01, same build and scenario.'))
+        note='Uptake = -sum(observed_delta) of the exchange ledger; errors relative to k = 1 at the campaign diffusion dt, same build and scenario; biomass errors on a 0.01-min grid.'))
     if a.plots:
         (a.output/'plots').mkdir()
         if any(r['scenario'].startswith('A') and r['ratio'] == 1 for r in records): plot_checks(a.output/'plots', records, samples)

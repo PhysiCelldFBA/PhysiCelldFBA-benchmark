@@ -5,14 +5,20 @@ material. Scripts, protocols and documentation are versioned here. Generated
 campaigns and large simulation outputs belong in ignored `workspaces/` folders;
 reviewed compact evidence, tables and figures can be committed under `results/`.
 
-| Study | Purpose | Protocol/code | Status |
-|---|---|---|---|
-| Shared voxel | Eight cells in one voxel, serial/parallel execution and per-run update-order seeds | [voxel_sharing/README.md](voxel_sharing/README.md) | [Pre-fix: 60 runs](results/voxel_sharing/voxel-20261026/README.md); [after PR #19: 60 runs](results/voxel_sharing/voxel-20261027/README.md), parallel identical to serial ([comparison](results/voxel_sharing/before-after-20261027/README.md)) |
-| Mesh occupancy | Eight distinct fixed centers; 8/4/2/1 cells per occupied voxel | [voxel_sharing/MESH_STUDY.md](voxel_sharing/MESH_STUDY.md) | [Pre-fix: 240 runs](results/voxel_sharing/mesh-20261026/README.md), update deficits at every occupancy; [after PR #19: 240 runs](results/voxel_sharing/mesh-20261027/README.md), none ([comparison](results/voxel_sharing/before-after-20261027/README.md)) |
-| Intracellular timestep | Ratios 1, 2, 10, 100; E. coli and cancer; reference refinement | [performance/TIMESTEP_PILOTS.md](performance/TIMESTEP_PILOTS.md) | [Eleven pilots analyzed](results/timestep/pilot-20261026/README.md). Ratios > 1 were dominated by an exchange-scaling defect; [re-run with a proposed fix](results/timestep/exchange-fix-20261027/README.md). [Trade-off Part A](results/timestep/tradeoff-accuracy-20261027/README.md): error onset when one window's uptake demand exceeds voxel content; Part B (cost) in progress |
-| Model-specific growth conditions | Native and supplied media, single cells and fixed-volume populations | [performance/model_conditions/README.md](performance/model_conditions/README.md) | [23 dynamic controls analyzed](results/growth_conditions/growth-20261026/README.md); 10 pass full checks |
-| Cancer FBA/pFBA | Outcomes and runtime after selecting the timestep | [performance/README.md](performance/README.md) | Pending timestep study |
-| Performance/scaling | Cells, fields, networks and threads; upstream/disabled baselines | [performance/README.md](performance/README.md) | Pilot/workload validation pending |
+**Final results: [results/final-20261102](results/final-20261102/README.md).** Every study below was
+rerun on PhysiCelldFBA PR commit `c59daa81` (development `7f2b1d0a` + exchange fix), without
+patches. The reports from 2026-10-26/27 linked in the table are earlier stages: they document how
+the benchmark found the race conditions (fixed in PR #19) and the exchange-scaling defect. The
+final report supersedes them.
+
+| Study | Purpose | Protocol/code | Final (2026-11-02) | Earlier stages |
+|---|---|---|---|---|
+| Shared voxel | Eight cells in one voxel, serial/parallel execution and per-run update-order seeds | [voxel_sharing/README.md](voxel_sharing/README.md) | [60 runs](results/voxel_sharing/voxel-final-20261102/README.md): parallel identical to serial | [Pre-fix](results/voxel_sharing/voxel-20261026/README.md); [after PR #19](results/voxel_sharing/voxel-20261027/README.md) ([comparison](results/voxel_sharing/before-after-20261027/README.md)) |
+| Mesh occupancy | Eight distinct fixed centers; 8/4/2/1 cells per occupied voxel | [voxel_sharing/MESH_STUDY.md](voxel_sharing/MESH_STUDY.md) | [240 runs](results/voxel_sharing/mesh-final-20261102/README.md): parallel identical to serial; [same as 2026-10-27](results/voxel_sharing/final-vs-20261027/README.md) | [Pre-fix](results/voxel_sharing/mesh-20261026/README.md); [after PR #19](results/voxel_sharing/mesh-20261027/README.md) |
+| Intracellular timestep trade-off | Accuracy (A1–A4) and cost (3 models, 1/56 threads) for k = 1–100, diffusion dt 0.01 and 0.001 min | [performance/TIMESTEP_TRADEOFF.md](performance/TIMESTEP_TRADEOFF.md) | Accuracy [dt 0.01](results/timestep/tradeoff-accuracy-d0_01-final-20261102/README.md), [dt 0.001](results/timestep/tradeoff-accuracy-d0_001-final-20261102/README.md); cost [dt 0.01](results/timestep/tradeoff-cost-d0_01-final-20261102/README.md), [dt 0.001](results/timestep/tradeoff-cost-d0_001-final-20261102/README.md) | [Pilots](results/timestep/pilot-20261026/README.md); [exchange fix](results/timestep/exchange-fix-20261027/README.md); [checks](results/timestep/tradeoff-checks-20261027/README.md); [Part A](results/timestep/tradeoff-accuracy-20261027/README.md); [Part B pilot](results/timestep/tradeoff-cost-pilot-20261027/README.md) |
+| Model-specific growth conditions | Native and supplied media, single cells and fixed-volume populations | [performance/model_conditions/README.md](performance/model_conditions/README.md) | [23 controls](results/growth_conditions/growth-final-20261102/README.md): 22 pass | [Pre-fix](results/growth_conditions/growth-20261026/README.md): 10 pass |
+| Cancer FBA/pFBA | Outcomes and runtime after selecting the timestep | [performance/README.md](performance/README.md) | Not started | — |
+| Performance/scaling | Cells, fields, networks and threads; upstream/disabled baselines | [performance/README.md](performance/README.md) | Not started | — |
 
 `performance/` supplies shared build, input, telemetry and collection utilities.
 The shared-voxel protocol uses the existing sample project's eight-cell test,
