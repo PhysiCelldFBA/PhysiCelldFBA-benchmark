@@ -22,10 +22,11 @@ git -C "$source_repo" rev-parse HEAD > "$destination/source_commit.txt"
 here=$(cd -- "$(dirname -- "$0")" && pwd)
 mkdir -p "$destination/benchmarks/performance"
 cp "$here/telemetry.h" "$here/runtime.h" "$destination/benchmarks/performance/"
-# Unhooked PhysiCelldFBA receives the core and dFBA-engine hooks; pristine
-# upstream receives only the shared core hooks, not dFBA code.
+# Unhooked PhysiCelldFBA projects receive the core and dFBA-engine hooks; the upstream
+# baseline (template) receives only the shared core hooks. Upstream PhysiCell has its own
+# addons/dFBA, so the project, not the folder, decides.
 if ! grep -q PHYSICELL_BENCHMARK "$destination/core/PhysiCell_cell_container.cpp"; then
-    if [[ -d "$destination/addons/dFBA/src" ]]; then
+    if [[ "$project" != template ]]; then
         patch -d "$destination" -p1 < "$here/physicelldfba-hooks.patch"
     else
         patch -l -d "$destination" -p1 < "$here/upstream-hooks.patch"
