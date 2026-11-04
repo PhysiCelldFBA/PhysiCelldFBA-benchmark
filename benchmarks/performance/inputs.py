@@ -116,11 +116,12 @@ def materialize(case, study, destination, duration, output_policy=None, nutrient
     policy=output_policy or case['output_policy']
     if policy != case['output_policy']:
         raise ValueError('Use a separate case ID and change its output_policy before generating a timing counterpart')
-    controls.set('diagnostics',str(policy!='minimal').lower())
+    # snapshots_hourly: application runs with full snapshots every 60 min and no per-step telemetry (too large for long multicellular runs).
+    controls.set('diagnostics',str(policy not in ('minimal','snapshots_hourly')).lower())
     for path,value in [('overall/max_time',duration),('overall/dt_diffusion',case['diffusion_dt_minutes']),
                        ('parallel/omp_num_threads',case['threads']),('save/folder','output'),
                        ('options/random_seed',case['simulation_seed']),
-                       ('save/full_data/enable',str(policy!='minimal').lower()),('save/full_data/interval',duration if policy=='diagnostic_endpoints' else case['intracellular_dt_minutes']),
+                       ('save/full_data/enable',str(policy!='minimal').lower()),('save/full_data/interval',duration if policy=='diagnostic_endpoints' else 60 if policy=='snapshots_hourly' else case['intracellular_dt_minutes']),
                        ('save/SVG/enable','false'),('save/legacy_data/enable','false')]: set_text(root,path,value)
     # PhysiCelldFBA seeds from <options> only since PR #27; keep a legacy user parameter consistent if a template has one.
     if root.find('user_parameters/random_seed') is not None: set_text(root,'user_parameters/random_seed',case['simulation_seed'])
@@ -197,7 +198,7 @@ def main():
     parser.add_argument('--study',default=Path(__file__).with_name('study.json'),type=Path)
     parser.add_argument('--output',required=True,type=Path)
     parser.add_argument('--duration',required=True,type=float,help='Pilot-selected physical minutes')
-    parser.add_argument('--output-policy',choices=('minimal','intracellular','diagnostic_endpoints'))
+    parser.add_argument('--output-policy',choices=('minimal','intracellular','diagnostic_endpoints','snapshots_hourly'))
     parser.add_argument('--nutrient-multiplier',type=float,default=100)
     args=parser.parse_args()
     materialize(read_json(args.case),read_json(args.study),args.output,args.duration,args.output_policy,args.nutrient_multiplier)

@@ -32,7 +32,7 @@ def main():
     for name in ('telemetry.h','runtime.h'):
         if digest(build/'benchmarks/performance'/name)!=digest(HERE/name): raise ValueError(f'Harness changed since build: {name}')
     ext=(build/'addons/dFBA/ext').resolve()
-    for name,expected in record['libraries']['static_archives'].items():
+    for name,expected in record['libraries'].get('static_archives',{}).items():   # none for upstream PhysiCell
         if digest(ext/name)!=expected: raise ValueError(f'Dependency archive changed: {name}')
     patches=[]
     for line in (build/'applied-patches.txt').read_text().splitlines():

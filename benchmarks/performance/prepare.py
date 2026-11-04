@@ -79,7 +79,7 @@ def stage(args):
             raise ValueError('Occupancy control disagrees with the case')
     if controls.get("permute") != str(case.get("order_seed") is not None).lower():
         raise ValueError("Permutation control disagrees with the case")
-    if controls.get("diagnostics") != str(case["output_policy"] != "minimal").lower():
+    if controls.get("diagnostics") != str(case["output_policy"] not in ("minimal", "snapshots_hourly")).lower():
         raise ValueError("Output policy disagrees with case; use a separate timing case for minimal output")
     if original["fields"] != case["fields"]:
         raise ValueError("Case field count disagrees with the finalized XML")
