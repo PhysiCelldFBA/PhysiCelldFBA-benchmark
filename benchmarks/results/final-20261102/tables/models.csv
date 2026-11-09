@@ -1,0 +1,4 @@
+model,sbml,sbml_reactions,sbml_species,lp_rows,lp_columns,lp_nonzeros
+ecoli_core,sample_projects_intracellular/fba/bacterial_colony/config/Ecoli_core.xml,95,72,72,95,360
+mcf7_core,sample_projects_intracellular/fba/cancer_core_metabolism/config/MCF7_Zielinski_2017_core_trimmed.sbml,374,360,360,374,1566
+iml1515,benchmarks/assets/iml1515/iML1515.xml,2712,1877,1877,2712,10575

@@ -1,0 +1,4 @@
+model,repeats,solves_per_run,microseconds_per_warm_solve,simplex_iterations_per_warm_solve,milliseconds_per_initial_solve,warm_solves_per_second_one_thread
+ecoli_core,3,1000000,35.72,0.004,0.563,27994
+mcf7_core,3,1000000,210.87,0.023,1.979,4742
+iml1515,3,1000000,1518.34,0.4627,25.916,659

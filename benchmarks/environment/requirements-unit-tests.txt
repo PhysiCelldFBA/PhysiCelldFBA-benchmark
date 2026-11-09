@@ -1,0 +1,6 @@
+cobra==0.29.1
+depinfo==2.2.0
+future==1.0.0
+optlang==1.9.1
+python-libsbml==5.21.2
+swiglpk==5.0.13

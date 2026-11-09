@@ -1,0 +1,7 @@
+model,threads,measured_at_cells,loop_seconds_per_cell_per_simulated_hour,wall_hours_1000_cells_24h,wall_hours_10000_cells_24h,wall_hours_100000_cells_24h
+ecoli_core,1,10000,0.3322,2.21,22.15,221.45
+ecoli_core,56,10000,0.014,0.09,0.93,9.32
+mcf7_core,1,10000,1.6339,10.89,108.92,1089.24
+mcf7_core,56,10000,0.0521,0.35,3.47,34.75
+iml1515,1,10000,11.1029,74.02,740.19,7401.93
+iml1515,56,10000,0.3282,2.19,21.88,218.8

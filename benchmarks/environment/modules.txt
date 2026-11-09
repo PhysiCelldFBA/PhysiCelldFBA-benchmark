@@ -1,0 +1,6 @@
+Currently Loaded Modules:
+  1) impi/2021.10.0   5) oneapi/2023.2.0   9) hdf5/1.14.1-2
+  2) mkl/2023.2.0     6) bsc/1.0          10) sqlite3/3.45.2
+  3) ucx/1.15.0       7) ncurses/6.4      11) python/3.12.1
+  4) intel/2023.2.0   8) tmux/3.3a
+ 

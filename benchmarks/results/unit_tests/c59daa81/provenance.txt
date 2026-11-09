@@ -1,0 +1,4 @@
+source_commit c59daa81bc13c459b9421b3fb5dbb7b6200b3b8b
+52ade27e13de5cce8eb64a080f0e121634d9f11df24c1214b4e3aea5150bf3c9  benchmarks/workspaces/unit-tests-c59daa81/tree/dfba-unit-test
+cobra 0.29.1 numpy 1.26.0 scipy 1.13.0
+host gs01r1b51 cpus 32
