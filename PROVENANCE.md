@@ -65,3 +65,9 @@ benchmark hooks were applied (`source_patches` is empty in every build record). 
 
 **Pending:** when the PR is merged, compare the merged tree with `c59daa81` (engine sources and
 the sample configurations the benchmark reads) and record the outcome here.
+
+**Update 2026-11-04.** The PR merge is postponed until the PhysiCelldFBA release and `development` is
+frozen until then, so `c59daa81` is the benchmarked version. The last two studies (cancer FBA/pFBA,
+performance/scaling) use the same PhysiCelldFBA builds. The performance baseline is upstream PhysiCell
+`49d7cc54` (public, MathCancer/PhysiCell), template project, with the core-only `upstream-hooks.patch`
+([build record](benchmarks/results/final-20261102/builds/upstream-template.json)).

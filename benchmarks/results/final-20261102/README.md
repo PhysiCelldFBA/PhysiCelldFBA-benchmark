@@ -1,15 +1,17 @@
-# Final benchmark runs (2026-11-02)
+# Final benchmark results
 
-Every study rerun on a single PhysiCelldFBA version, without patches:
+Every study run on a single PhysiCelldFBA version, without patches:
 **PR `fix/intracellular-dt-exchange`, commit `c59daa81`**, which is `development` @
 `7f2b1d0a` plus the one-line exchange fix and its regression test. The timestep accuracy
-study also runs the unfixed `7f2b1d0a` to document the defect. 91 Slurm jobs and 691
-simulations, all completed. Each study folder below has its own tables, figures and
-compact per-run evidence.
+study also runs the unfixed `7f2b1d0a` to document the defect. Runs of 2026-11-02 (sections
+1–4): 91 Slurm jobs, 691 simulations. Runs of 2026-11-04 (sections 5–6): 140 jobs, 413
+simulations. All completed. Each study folder below has its own tables, figures and compact
+per-run evidence.
 
-> **Pending:** the PR is not merged yet. After the merge, the merged tree is compared with
-> `c59daa81` and the result is recorded in [PROVENANCE.md](../../../PROVENANCE.md). Results
-> stay valid as long as the engine and the templates used are unchanged.
+> **Version:** the PR merge is postponed until the PhysiCelldFBA release, and `development` is
+> frozen until then. `c59daa81` is therefore the benchmarked version. After the merge, compare the
+> merged tree with `c59daa81` and record the result in [PROVENANCE.md](../../../PROVENANCE.md).
+> Results stay valid as long as the engine and the templates used are unchanged.
 
 | Study | Report | Runs | Outcome |
 |---|---|---:|---|
@@ -21,6 +23,8 @@ compact per-run evidence.
 | Timestep cost, dt 0.01 min | [tradeoff-cost-d0_01](../timestep/tradeoff-cost-d0_01-final-20261102/README.md) | 126 | See below |
 | Timestep cost, dt 0.001 min | [tradeoff-cost-d0_001](../timestep/tradeoff-cost-d0_001-final-20261102/README.md) | 126 | See below |
 | Growth conditions | [growth-final-20261102](../growth_conditions/growth-final-20261102/README.md) | 23 | 22 pass all checks (10 before the fix) |
+| Cancer FBA vs pFBA | [pfba-final-20261104](../pfba/pfba-final-20261104/README.md) | 8 | Same growth, 192× less internal flux, 1.3–2× cost |
+| Performance and scaling | [scaling-final-20261104](../performance/scaling-final-20261104/README.md) | 405 | No add-on overhead; LPs scale to 38–41× on 56 threads |
 
 Builds (GCC 11.5.0, `-O3 -march=native -fopenmp -DPHYSICELL_BENCHMARK`, Sapphire Rapids;
 records in [builds/](builds/)):
@@ -29,6 +33,7 @@ records in [builds/](builds/)):
 |---|---|---|---|---|
 | fix | `c59daa81` | `diffusion_dt` | `689e43c1e7cc…` | `15439660433d…` |
 | dev | `7f2b1d0a` | `dfba_time_step` | `f2ba963fe684…` | `13b7c5aaafb1…` |
+| upstream | PhysiCell `49d7cc54`, template project, core hooks only | — | `2e62bcfd885e…` (single binary) | |
 
 ## 1. Race conditions (PR #19): parallel results equal serial
 
@@ -140,6 +145,54 @@ consistent exchange ledger), against 10 of 23 before the fix. The failures at in
 E. coli fed growth (14.86% in 10 min) reflects the new `bacterial_colony` medium (glucose
 5 mM, oxygen 4 mM).
 
+## 5. Cancer FBA vs pFBA
+
+![Application: live cells, biomass and substrates under FBA and pFBA at two timesteps](../pfba/pfba-final-20261104/plots/application.png)
+
+MCF7 core, FBA against pFBA (fraction of optimum 1), at intracellular dt 0.01 and 0.1 min:
+a single cell for 240 min and the `cancer_core_metabolism` application (240 cells, 72 h, 56 threads).
+[Full report](../pfba/pfba-final-20261104/README.md).
+
+- **Single cell:** pFBA reproduces FBA's growth exactly (≤ 2×10⁻¹³) with 192× less total
+  internal flux, 21% less glucose uptake, 14% less O₂ and 38% less lactate secretion. All
+  second-stage solves are optimal. pFBA takes 1.07–1.45× FBA's loop time.
+- **Application:** tumour dynamics agree within run-to-run variation (one stochastic run per
+  condition; up to 13% in live cells after 40 h). pFBA's systematic signature is 1.6–1.8× more
+  domain lactate at 72 h. pFBA costs 1.3× (dt 0.01) to 2.0× (dt 0.1) FBA's wall time, and
+  falls back to stage-one fluxes in 10⁻⁶–10⁻⁵ of second-stage solves.
+- **The intracellular timestep matters in the crowded application.** At dt 0.1 the die-off is
+  delayed by about 10 h, the population ends 9–13% larger, and twice as many primary solves are
+  infeasible, identically for FBA and pFBA. The single cell does not show this (2×10⁻⁵).
+- **About 12% of primary solves are infeasible in the shipped application at dt 0.01** (34% in
+  the first hour). This is a property of the sample configuration, not of the benchmark.
+
+## 6. Performance and scaling
+
+![Speed-up against threads at 1000 cells for three variants](../performance/scaling-final-20261104/plots/strong_scaling.png)
+
+1000-cell (and 100/10 000-cell) lattice workloads of E. coli core, MCF7 core and iML1515; 10 min,
+k = 1, 3 repeats; PhysiCelldFBA, PhysiCelldFBA without metabolism, and upstream PhysiCell `49d7cc54`.
+[Full report](../performance/scaling-final-20261104/README.md).
+
+- **No overhead from the add-on:** without metabolism, PhysiCelldFBA runs within 0.90–1.08× of
+  upstream PhysiCell at every point.
+- **Metabolism dominates the cost**, close to linearly in the number of cells. At 1000 cells on one
+  thread a step costs 25× (E. coli core), 455× (MCF7 core) and 2350× (iML1515) that without metabolism.
+- **The LP work parallelises well:** 85–86% efficiency up to 28 threads, 38–41× at 56 threads and
+  42–59× at 112 for MCF7 core and iML1515. E. coli core levels off at about 20× because its LPs are cheap.
+- Field count (4–32) does not change the loop time. iML1515 needs about 2.3 GB per 1000 cells.
+
+## Known limitations of the engine (documented, not changed)
+
+The benchmarked version is `c59daa81`. These remaining issues were found and quantified. By
+decision of the developers they are not changed before the release:
+
+| Issue | Where it shows | Size |
+|---|---|---|
+| The uptake cap uses dry mass before growth, the exchange uses it after growth | Every run where the cap binds | Undershoot of c·μ·dt, ~10⁻⁶ mM ([details](../voxel_sharing/before-after-20261027/README.md#remaining-serial-undershoot)) |
+| The cap is budgeted at the FBA update but applied after the next diffusion step | End of depletion with fast diffusion and D > 1 | At most about one voxel's content (−1.25×10⁻⁴ mM in A1 at dt 0.001) |
+| The cap ignores diffusion during a long intracellular window | k > 1 when D = Vmax·m·Δt / (c·V_voxel) exceeds 1 | The timestep errors of section 2; infeasible LPs at long windows |
+
 ## What this means for choosing a timestep
 
 1. With the fix, setting intracellular dt > diffusion dt is safe for mass balance; before the
@@ -154,11 +207,19 @@ Examples from these runs:
   or 26× (56 threads) at dt 0.001.
 - **E. coli, 2 µm voxels:** windows up to 0.01 min (k ≤ 10 at dt 0.001) keep the final biomass
   within 10⁻⁴ and save 7–10× on one thread, but at most 2.3× on 56 threads.
+- **Crowded tissue:** the cancer application shows a systematic shift at a 0.1-min window that
+  the single cell does not. Where cells share low-O₂ voxels, check D with the local
+  concentration, not the medium value.
 
 ## Provenance
 
-Jobs: [workflow/submitted-jobs.tsv](workflow/submitted-jobs.tsv). Preparation, submission and analysis
-scripts and logs are in [workflow/](workflow/). Python 3.12.1, NumPy 2.4.4, Matplotlib 3.10.8.
+Jobs: [workflow/submitted-jobs.tsv](workflow/submitted-jobs.tsv) (sections 1–4) and
+[workflow-studies/submitted-jobs.tsv](workflow-studies/submitted-jobs.tsv) (sections 5–6). Preparation,
+submission and analysis scripts and logs are in [workflow/](workflow/) and
+[workflow-studies/](workflow-studies/). Python 3.12.1, NumPy 2.4.4, Matplotlib 3.10.8.
+The first preparation attempt of sections 5–6 failed at the upstream build: the hooks patch was
+chosen by folder, and upstream PhysiCell has its own `addons/dFBA`. It is now chosen by project,
+before anything was prepared (`workflow-studies/build_prepare-attempt1.log`).
 The first preparation attempt failed before building anything (missing directory; see
 `build_prepare-attempt1.log`). The first Part A analysis at dt 0.001 ran out of memory.
 `analyze_tradeoff.py` was then changed to read the per-step tables row by row and to take the

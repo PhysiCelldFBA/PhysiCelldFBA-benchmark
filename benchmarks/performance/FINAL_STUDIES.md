@@ -1,7 +1,8 @@
 # Cancer FBA/pFBA comparison and performance/scaling (final studies)
 
 Both studies run on the benchmark version, PhysiCelldFBA `c59daa81` (see [PROVENANCE.md](../../PROVENANCE.md)).
-They are prepared with [`prepare_final_studies.py`](prepare_final_studies.py) and implement the
+**Status: done** ([results](../results/final-20261102/README.md#5-cancer-fba-vs-pfba)). They are prepared with
+[`prepare_final_studies.py`](prepare_final_studies.py) and implement the
 corresponding rows of the agreed experiment table in [README.md](README.md). Decisions recorded on 2026-11-04:
 
 ## Cancer FBA vs pFBA (`--stage pfba`, 8 runs)

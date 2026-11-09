@@ -1,0 +1,297 @@
+Using config file settings.xml ... 
+Setting up RNG with seed 50
+1
+dc? 1
+User parameters in XML config file: 
+Bool parameters:: 
+
+Int parameters:: 
+number_of_cells: 0 [dimensionless]
+
+Double parameters:: 
+colony_radius: 10 [micron]
+
+String parameters:: 
+
+
+which boundaries?
+1 1 1 1 0 0
+
+Microenvironment summary: microenvironment: 
+
+Mesh information: 
+type: uniform Cartesian
+Domain: [-25,25] micron x [-40,40] micron x [-1,1] micron
+   resolution: dx = 2 micron
+   voxels: 1000
+   voxel faces: 0
+   volume: 8000 cubic micron
+Densities: (8 total)
+   oxygen:
+     units: dimensionless
+     diffusion coefficient: 120000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.4641e+08 micron
+     initial condition: 5 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   glucose:
+     units: dimensionless
+     diffusion coefficient: 35000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 1.87083e+08 micron
+     initial condition: 4 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   acetate:
+     units: dimensionless
+     diffusion coefficient: 50000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 2.23607e+08 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   lactate:
+     units: dimensionless
+     diffusion coefficient: 50000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 2.23607e+08 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   CO2:
+     units: dimensionless
+     diffusion coefficient: 100000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+08 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_5:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_6:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_7:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+
+virtual_wall_at_domain_edge: enabled
+Pre-processing type 0 named ecoli
+Processing ecoli ... 
+Note: setting cell definition to 2D based on microenvironment domain settings ... 
+  --------- attachment_elastic_constant = 0
+Signals: 
+=======
+0 : oxygen
+1 : glucose
+2 : acetate
+3 : lactate
+4 : CO2
+5 : benchmark_extra_5
+6 : benchmark_extra_6
+7 : benchmark_extra_7
+8 : intracellular oxygen
+9 : intracellular glucose
+10 : intracellular acetate
+11 : intracellular lactate
+12 : intracellular CO2
+13 : intracellular benchmark_extra_5
+14 : intracellular benchmark_extra_6
+15 : intracellular benchmark_extra_7
+16 : oxygen gradient
+17 : glucose gradient
+18 : acetate gradient
+19 : lactate gradient
+20 : CO2 gradient
+21 : benchmark_extra_5 gradient
+22 : benchmark_extra_6 gradient
+23 : benchmark_extra_7 gradient
+24 : pressure
+25 : volume
+26 : contact with ecoli
+27 : contact with live cell
+28 : contact with dead cell
+29 : contact with apoptotic cell
+30 : contact with necrotic cell
+31 : contact with other dead cell
+32 : contact with basement membrane
+33 : damage
+34 : damage delivered
+35 : attacking
+36 : dead
+37 : total attack time
+38 : time
+39 : custom:dummy_variable
+40 : custom:R_EX_glc__D_e
+41 : custom:R_EX_glc__D_e_lb
+42 : custom:R_EX_ac_e
+43 : custom:R_EX_ac_e_lb
+44 : custom:R_EX_lac__D_e
+45 : custom:R_EX_lac__D_e_lb
+46 : custom:R_EX_o2_e
+47 : custom:R_EX_o2_e_lb
+48 : custom:R_EX_co2_e
+49 : custom:R_EX_co2_e_lb
+50 : custom:growth_rate
+51 : apoptotic
+52 : necrotic
+
+
+Behaviors: 
+=========
+0 : oxygen secretion
+1 : glucose secretion
+2 : acetate secretion
+3 : lactate secretion
+4 : CO2 secretion
+5 : benchmark_extra_5 secretion
+6 : benchmark_extra_6 secretion
+7 : benchmark_extra_7 secretion
+8 : oxygen secretion target
+9 : glucose secretion target
+10 : acetate secretion target
+11 : lactate secretion target
+12 : CO2 secretion target
+13 : benchmark_extra_5 secretion target
+14 : benchmark_extra_6 secretion target
+15 : benchmark_extra_7 secretion target
+16 : oxygen uptake
+17 : glucose uptake
+18 : acetate uptake
+19 : lactate uptake
+20 : CO2 uptake
+21 : benchmark_extra_5 uptake
+22 : benchmark_extra_6 uptake
+23 : benchmark_extra_7 uptake
+24 : oxygen export
+25 : glucose export
+26 : acetate export
+27 : lactate export
+28 : CO2 export
+29 : benchmark_extra_5 export
+30 : benchmark_extra_6 export
+31 : benchmark_extra_7 export
+32 : cycle entry
+33 : exit from cycle phase 1
+34 : exit from cycle phase 2
+35 : exit from cycle phase 3
+36 : exit from cycle phase 4
+37 : exit from cycle phase 5
+38 : apoptosis
+39 : necrosis
+40 : migration speed
+41 : migration bias
+42 : migration persistence time
+43 : chemotactic response to oxygen
+44 : chemotactic response to glucose
+45 : chemotactic response to acetate
+46 : chemotactic response to lactate
+47 : chemotactic response to CO2
+48 : chemotactic response to benchmark_extra_5
+49 : chemotactic response to benchmark_extra_6
+50 : chemotactic response to benchmark_extra_7
+51 : cell-cell adhesion
+52 : cell-cell adhesion elastic constant
+53 : adhesive affinity to ecoli
+54 : relative maximum adhesion distance
+55 : cell-cell repulsion
+56 : cell-BM adhesion
+57 : cell-BM repulsion
+58 : phagocytose apoptotic cell
+59 : phagocytose necrotic cell
+60 : phagocytose other dead cell
+61 : phagocytose ecoli
+62 : attack ecoli
+63 : fuse to ecoli
+64 : transition to ecoli
+65 : asymmetric division to ecoli
+66 : custom:dummy_variable
+67 : custom:R_EX_glc__D_e
+68 : custom:R_EX_glc__D_e_lb
+69 : custom:R_EX_ac_e
+70 : custom:R_EX_ac_e_lb
+71 : custom:R_EX_lac__D_e
+72 : custom:R_EX_lac__D_e_lb
+73 : custom:R_EX_o2_e
+74 : custom:R_EX_o2_e_lb
+75 : custom:R_EX_co2_e
+76 : custom:R_EX_co2_e_lb
+77 : custom:growth_rate
+78 : is_movable
+79 : immunogenicity to ecoli
+80 : cell attachment rate
+81 : cell detachment rate
+82 : maximum number of cell attachments
+83 : attack damage rate
+84 : attack duration
+85 : damage rate
+86 : damage repair rate
+
+
+0 :: type:0 name: ecoli
+	 cycle model: Live (code=5)
+		Phase 0: Live
+		Cycle transitions: 
+		-----------------
+		Live --> Live w mean duration inf min
+	 death models: 
+		0 : Apoptosis (code=100) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Apoptotic --> Debris w mean duration 516 min
+		1 : Necrosis (code=101) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Necrotic (swelling) --> Necrotic (lysed) w mean duration 1e-16 min
+		Necrotic (lysed) --> Debris w mean duration 86400 min
+	 key functions: 
+		 migration bias rule: false
+		 custom rule: false
+		 phenotype rule: false
+		 volume update function: false
+		 mechanics function: true
+		 contact function: false
+		 cell division function: false
+		 cell division direction function: false
+	motility (enabled: false in 2D)
+		speed: 0 micron/min
+		bias: 0.5 
+		persistence time: 0 min
+		chemotaxis (enabled: false)
+			along -1 * grad(oxygen) 
+	mechanics:
+		cell_cell_adhesion_strength: 0
+		cell_cell_repulsion_strength: 1000
+		rel max adhesion dist: 1
+		cell_BM_adhesion_strength: 4
+		cell_BM_repulsion_strength: 100
+		attachment_elastic_constant: 0
+		attachment_rate: 0
+		detachment_rate: 0
+	custom data: 
+		dummy_variable: 0 dimensionless
+		R_EX_glc__D_e: 0 mmol/g DW cell/h
+		R_EX_glc__D_e_lb: 0 mmol/g DW cell/h
+		R_EX_ac_e: 0 mmol/g DW cell/h
+		R_EX_ac_e_lb: 0 mmol/g DW cell/h
+		R_EX_lac__D_e: 0 mmol/g DW cell/h
+		R_EX_lac__D_e_lb: 0 mmol/g DW cell/h
+		R_EX_o2_e: 0 mmol/g DW cell/h
+		R_EX_o2_e_lb: 0 mmol/g DW cell/h
+		R_EX_co2_e: 0 mmol/g DW cell/h
+		R_EX_co2_e_lb: 0 mmol/g DW cell/h
+		growth_rate: 0 1/h
+	custom vector data: 
+			NOTE: custom vector data will eventually be merged with custom data
+
+Using method diffusion_decay_solver__constant_coefficients_LOD_2D (2D LOD with Thomas Algorithm) ... 
+

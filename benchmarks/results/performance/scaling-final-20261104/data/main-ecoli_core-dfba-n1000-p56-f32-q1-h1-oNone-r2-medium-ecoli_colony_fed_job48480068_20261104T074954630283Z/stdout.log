@@ -1,0 +1,664 @@
+Using config file settings.xml ... 
+Setting up RNG with seed 50
+1
+dc? 1
+User parameters in XML config file: 
+Bool parameters:: 
+
+Int parameters:: 
+number_of_cells: 0 [dimensionless]
+
+Double parameters:: 
+colony_radius: 10 [micron]
+
+String parameters:: 
+
+
+which boundaries?
+1 1 1 1 0 0
+
+Microenvironment summary: microenvironment: 
+
+Mesh information: 
+type: uniform Cartesian
+Domain: [-25,25] micron x [-40,40] micron x [-1,1] micron
+   resolution: dx = 2 micron
+   voxels: 1000
+   voxel faces: 0
+   volume: 8000 cubic micron
+Densities: (32 total)
+   oxygen:
+     units: dimensionless
+     diffusion coefficient: 120000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.4641e+08 micron
+     initial condition: 5 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   glucose:
+     units: dimensionless
+     diffusion coefficient: 35000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 1.87083e+08 micron
+     initial condition: 4 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   acetate:
+     units: dimensionless
+     diffusion coefficient: 50000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 2.23607e+08 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   lactate:
+     units: dimensionless
+     diffusion coefficient: 50000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 2.23607e+08 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   CO2:
+     units: dimensionless
+     diffusion coefficient: 100000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+08 micron
+     initial condition: 0 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_5:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_6:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_7:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_8:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_9:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_10:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_11:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_12:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_13:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_14:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_15:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_16:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_17:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_18:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_19:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_20:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_21:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_22:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_23:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_24:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_25:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_26:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_27:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_28:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_29:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_30:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+   benchmark_extra_31:
+     units: dimensionless
+     diffusion coefficient: 1000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+07 micron
+     initial condition: 1 dimensionless
+     boundary condition: 0 dimensionless (enabled: false)
+
+virtual_wall_at_domain_edge: enabled
+Pre-processing type 0 named ecoli
+Processing ecoli ... 
+Note: setting cell definition to 2D based on microenvironment domain settings ... 
+  --------- attachment_elastic_constant = 0
+===================================================
+Parssing dFBA intracellular model
+Metabolic-dependent death enabled: necrosis, monitored flux: R_ATPM, threshold: 8.39, rate: 1.67e-05
+Loading SBML model from: config/Ecoli_core.xml
+SBML model correctly loaded: config/Ecoli_core.xml
+Done!
+===================================================
+Signals: 
+=======
+0 : oxygen
+1 : glucose
+2 : acetate
+3 : lactate
+4 : CO2
+5 : benchmark_extra_5
+6 : benchmark_extra_6
+7 : benchmark_extra_7
+8 : benchmark_extra_8
+9 : benchmark_extra_9
+10 : benchmark_extra_10
+11 : benchmark_extra_11
+12 : benchmark_extra_12
+13 : benchmark_extra_13
+14 : benchmark_extra_14
+15 : benchmark_extra_15
+16 : benchmark_extra_16
+17 : benchmark_extra_17
+18 : benchmark_extra_18
+19 : benchmark_extra_19
+20 : benchmark_extra_20
+21 : benchmark_extra_21
+22 : benchmark_extra_22
+23 : benchmark_extra_23
+24 : benchmark_extra_24
+25 : benchmark_extra_25
+26 : benchmark_extra_26
+27 : benchmark_extra_27
+28 : benchmark_extra_28
+29 : benchmark_extra_29
+30 : benchmark_extra_30
+31 : benchmark_extra_31
+32 : intracellular oxygen
+33 : intracellular glucose
+34 : intracellular acetate
+35 : intracellular lactate
+36 : intracellular CO2
+37 : intracellular benchmark_extra_5
+38 : intracellular benchmark_extra_6
+39 : intracellular benchmark_extra_7
+40 : intracellular benchmark_extra_8
+41 : intracellular benchmark_extra_9
+42 : intracellular benchmark_extra_10
+43 : intracellular benchmark_extra_11
+44 : intracellular benchmark_extra_12
+45 : intracellular benchmark_extra_13
+46 : intracellular benchmark_extra_14
+47 : intracellular benchmark_extra_15
+48 : intracellular benchmark_extra_16
+49 : intracellular benchmark_extra_17
+50 : intracellular benchmark_extra_18
+51 : intracellular benchmark_extra_19
+52 : intracellular benchmark_extra_20
+53 : intracellular benchmark_extra_21
+54 : intracellular benchmark_extra_22
+55 : intracellular benchmark_extra_23
+56 : intracellular benchmark_extra_24
+57 : intracellular benchmark_extra_25
+58 : intracellular benchmark_extra_26
+59 : intracellular benchmark_extra_27
+60 : intracellular benchmark_extra_28
+61 : intracellular benchmark_extra_29
+62 : intracellular benchmark_extra_30
+63 : intracellular benchmark_extra_31
+64 : oxygen gradient
+65 : glucose gradient
+66 : acetate gradient
+67 : lactate gradient
+68 : CO2 gradient
+69 : benchmark_extra_5 gradient
+70 : benchmark_extra_6 gradient
+71 : benchmark_extra_7 gradient
+72 : benchmark_extra_8 gradient
+73 : benchmark_extra_9 gradient
+74 : benchmark_extra_10 gradient
+75 : benchmark_extra_11 gradient
+76 : benchmark_extra_12 gradient
+77 : benchmark_extra_13 gradient
+78 : benchmark_extra_14 gradient
+79 : benchmark_extra_15 gradient
+80 : benchmark_extra_16 gradient
+81 : benchmark_extra_17 gradient
+82 : benchmark_extra_18 gradient
+83 : benchmark_extra_19 gradient
+84 : benchmark_extra_20 gradient
+85 : benchmark_extra_21 gradient
+86 : benchmark_extra_22 gradient
+87 : benchmark_extra_23 gradient
+88 : benchmark_extra_24 gradient
+89 : benchmark_extra_25 gradient
+90 : benchmark_extra_26 gradient
+91 : benchmark_extra_27 gradient
+92 : benchmark_extra_28 gradient
+93 : benchmark_extra_29 gradient
+94 : benchmark_extra_30 gradient
+95 : benchmark_extra_31 gradient
+96 : pressure
+97 : volume
+98 : contact with ecoli
+99 : contact with live cell
+100 : contact with dead cell
+101 : contact with apoptotic cell
+102 : contact with necrotic cell
+103 : contact with other dead cell
+104 : contact with basement membrane
+105 : damage
+106 : damage delivered
+107 : attacking
+108 : dead
+109 : total attack time
+110 : time
+111 : custom:dummy_variable
+112 : custom:R_EX_glc__D_e
+113 : custom:R_EX_glc__D_e_lb
+114 : custom:R_EX_ac_e
+115 : custom:R_EX_ac_e_lb
+116 : custom:R_EX_lac__D_e
+117 : custom:R_EX_lac__D_e_lb
+118 : custom:R_EX_o2_e
+119 : custom:R_EX_o2_e_lb
+120 : custom:R_EX_co2_e
+121 : custom:R_EX_co2_e_lb
+122 : custom:growth_rate
+123 : apoptotic
+124 : necrotic
+
+
+Behaviors: 
+=========
+0 : oxygen secretion
+1 : glucose secretion
+2 : acetate secretion
+3 : lactate secretion
+4 : CO2 secretion
+5 : benchmark_extra_5 secretion
+6 : benchmark_extra_6 secretion
+7 : benchmark_extra_7 secretion
+8 : benchmark_extra_8 secretion
+9 : benchmark_extra_9 secretion
+10 : benchmark_extra_10 secretion
+11 : benchmark_extra_11 secretion
+12 : benchmark_extra_12 secretion
+13 : benchmark_extra_13 secretion
+14 : benchmark_extra_14 secretion
+15 : benchmark_extra_15 secretion
+16 : benchmark_extra_16 secretion
+17 : benchmark_extra_17 secretion
+18 : benchmark_extra_18 secretion
+19 : benchmark_extra_19 secretion
+20 : benchmark_extra_20 secretion
+21 : benchmark_extra_21 secretion
+22 : benchmark_extra_22 secretion
+23 : benchmark_extra_23 secretion
+24 : benchmark_extra_24 secretion
+25 : benchmark_extra_25 secretion
+26 : benchmark_extra_26 secretion
+27 : benchmark_extra_27 secretion
+28 : benchmark_extra_28 secretion
+29 : benchmark_extra_29 secretion
+30 : benchmark_extra_30 secretion
+31 : benchmark_extra_31 secretion
+32 : oxygen secretion target
+33 : glucose secretion target
+34 : acetate secretion target
+35 : lactate secretion target
+36 : CO2 secretion target
+37 : benchmark_extra_5 secretion target
+38 : benchmark_extra_6 secretion target
+39 : benchmark_extra_7 secretion target
+40 : benchmark_extra_8 secretion target
+41 : benchmark_extra_9 secretion target
+42 : benchmark_extra_10 secretion target
+43 : benchmark_extra_11 secretion target
+44 : benchmark_extra_12 secretion target
+45 : benchmark_extra_13 secretion target
+46 : benchmark_extra_14 secretion target
+47 : benchmark_extra_15 secretion target
+48 : benchmark_extra_16 secretion target
+49 : benchmark_extra_17 secretion target
+50 : benchmark_extra_18 secretion target
+51 : benchmark_extra_19 secretion target
+52 : benchmark_extra_20 secretion target
+53 : benchmark_extra_21 secretion target
+54 : benchmark_extra_22 secretion target
+55 : benchmark_extra_23 secretion target
+56 : benchmark_extra_24 secretion target
+57 : benchmark_extra_25 secretion target
+58 : benchmark_extra_26 secretion target
+59 : benchmark_extra_27 secretion target
+60 : benchmark_extra_28 secretion target
+61 : benchmark_extra_29 secretion target
+62 : benchmark_extra_30 secretion target
+63 : benchmark_extra_31 secretion target
+64 : oxygen uptake
+65 : glucose uptake
+66 : acetate uptake
+67 : lactate uptake
+68 : CO2 uptake
+69 : benchmark_extra_5 uptake
+70 : benchmark_extra_6 uptake
+71 : benchmark_extra_7 uptake
+72 : benchmark_extra_8 uptake
+73 : benchmark_extra_9 uptake
+74 : benchmark_extra_10 uptake
+75 : benchmark_extra_11 uptake
+76 : benchmark_extra_12 uptake
+77 : benchmark_extra_13 uptake
+78 : benchmark_extra_14 uptake
+79 : benchmark_extra_15 uptake
+80 : benchmark_extra_16 uptake
+81 : benchmark_extra_17 uptake
+82 : benchmark_extra_18 uptake
+83 : benchmark_extra_19 uptake
+84 : benchmark_extra_20 uptake
+85 : benchmark_extra_21 uptake
+86 : benchmark_extra_22 uptake
+87 : benchmark_extra_23 uptake
+88 : benchmark_extra_24 uptake
+89 : benchmark_extra_25 uptake
+90 : benchmark_extra_26 uptake
+91 : benchmark_extra_27 uptake
+92 : benchmark_extra_28 uptake
+93 : benchmark_extra_29 uptake
+94 : benchmark_extra_30 uptake
+95 : benchmark_extra_31 uptake
+96 : oxygen export
+97 : glucose export
+98 : acetate export
+99 : lactate export
+100 : CO2 export
+101 : benchmark_extra_5 export
+102 : benchmark_extra_6 export
+103 : benchmark_extra_7 export
+104 : benchmark_extra_8 export
+105 : benchmark_extra_9 export
+106 : benchmark_extra_10 export
+107 : benchmark_extra_11 export
+108 : benchmark_extra_12 export
+109 : benchmark_extra_13 export
+110 : benchmark_extra_14 export
+111 : benchmark_extra_15 export
+112 : benchmark_extra_16 export
+113 : benchmark_extra_17 export
+114 : benchmark_extra_18 export
+115 : benchmark_extra_19 export
+116 : benchmark_extra_20 export
+117 : benchmark_extra_21 export
+118 : benchmark_extra_22 export
+119 : benchmark_extra_23 export
+120 : benchmark_extra_24 export
+121 : benchmark_extra_25 export
+122 : benchmark_extra_26 export
+123 : benchmark_extra_27 export
+124 : benchmark_extra_28 export
+125 : benchmark_extra_29 export
+126 : benchmark_extra_30 export
+127 : benchmark_extra_31 export
+128 : cycle entry
+129 : exit from cycle phase 1
+130 : exit from cycle phase 2
+131 : exit from cycle phase 3
+132 : exit from cycle phase 4
+133 : exit from cycle phase 5
+134 : apoptosis
+135 : necrosis
+136 : migration speed
+137 : migration bias
+138 : migration persistence time
+139 : chemotactic response to oxygen
+140 : chemotactic response to glucose
+141 : chemotactic response to acetate
+142 : chemotactic response to lactate
+143 : chemotactic response to CO2
+144 : chemotactic response to benchmark_extra_5
+145 : chemotactic response to benchmark_extra_6
+146 : chemotactic response to benchmark_extra_7
+147 : chemotactic response to benchmark_extra_8
+148 : chemotactic response to benchmark_extra_9
+149 : chemotactic response to benchmark_extra_10
+150 : chemotactic response to benchmark_extra_11
+151 : chemotactic response to benchmark_extra_12
+152 : chemotactic response to benchmark_extra_13
+153 : chemotactic response to benchmark_extra_14
+154 : chemotactic response to benchmark_extra_15
+155 : chemotactic response to benchmark_extra_16
+156 : chemotactic response to benchmark_extra_17
+157 : chemotactic response to benchmark_extra_18
+158 : chemotactic response to benchmark_extra_19
+159 : chemotactic response to benchmark_extra_20
+160 : chemotactic response to benchmark_extra_21
+161 : chemotactic response to benchmark_extra_22
+162 : chemotactic response to benchmark_extra_23
+163 : chemotactic response to benchmark_extra_24
+164 : chemotactic response to benchmark_extra_25
+165 : chemotactic response to benchmark_extra_26
+166 : chemotactic response to benchmark_extra_27
+167 : chemotactic response to benchmark_extra_28
+168 : chemotactic response to benchmark_extra_29
+169 : chemotactic response to benchmark_extra_30
+170 : chemotactic response to benchmark_extra_31
+171 : cell-cell adhesion
+172 : cell-cell adhesion elastic constant
+173 : adhesive affinity to ecoli
+174 : relative maximum adhesion distance
+175 : cell-cell repulsion
+176 : cell-BM adhesion
+177 : cell-BM repulsion
+178 : phagocytose apoptotic cell
+179 : phagocytose necrotic cell
+180 : phagocytose other dead cell
+181 : phagocytose ecoli
+182 : attack ecoli
+183 : fuse to ecoli
+184 : transition to ecoli
+185 : asymmetric division to ecoli
+186 : custom:dummy_variable
+187 : custom:R_EX_glc__D_e
+188 : custom:R_EX_glc__D_e_lb
+189 : custom:R_EX_ac_e
+190 : custom:R_EX_ac_e_lb
+191 : custom:R_EX_lac__D_e
+192 : custom:R_EX_lac__D_e_lb
+193 : custom:R_EX_o2_e
+194 : custom:R_EX_o2_e_lb
+195 : custom:R_EX_co2_e
+196 : custom:R_EX_co2_e_lb
+197 : custom:growth_rate
+198 : is_movable
+199 : immunogenicity to ecoli
+200 : cell attachment rate
+201 : cell detachment rate
+202 : maximum number of cell attachments
+203 : attack damage rate
+204 : attack duration
+205 : damage rate
+206 : damage repair rate
+
+
+0 :: type:0 name: ecoli
+	 cycle model: Live (code=5)
+		Phase 0: Live
+		Cycle transitions: 
+		-----------------
+		Live --> Live w mean duration inf min
+	 death models: 
+		0 : Apoptosis (code=100) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Apoptotic --> Debris w mean duration 516 min
+		1 : Necrosis (code=101) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Necrotic (swelling) --> Necrotic (lysed) w mean duration 1e-16 min
+		Necrotic (lysed) --> Debris w mean duration 86400 min
+	 key functions: 
+		 migration bias rule: false
+		 custom rule: false
+		 phenotype rule: false
+		 volume update function: false
+		 mechanics function: true
+		 contact function: false
+		 cell division function: false
+		 cell division direction function: false
+	motility (enabled: false in 2D)
+		speed: 0 micron/min
+		bias: 0.5 
+		persistence time: 0 min
+		chemotaxis (enabled: false)
+			along -1 * grad(oxygen) 
+	mechanics:
+		cell_cell_adhesion_strength: 0
+		cell_cell_repulsion_strength: 1000
+		rel max adhesion dist: 1
+		cell_BM_adhesion_strength: 4
+		cell_BM_repulsion_strength: 100
+		attachment_elastic_constant: 0
+		attachment_rate: 0
+		detachment_rate: 0
+	custom data: 
+		dummy_variable: 0 dimensionless
+		R_EX_glc__D_e: 0 mmol/g DW cell/h
+		R_EX_glc__D_e_lb: 0 mmol/g DW cell/h
+		R_EX_ac_e: 0 mmol/g DW cell/h
+		R_EX_ac_e_lb: 0 mmol/g DW cell/h
+		R_EX_lac__D_e: 0 mmol/g DW cell/h
+		R_EX_lac__D_e_lb: 0 mmol/g DW cell/h
+		R_EX_o2_e: 0 mmol/g DW cell/h
+		R_EX_o2_e_lb: 0 mmol/g DW cell/h
+		R_EX_co2_e: 0 mmol/g DW cell/h
+		R_EX_co2_e_lb: 0 mmol/g DW cell/h
+		growth_rate: 0 1/h
+	custom vector data: 
+			NOTE: custom vector data will eventually be merged with custom data
+
+Using method diffusion_decay_solver__constant_coefficients_LOD_2D (2D LOD with Thomas Algorithm) ... 
+

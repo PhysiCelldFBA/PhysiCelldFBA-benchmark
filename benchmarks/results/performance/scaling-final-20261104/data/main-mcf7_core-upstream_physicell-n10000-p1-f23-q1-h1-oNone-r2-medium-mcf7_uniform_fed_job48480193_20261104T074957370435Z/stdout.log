@@ -1,0 +1,634 @@
+Using config file settings.xml ... 
+Setting up RNG with seed 50
+1
+dc? 1
+User parameters in XML config file: 
+Bool parameters:: 
+
+Int parameters:: 
+number_of_cells: 0 [dimensionless]
+diffusion_steps: 300 [dimensionless]
+
+Double parameters:: 
+
+String parameters:: 
+
+
+which boundaries?
+1 1 1 1 1 1
+
+Microenvironment summary: microenvironment: 
+
+Mesh information: 
+type: uniform Cartesian
+Domain: [-187.5,187.5] micron x [-150,150] micron x [-150,150] micron
+   resolution: dx = 15 micron
+   voxels: 10000
+   voxel faces: 0
+   volume: 3.375e+07 cubic micron
+Densities: (23 total)
+   Ammonium:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 0 mM
+     boundary condition: 0 mM (enabled: false)
+   CO2:
+     units: mM
+     diffusion coefficient: 115000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.39116e+08 micron
+     initial condition: 0 mM
+     boundary condition: 0 mM (enabled: false)
+   Choline:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   D-Glucose:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 0.5 mM
+     boundary condition: 0.5 mM (enabled: false)
+   Glycine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Arginine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Asparagine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Aspartate:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 0 mM
+     boundary condition: 0 mM (enabled: false)
+   L-Glutamate:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Glutamine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Isoleucine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Lactate:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 0 mM
+     boundary condition: 0 mM (enabled: false)
+   L-Leucine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Lysine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Phenylalanine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Serine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Threonine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Tryptophan:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Tyrosine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   L-Valine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   O2:
+     units: mM
+     diffusion coefficient: 100000 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 3.16228e+08 micron
+     initial condition: 2 mM
+     boundary condition: 2 mM (enabled: false)
+   Ornithine:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+   Phosphate:
+     units: mM
+     diffusion coefficient: 8921 micron^2 / min
+     decay rate: 0 min^-1
+     diffusion length scale: 9.4451e+07 micron
+     initial condition: 1 mM
+     boundary condition: 1 mM (enabled: false)
+
+virtual_wall_at_domain_edge: enabled
+Pre-processing type 0 named MCF7_core
+Processing MCF7_core ... 
+  --------- attachment_elastic_constant = 0.01
+Signals: 
+=======
+0 : Ammonium
+1 : CO2
+2 : Choline
+3 : D-Glucose
+4 : Glycine
+5 : L-Arginine
+6 : L-Asparagine
+7 : L-Aspartate
+8 : L-Glutamate
+9 : L-Glutamine
+10 : L-Isoleucine
+11 : L-Lactate
+12 : L-Leucine
+13 : L-Lysine
+14 : L-Phenylalanine
+15 : L-Serine
+16 : L-Threonine
+17 : L-Tryptophan
+18 : L-Tyrosine
+19 : L-Valine
+20 : O2
+21 : Ornithine
+22 : Phosphate
+23 : intracellular Ammonium
+24 : intracellular CO2
+25 : intracellular Choline
+26 : intracellular D-Glucose
+27 : intracellular Glycine
+28 : intracellular L-Arginine
+29 : intracellular L-Asparagine
+30 : intracellular L-Aspartate
+31 : intracellular L-Glutamate
+32 : intracellular L-Glutamine
+33 : intracellular L-Isoleucine
+34 : intracellular L-Lactate
+35 : intracellular L-Leucine
+36 : intracellular L-Lysine
+37 : intracellular L-Phenylalanine
+38 : intracellular L-Serine
+39 : intracellular L-Threonine
+40 : intracellular L-Tryptophan
+41 : intracellular L-Tyrosine
+42 : intracellular L-Valine
+43 : intracellular O2
+44 : intracellular Ornithine
+45 : intracellular Phosphate
+46 : Ammonium gradient
+47 : CO2 gradient
+48 : Choline gradient
+49 : D-Glucose gradient
+50 : Glycine gradient
+51 : L-Arginine gradient
+52 : L-Asparagine gradient
+53 : L-Aspartate gradient
+54 : L-Glutamate gradient
+55 : L-Glutamine gradient
+56 : L-Isoleucine gradient
+57 : L-Lactate gradient
+58 : L-Leucine gradient
+59 : L-Lysine gradient
+60 : L-Phenylalanine gradient
+61 : L-Serine gradient
+62 : L-Threonine gradient
+63 : L-Tryptophan gradient
+64 : L-Tyrosine gradient
+65 : L-Valine gradient
+66 : O2 gradient
+67 : Ornithine gradient
+68 : Phosphate gradient
+69 : pressure
+70 : volume
+71 : contact with MCF7_core
+72 : contact with live cell
+73 : contact with dead cell
+74 : contact with apoptotic cell
+75 : contact with necrotic cell
+76 : contact with other dead cell
+77 : contact with basement membrane
+78 : damage
+79 : damage delivered
+80 : attacking
+81 : dead
+82 : total attack time
+83 : time
+84 : custom:growth_rate
+85 : custom:R_EX_arg_L_e
+86 : custom:R_EX_arg_L_e_lb
+87 : custom:R_EX_asn_L_e
+88 : custom:R_EX_asn_L_e_lb
+89 : custom:R_EX_asp_L_e
+90 : custom:R_EX_asp_L_e_lb
+91 : custom:R_EX_chol_e
+92 : custom:R_EX_chol_e_lb
+93 : custom:R_EX_co2_e
+94 : custom:R_EX_co2_e_lb
+95 : custom:R_EX_glc_e
+96 : custom:R_EX_glc_e_lb
+97 : custom:R_EX_gln_L_e
+98 : custom:R_EX_gln_L_e_lb
+99 : custom:R_EX_glu_L_e
+100 : custom:R_EX_glu_L_e_lb
+101 : custom:R_EX_gly_e
+102 : custom:R_EX_gly_e_lb
+103 : custom:R_EX_ile_L_e
+104 : custom:R_EX_ile_L_e_lb
+105 : custom:R_EX_lac_L_e
+106 : custom:R_EX_lac_L_e_lb
+107 : custom:R_EX_leu_L_e
+108 : custom:R_EX_leu_L_e_lb
+109 : custom:R_EX_lys_L_e
+110 : custom:R_EX_lys_L_e_lb
+111 : custom:R_EX_nh4_e
+112 : custom:R_EX_nh4_e_lb
+113 : custom:R_EX_o2_e
+114 : custom:R_EX_o2_e_lb
+115 : custom:R_EX_orn_e
+116 : custom:R_EX_orn_e_lb
+117 : custom:R_EX_phe_L_e
+118 : custom:R_EX_phe_L_e_lb
+119 : custom:R_EX_pi_e
+120 : custom:R_EX_pi_e_lb
+121 : custom:R_EX_ser_L_e
+122 : custom:R_EX_ser_L_e_lb
+123 : custom:R_EX_thr_L_e
+124 : custom:R_EX_thr_L_e_lb
+125 : custom:R_EX_trp_L_e
+126 : custom:R_EX_trp_L_e_lb
+127 : custom:R_EX_tyr_L_e
+128 : custom:R_EX_tyr_L_e_lb
+129 : custom:R_EX_val_L_e
+130 : custom:R_EX_val_L_e_lb
+131 : apoptotic
+132 : necrotic
+
+
+Behaviors: 
+=========
+0 : Ammonium secretion
+1 : CO2 secretion
+2 : Choline secretion
+3 : D-Glucose secretion
+4 : Glycine secretion
+5 : L-Arginine secretion
+6 : L-Asparagine secretion
+7 : L-Aspartate secretion
+8 : L-Glutamate secretion
+9 : L-Glutamine secretion
+10 : L-Isoleucine secretion
+11 : L-Lactate secretion
+12 : L-Leucine secretion
+13 : L-Lysine secretion
+14 : L-Phenylalanine secretion
+15 : L-Serine secretion
+16 : L-Threonine secretion
+17 : L-Tryptophan secretion
+18 : L-Tyrosine secretion
+19 : L-Valine secretion
+20 : O2 secretion
+21 : Ornithine secretion
+22 : Phosphate secretion
+23 : Ammonium secretion target
+24 : CO2 secretion target
+25 : Choline secretion target
+26 : D-Glucose secretion target
+27 : Glycine secretion target
+28 : L-Arginine secretion target
+29 : L-Asparagine secretion target
+30 : L-Aspartate secretion target
+31 : L-Glutamate secretion target
+32 : L-Glutamine secretion target
+33 : L-Isoleucine secretion target
+34 : L-Lactate secretion target
+35 : L-Leucine secretion target
+36 : L-Lysine secretion target
+37 : L-Phenylalanine secretion target
+38 : L-Serine secretion target
+39 : L-Threonine secretion target
+40 : L-Tryptophan secretion target
+41 : L-Tyrosine secretion target
+42 : L-Valine secretion target
+43 : O2 secretion target
+44 : Ornithine secretion target
+45 : Phosphate secretion target
+46 : Ammonium uptake
+47 : CO2 uptake
+48 : Choline uptake
+49 : D-Glucose uptake
+50 : Glycine uptake
+51 : L-Arginine uptake
+52 : L-Asparagine uptake
+53 : L-Aspartate uptake
+54 : L-Glutamate uptake
+55 : L-Glutamine uptake
+56 : L-Isoleucine uptake
+57 : L-Lactate uptake
+58 : L-Leucine uptake
+59 : L-Lysine uptake
+60 : L-Phenylalanine uptake
+61 : L-Serine uptake
+62 : L-Threonine uptake
+63 : L-Tryptophan uptake
+64 : L-Tyrosine uptake
+65 : L-Valine uptake
+66 : O2 uptake
+67 : Ornithine uptake
+68 : Phosphate uptake
+69 : Ammonium export
+70 : CO2 export
+71 : Choline export
+72 : D-Glucose export
+73 : Glycine export
+74 : L-Arginine export
+75 : L-Asparagine export
+76 : L-Aspartate export
+77 : L-Glutamate export
+78 : L-Glutamine export
+79 : L-Isoleucine export
+80 : L-Lactate export
+81 : L-Leucine export
+82 : L-Lysine export
+83 : L-Phenylalanine export
+84 : L-Serine export
+85 : L-Threonine export
+86 : L-Tryptophan export
+87 : L-Tyrosine export
+88 : L-Valine export
+89 : O2 export
+90 : Ornithine export
+91 : Phosphate export
+92 : cycle entry
+93 : exit from cycle phase 1
+94 : exit from cycle phase 2
+95 : exit from cycle phase 3
+96 : exit from cycle phase 4
+97 : exit from cycle phase 5
+98 : apoptosis
+99 : necrosis
+100 : migration speed
+101 : migration bias
+102 : migration persistence time
+103 : chemotactic response to Ammonium
+104 : chemotactic response to CO2
+105 : chemotactic response to Choline
+106 : chemotactic response to D-Glucose
+107 : chemotactic response to Glycine
+108 : chemotactic response to L-Arginine
+109 : chemotactic response to L-Asparagine
+110 : chemotactic response to L-Aspartate
+111 : chemotactic response to L-Glutamate
+112 : chemotactic response to L-Glutamine
+113 : chemotactic response to L-Isoleucine
+114 : chemotactic response to L-Lactate
+115 : chemotactic response to L-Leucine
+116 : chemotactic response to L-Lysine
+117 : chemotactic response to L-Phenylalanine
+118 : chemotactic response to L-Serine
+119 : chemotactic response to L-Threonine
+120 : chemotactic response to L-Tryptophan
+121 : chemotactic response to L-Tyrosine
+122 : chemotactic response to L-Valine
+123 : chemotactic response to O2
+124 : chemotactic response to Ornithine
+125 : chemotactic response to Phosphate
+126 : cell-cell adhesion
+127 : cell-cell adhesion elastic constant
+128 : adhesive affinity to MCF7_core
+129 : relative maximum adhesion distance
+130 : cell-cell repulsion
+131 : cell-BM adhesion
+132 : cell-BM repulsion
+133 : phagocytose apoptotic cell
+134 : phagocytose necrotic cell
+135 : phagocytose other dead cell
+136 : phagocytose MCF7_core
+137 : attack MCF7_core
+138 : fuse to MCF7_core
+139 : transition to MCF7_core
+140 : asymmetric division to MCF7_core
+141 : custom:growth_rate
+142 : custom:R_EX_arg_L_e
+143 : custom:R_EX_arg_L_e_lb
+144 : custom:R_EX_asn_L_e
+145 : custom:R_EX_asn_L_e_lb
+146 : custom:R_EX_asp_L_e
+147 : custom:R_EX_asp_L_e_lb
+148 : custom:R_EX_chol_e
+149 : custom:R_EX_chol_e_lb
+150 : custom:R_EX_co2_e
+151 : custom:R_EX_co2_e_lb
+152 : custom:R_EX_glc_e
+153 : custom:R_EX_glc_e_lb
+154 : custom:R_EX_gln_L_e
+155 : custom:R_EX_gln_L_e_lb
+156 : custom:R_EX_glu_L_e
+157 : custom:R_EX_glu_L_e_lb
+158 : custom:R_EX_gly_e
+159 : custom:R_EX_gly_e_lb
+160 : custom:R_EX_ile_L_e
+161 : custom:R_EX_ile_L_e_lb
+162 : custom:R_EX_lac_L_e
+163 : custom:R_EX_lac_L_e_lb
+164 : custom:R_EX_leu_L_e
+165 : custom:R_EX_leu_L_e_lb
+166 : custom:R_EX_lys_L_e
+167 : custom:R_EX_lys_L_e_lb
+168 : custom:R_EX_nh4_e
+169 : custom:R_EX_nh4_e_lb
+170 : custom:R_EX_o2_e
+171 : custom:R_EX_o2_e_lb
+172 : custom:R_EX_orn_e
+173 : custom:R_EX_orn_e_lb
+174 : custom:R_EX_phe_L_e
+175 : custom:R_EX_phe_L_e_lb
+176 : custom:R_EX_pi_e
+177 : custom:R_EX_pi_e_lb
+178 : custom:R_EX_ser_L_e
+179 : custom:R_EX_ser_L_e_lb
+180 : custom:R_EX_thr_L_e
+181 : custom:R_EX_thr_L_e_lb
+182 : custom:R_EX_trp_L_e
+183 : custom:R_EX_trp_L_e_lb
+184 : custom:R_EX_tyr_L_e
+185 : custom:R_EX_tyr_L_e_lb
+186 : custom:R_EX_val_L_e
+187 : custom:R_EX_val_L_e_lb
+188 : is_movable
+189 : immunogenicity to MCF7_core
+190 : cell attachment rate
+191 : cell detachment rate
+192 : maximum number of cell attachments
+193 : attack damage rate
+194 : attack duration
+195 : damage rate
+196 : damage repair rate
+
+
+ruleset
+	Ruleset disabled ... 
+Behavioral rules for cell type MCF7_core:
+===================================================
+
+Exporting rules to file output/cell_rules_parsed.csv (v3 format) ... 
+Done!
+
+0 :: type:0 name: MCF7_core
+	 cycle model: Live (code=5)
+		Phase 0: Live
+		Cycle transitions: 
+		-----------------
+		Live --> Live w mean duration inf min
+	 death models: 
+		0 : Apoptosis (code=100) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Apoptotic --> Debris w mean duration 516 min
+		1 : Necrosis (code=101) with rate 0 1/min
+		death phase transitions: 
+		------------------------
+		Necrotic (swelling) --> Necrotic (lysed) w mean duration 1.11111e-10 min
+		Necrotic (lysed) --> Debris w mean duration 86399.8 min
+	 key functions: 
+		 migration bias rule: false
+		 custom rule: true
+		 phenotype rule: true
+		 volume update function: true
+		 mechanics function: true
+		 contact function: true
+		 cell division function: false
+		 cell division direction function: false
+	motility (enabled: false in 2D)
+		speed: 1 micron/min
+		bias: 0.5 
+		persistence time: 1 min
+		chemotaxis (enabled: false)
+			along -1 * grad(O2) 
+	mechanics:
+		cell_cell_adhesion_strength: 0.4
+		cell_cell_repulsion_strength: 100
+		rel max adhesion dist: 1.25
+		cell_BM_adhesion_strength: 4
+		cell_BM_repulsion_strength: 100
+		attachment_elastic_constant: 0.01
+		attachment_rate: 0
+		detachment_rate: 0
+	custom data: 
+		growth_rate: 0 1/min
+		R_EX_arg_L_e: 0 mmol/g DW cell/min
+		R_EX_arg_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_asn_L_e: 0 mmol/g DW cell/min
+		R_EX_asn_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_asp_L_e: 0 mmol/g DW cell/min
+		R_EX_asp_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_chol_e: 0 mmol/g DW cell/min
+		R_EX_chol_e_lb: 0 mmol/g DW cell/min
+		R_EX_co2_e: 0 mmol/g DW cell/min
+		R_EX_co2_e_lb: 0 mmol/g DW cell/min
+		R_EX_glc_e: 0 mmol/g DW cell/min
+		R_EX_glc_e_lb: 0 mmol/g DW cell/min
+		R_EX_gln_L_e: 0 mmol/g DW cell/min
+		R_EX_gln_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_glu_L_e: 0 mmol/g DW cell/min
+		R_EX_glu_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_gly_e: 0 mmol/g DW cell/min
+		R_EX_gly_e_lb: 0 mmol/g DW cell/min
+		R_EX_ile_L_e: 0 mmol/g DW cell/min
+		R_EX_ile_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_lac_L_e: 0 mmol/g DW cell/min
+		R_EX_lac_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_leu_L_e: 0 mmol/g DW cell/min
+		R_EX_leu_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_lys_L_e: 0 mmol/g DW cell/min
+		R_EX_lys_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_nh4_e: 0 mmol/g DW cell/min
+		R_EX_nh4_e_lb: 0 mmol/g DW cell/min
+		R_EX_o2_e: 0 mmol/g DW cell/min
+		R_EX_o2_e_lb: 0 mmol/g DW cell/min
+		R_EX_orn_e: 0 mmol/g DW cell/min
+		R_EX_orn_e_lb: 0 mmol/g DW cell/min
+		R_EX_phe_L_e: 0 mmol/g DW cell/min
+		R_EX_phe_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_pi_e: 0 mmol/g DW cell/min
+		R_EX_pi_e_lb: 0 mmol/g DW cell/min
+		R_EX_ser_L_e: 0 mmol/g DW cell/min
+		R_EX_ser_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_thr_L_e: 0 mmol/g DW cell/min
+		R_EX_thr_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_trp_L_e: 0 mmol/g DW cell/min
+		R_EX_trp_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_tyr_L_e: 0 mmol/g DW cell/min
+		R_EX_tyr_L_e_lb: 0 mmol/g DW cell/min
+		R_EX_val_L_e: 0 mmol/g DW cell/min
+		R_EX_val_L_e_lb: 0 mmol/g DW cell/min
+	custom vector data: 
+			NOTE: custom vector data will eventually be merged with custom data
+
+Using method diffusion_decay_solver__constant_coefficients_LOD_3D (implicit 3-D LOD with Thomas Algorithm) ... 
+

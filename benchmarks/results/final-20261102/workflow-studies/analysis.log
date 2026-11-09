@@ -1,0 +1,160 @@
+srun: job 48792130 queued and waiting for resources
+srun: job 48792130 has been allocated resources
+load HDF5/1.14.1-2 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, HDF5_DIR, HDF5_ROOT,CFLAGS, CPPFLAGS, LDFLAGS) 
+load PYTHON/3.12.1 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH,
+PKG_CONFIG_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME, PYTHONPATH) 
+load SQLITE3/3.45.2 (PATH)
+{'layout': 'single', 'variant': 'dfba', 'intracellular_dt': 0.01, 'status': 'completed', 'flags': '', 'final_cells': 1, 'infeasible_share': 0.0, 'stage_two_failures': 0, 'biomass_change_percent': 5.61197572368537, 'live_cells': None, 'live_dry_mass_pg': None, 'wall_seconds': 15.85}
+{'layout': 'single', 'variant': 'dfba', 'intracellular_dt': 0.1, 'status': 'completed', 'flags': '', 'final_cells': 1, 'infeasible_share': 0.0, 'stage_two_failures': 0, 'biomass_change_percent': 5.611976150820319, 'live_cells': None, 'live_dry_mass_pg': None, 'wall_seconds': 9.1}
+{'layout': 'single', 'variant': 'pfba', 'intracellular_dt': 0.01, 'status': 'completed', 'flags': '', 'final_cells': 1, 'infeasible_share': 0.0, 'stage_two_failures': 0, 'biomass_change_percent': 5.6119757236891, 'live_cells': None, 'live_dry_mass_pg': None, 'wall_seconds': 23.0}
+{'layout': 'single', 'variant': 'pfba', 'intracellular_dt': 0.1, 'status': 'completed', 'flags': '', 'final_cells': 1, 'infeasible_share': 0.0, 'stage_two_failures': 0, 'biomass_change_percent': 5.611976150830578, 'live_cells': None, 'live_dry_mass_pg': None, 'wall_seconds': 9.7}
+{'layout': 'application', 'variant': 'dfba', 'intracellular_dt': 0.01, 'status': 'completed_flagged', 'flags': 'primary_solver_failure', 'final_cells': 349, 'infeasible_share': 0.11746670044270739, 'stage_two_failures': 0, 'biomass_change_percent': None, 'live_cells': 180, 'live_dry_mass_pg': 150715.82684833452, 'wall_seconds': 2026.48}
+{'layout': 'application', 'variant': 'dfba', 'intracellular_dt': 0.1, 'status': 'completed_flagged', 'flags': 'primary_solver_failure', 'final_cells': 349, 'infeasible_share': 0.22334065792024818, 'stage_two_failures': 0, 'biomass_change_percent': None, 'live_cells': 204, 'live_dry_mass_pg': 169079.02297549107, 'wall_seconds': 231.78}
+{'layout': 'application', 'variant': 'pfba', 'intracellular_dt': 0.01, 'status': 'completed_flagged', 'flags': 'pfba_fallback;primary_solver_failure', 'final_cells': 358, 'infeasible_share': 0.11994713242002673, 'stage_two_failures': 602, 'biomass_change_percent': None, 'live_cells': 188, 'live_dry_mass_pg': 152158.42766664742, 'wall_seconds': 2647.74}
+{'layout': 'application', 'variant': 'pfba', 'intracellular_dt': 0.1, 'status': 'completed_flagged', 'flags': 'pfba_fallback;primary_solver_failure', 'final_cells': 347, 'infeasible_share': 0.2211261345610376, 'stage_two_failures': 9, 'biomass_change_percent': None, 'live_cells': 204, 'live_dry_mass_pg': 171038.59015462146, 'wall_seconds': 455.09}
+{'kind': 'single', 'comparison': 'dt0.1_vs_dt0.01', 'variant': 'dfba', 'intracellular_dt': 0.1, 'attempt': 'pfba-mcf7_core-dfba-n1-p1-f23-q1-h1-oNone-r1-dt0_1_job48480040_20261104T075012251292Z', 'reference': 'pfba-mcf7_core-dfba-n1-p1-f23-q1-h1-oNone-r1-dt0_01_job48480040_20261104T074930040469Z', 'final_dry_mass_pg_ratio': 1.0000000040443797, 'median_internal_abs_flux_ratio': 1.0000000000144114, 'loop_seconds_ratio': 0.5692993961815456, 'wall_seconds_ratio': 0.5741324921135647, 'mean_net_export_D-Glucose_ratio': 1.0000126120473511, 'mean_net_export_O2_ratio': 1.0000100553658056, 'mean_net_export_L-Lactate_ratio': 1.0000143728237334, 'max_biomass_rel_diff': 2.0475931174934736e-05}
+{'kind': 'single', 'comparison': 'pfba_vs_fba', 'variant': 'pfba', 'intracellular_dt': 0.01, 'attempt': 'pfba-mcf7_core-pfba-n1-p1-f23-q1-h1-oNone-r1-dt0_01_job48480040_20261104T074947131263Z', 'reference': 'pfba-mcf7_core-dfba-n1-p1-f23-q1-h1-oNone-r1-dt0_01_job48480040_20261104T074930040469Z', 'final_dry_mass_pg_ratio': 1.0000000000000353, 'median_internal_abs_flux_ratio': 0.005196445358925927, 'loop_seconds_ratio': 1.4550035073612377, 'wall_seconds_ratio': 1.4511041009463723, 'mean_net_export_D-Glucose_ratio': 0.7856263670560112, 'mean_net_export_O2_ratio': 0.863338055354936, 'mean_net_export_L-Lactate_ratio': 0.624380817034854, 'max_biomass_rel_diff': 6.283862319378386e-14}
+{'kind': 'single', 'comparison': 'pfba_vs_fba', 'variant': 'pfba', 'intracellular_dt': 0.1, 'attempt': 'pfba-mcf7_core-pfba-n1-p1-f23-q1-h1-oNone-r1-dt0_1_job48480040_20261104T075022318117Z', 'reference': 'pfba-mcf7_core-dfba-n1-p1-f23-q1-h1-oNone-r1-dt0_1_job48480040_20261104T075012251292Z', 'final_dry_mass_pg_ratio': 1.000000000000097, 'median_internal_abs_flux_ratio': 0.0051964453625519295, 'loop_seconds_ratio': 1.0676099513806736, 'wall_seconds_ratio': 1.065934065934066, 'mean_net_export_D-Glucose_ratio': 0.7856245798053286, 'mean_net_export_O2_ratio': 0.8633382350578772, 'mean_net_export_L-Lactate_ratio': 0.6243785453747919, 'max_biomass_rel_diff': 1.822986206434507e-13}
+{'kind': 'single', 'comparison': 'dt0.1_vs_dt0.01', 'variant': 'pfba', 'intracellular_dt': 0.1, 'attempt': 'pfba-mcf7_core-pfba-n1-p1-f23-q1-h1-oNone-r1-dt0_1_job48480040_20261104T075022318117Z', 'reference': 'pfba-mcf7_core-pfba-n1-p1-f23-q1-h1-oNone-r1-dt0_01_job48480040_20261104T074947131263Z', 'final_dry_mass_pg_ratio': 1.0000000040444417, 'median_internal_abs_flux_ratio': 1.0000000007121965, 'loop_seconds_ratio': 0.4177238732439214, 'wall_seconds_ratio': 0.42173913043478256, 'mean_net_export_D-Glucose_ratio': 1.000010337081415, 'mean_net_export_O2_ratio': 1.000010263516885, 'mean_net_export_L-Lactate_ratio': 1.0000107345109437, 'max_biomass_rel_diff': 2.047593117604496e-05}
+{'kind': 'application', 'comparison': 'dt0.1_vs_dt0.01', 'variant': 'dfba', 'intracellular_dt': 0.1, 'attempt': 'pfba_application-mcf7_core-dfba-n1-p1-f23-q1-h1-oNone-r1-dt0_1_job48480044_20261104T074930018505Z', 'reference': 'pfba_application-mcf7_core-dfba-n1-p1-f23-q1-h1-oNone-r1-dt0_01_job48480042_20261104T074930029776Z', 'live_cells_ratio': 1.1333333333333333, 'live_dry_mass_pg_ratio': 1.121839865866479, 'loop_seconds_ratio': 0.11319788876030265, 'wall_seconds_ratio': 0.11437566617977972, 'infeasible_share_ratio': 1.9013103890594016, 'mean_R_EX_glc_e_ratio': 0.8569124874246151, 'mean_R_EX_o2_e_ratio': 0.840231388808117, 'mean_R_EX_lac_L_e_ratio': 0.7370038475773262, 'max_live_dry_mass_pg_rel_diff': 0.3114529323969921, 'max_live_cells_rel_diff': 0.3316326530612246}
+{'kind': 'application', 'comparison': 'pfba_vs_fba', 'variant': 'pfba', 'intracellular_dt': 0.01, 'attempt': 'pfba_application-mcf7_core-pfba-n1-p1-f23-q1-h1-oNone-r1-dt0_01_job48480046_20261104T074930019579Z', 'reference': 'pfba_application-mcf7_core-dfba-n1-p1-f23-q1-h1-oNone-r1-dt0_01_job48480042_20261104T074930029776Z', 'live_cells_ratio': 1.0444444444444445, 'live_dry_mass_pg_ratio': 1.0095716611087209, 'loop_seconds_ratio': 1.3058855772177933, 'wall_seconds_ratio': 1.3065709999605226, 'infeasible_share_ratio': 1.0211160436785158, 'mean_R_EX_glc_e_ratio': 0.9454041279610099, 'mean_R_EX_o2_e_ratio': 0.9613212166859119, 'mean_R_EX_lac_L_e_ratio': 1.687267230109163, 'max_live_dry_mass_pg_rel_diff': 0.0786275388055675, 'max_live_cells_rel_diff': 0.13294797687861282}
+{'kind': 'application', 'comparison': 'pfba_vs_fba', 'variant': 'pfba', 'intracellular_dt': 0.1, 'attempt': 'pfba_application-mcf7_core-pfba-n1-p1-f23-q1-h1-oNone-r1-dt0_1_job48480048_20261104T074930011199Z', 'reference': 'pfba_application-mcf7_core-dfba-n1-p1-f23-q1-h1-oNone-r1-dt0_1_job48480044_20261104T074930018505Z', 'live_cells_ratio': 1.0, 'live_dry_mass_pg_ratio': 1.011589652841881, 'loop_seconds_ratio': 1.9650753598101718, 'wall_seconds_ratio': 1.9634567262058849, 'infeasible_share_ratio': 0.9900845489583838, 'mean_R_EX_glc_e_ratio': 0.9377333959398694, 'mean_R_EX_o2_e_ratio': 0.9394526899391427, 'mean_R_EX_lac_L_e_ratio': 2.1504009925939718, 'max_live_dry_mass_pg_rel_diff': 0.06548124426702184, 'max_live_cells_rel_diff': 0.07042253521126751}
+{'kind': 'application', 'comparison': 'dt0.1_vs_dt0.01', 'variant': 'pfba', 'intracellular_dt': 0.1, 'attempt': 'pfba_application-mcf7_core-pfba-n1-p1-f23-q1-h1-oNone-r1-dt0_1_job48480048_20261104T074930011199Z', 'reference': 'pfba_application-mcf7_core-pfba-n1-p1-f23-q1-h1-oNone-r1-dt0_01_job48480046_20261104T074930019579Z', 'live_cells_ratio': 1.0851063829787233, 'live_dry_mass_pg_ratio': 1.124082265948076, 'loop_seconds_ratio': 0.17033834040752635, 'wall_seconds_ratio': 0.171878658780696, 'infeasible_share_ratio': 1.8435299794138116, 'mean_R_EX_glc_e_ratio': 0.8499597506402097, 'mean_R_EX_o2_e_ratio': 0.8211174628063893, 'mean_R_EX_lac_L_e_ratio': 0.9393021906039872, 'max_live_dry_mass_pg_rel_diff': 0.36896415444806174, 'max_live_cells_rel_diff': 0.34536082474226815}
+=== pfba exit 0
+ecoli_core dfba               n100   p1   f23 runs=3 flagged=0 loop=     3.493s speedup=  1.00 vs_off=   40.01 vs_up=   40.12
+ecoli_core dfba               n100   p56  f23 runs=3 flagged=0 loop=     0.424s speedup=  8.24 vs_off=    1.43 vs_up=    1.46
+ecoli_core dfba               n1000  p1   f23 runs=3 flagged=0 loop=    45.625s speedup=  1.00 vs_off=   24.85 vs_up=   25.21
+ecoli_core dfba               n1000  p2   f23 runs=3 flagged=0 loop=    19.292s speedup=  2.36 vs_off=   15.85 vs_up=   15.97
+ecoli_core dfba               n1000  p4   f23 runs=3 flagged=0 loop=    12.966s speedup=  3.52 vs_off=   13.40 vs_up=   13.31
+ecoli_core dfba               n1000  p8   f23 runs=3 flagged=0 loop=     5.564s speedup=  8.20 vs_off=    6.97 vs_up=    6.95
+ecoli_core dfba               n1000  p16  f23 runs=3 flagged=0 loop=     3.199s speedup= 14.26 vs_off=    4.69 vs_up=    4.90
+ecoli_core dfba               n1000  p28  f23 runs=3 flagged=0 loop=     2.258s speedup= 20.21 vs_off=    3.15 vs_up=    3.22
+ecoli_core dfba               n1000  p56  f5  runs=3 flagged=0 loop=     1.736s speedup=   nan vs_off=    2.23 vs_up=    2.29
+ecoli_core dfba               n1000  p56  f8  runs=3 flagged=0 loop=     1.821s speedup=   nan vs_off=    2.43 vs_up=    2.38
+ecoli_core dfba               n1000  p56  f16 runs=3 flagged=0 loop=     1.794s speedup=   nan vs_off=    2.18 vs_up=    2.32
+ecoli_core dfba               n1000  p56  f23 runs=3 flagged=0 loop=     2.138s speedup= 21.34 vs_off=    2.46 vs_up=    2.56
+ecoli_core dfba               n1000  p56  f32 runs=3 flagged=0 loop=     1.817s speedup=   nan vs_off=    2.26 vs_up=    2.34
+ecoli_core dfba               n1000  p112 f23 runs=3 flagged=0 loop=     2.293s speedup= 19.89 vs_off=    1.80 vs_up=    1.75
+ecoli_core dfba               n10000 p1   f23 runs=3 flagged=0 loop=   553.630s speedup=  1.00 vs_off=   23.95 vs_up=   24.16
+ecoli_core dfba               n10000 p56  f23 runs=3 flagged=0 loop=    23.292s speedup= 23.77 vs_off=    4.10 vs_up=    4.43
+ecoli_core dfba_disabled      n100   p1   f23 runs=3 flagged=0 loop=     0.087s speedup=  1.00 vs_off=     nan vs_up=    1.00
+ecoli_core dfba_disabled      n100   p56  f23 runs=3 flagged=0 loop=     0.295s speedup=  0.30 vs_off=     nan vs_up=    1.02
+ecoli_core dfba_disabled      n1000  p1   f23 runs=3 flagged=0 loop=     1.836s speedup=  1.00 vs_off=     nan vs_up=    1.01
+ecoli_core dfba_disabled      n1000  p2   f23 runs=3 flagged=0 loop=     1.217s speedup=  1.51 vs_off=     nan vs_up=    1.01
+ecoli_core dfba_disabled      n1000  p4   f23 runs=3 flagged=0 loop=     0.968s speedup=  1.90 vs_off=     nan vs_up=    0.99
+ecoli_core dfba_disabled      n1000  p8   f23 runs=3 flagged=0 loop=     0.798s speedup=  2.30 vs_off=     nan vs_up=    1.00
+ecoli_core dfba_disabled      n1000  p16  f23 runs=3 flagged=0 loop=     0.682s speedup=  2.69 vs_off=     nan vs_up=    1.05
+ecoli_core dfba_disabled      n1000  p28  f23 runs=3 flagged=0 loop=     0.717s speedup=  2.56 vs_off=     nan vs_up=    1.02
+ecoli_core dfba_disabled      n1000  p56  f5  runs=3 flagged=0 loop=     0.779s speedup=   nan vs_off=     nan vs_up=    1.03
+ecoli_core dfba_disabled      n1000  p56  f8  runs=3 flagged=0 loop=     0.750s speedup=   nan vs_off=     nan vs_up=    0.98
+ecoli_core dfba_disabled      n1000  p56  f16 runs=3 flagged=0 loop=     0.825s speedup=   nan vs_off=     nan vs_up=    1.06
+ecoli_core dfba_disabled      n1000  p56  f23 runs=3 flagged=0 loop=     0.869s speedup=  2.11 vs_off=     nan vs_up=    1.04
+ecoli_core dfba_disabled      n1000  p56  f32 runs=3 flagged=0 loop=     0.805s speedup=   nan vs_off=     nan vs_up=    1.03
+ecoli_core dfba_disabled      n1000  p112 f23 runs=3 flagged=0 loop=     1.271s speedup=  1.44 vs_off=     nan vs_up=    0.97
+ecoli_core dfba_disabled      n10000 p1   f23 runs=3 flagged=0 loop=    23.116s speedup=  1.00 vs_off=     nan vs_up=    1.01
+ecoli_core dfba_disabled      n10000 p56  f23 runs=3 flagged=0 loop=     5.679s speedup=  4.07 vs_off=     nan vs_up=    1.08
+ecoli_core upstream_physicell n100   p1   f23 runs=3 flagged=0 loop=     0.087s speedup=  1.00 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n100   p56  f23 runs=3 flagged=0 loop=     0.290s speedup=  0.30 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p1   f23 runs=3 flagged=0 loop=     1.810s speedup=  1.00 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p2   f23 runs=3 flagged=0 loop=     1.208s speedup=  1.50 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p4   f23 runs=3 flagged=0 loop=     0.974s speedup=  1.86 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p8   f23 runs=3 flagged=0 loop=     0.800s speedup=  2.26 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p16  f23 runs=3 flagged=0 loop=     0.652s speedup=  2.77 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p28  f23 runs=3 flagged=0 loop=     0.700s speedup=  2.58 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p56  f5  runs=3 flagged=0 loop=     0.759s speedup=   nan vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p56  f8  runs=3 flagged=0 loop=     0.765s speedup=   nan vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p56  f16 runs=3 flagged=0 loop=     0.774s speedup=   nan vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p56  f23 runs=3 flagged=0 loop=     0.834s speedup=  2.17 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p56  f32 runs=3 flagged=0 loop=     0.778s speedup=   nan vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n1000  p112 f23 runs=3 flagged=0 loop=     1.312s speedup=  1.38 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n10000 p1   f23 runs=3 flagged=0 loop=    22.913s speedup=  1.00 vs_off=     nan vs_up=     nan
+ecoli_core upstream_physicell n10000 p56  f23 runs=3 flagged=0 loop=     5.263s speedup=  4.35 vs_off=     nan vs_up=     nan
+iml1515    dfba               n100   p1   f23 runs=3 flagged=0 loop=   157.966s speedup=  1.00 vs_off= 4640.40 vs_up= 4664.75
+iml1515    dfba               n100   p56  f23 runs=3 flagged=0 loop=     4.408s speedup= 35.84 vs_off=   46.41 vs_up=   49.77
+iml1515    dfba               n1000  p1   f23 runs=3 flagged=0 loop=  1674.946s speedup=  1.00 vs_off= 2347.32 vs_up= 2357.29
+iml1515    dfba               n1000  p2   f23 runs=3 flagged=0 loop=   846.188s speedup=  1.98 vs_off= 1709.15 vs_up= 1738.02
+iml1515    dfba               n1000  p4   f23 runs=3 flagged=0 loop=   425.522s speedup=  3.94 vs_off= 1297.74 vs_up= 1320.95
+iml1515    dfba               n1000  p8   f23 runs=3 flagged=0 loop=   220.094s speedup=  7.61 vs_off=  877.06 vs_up=  860.16
+iml1515    dfba               n1000  p16  f23 runs=3 flagged=0 loop=   114.064s speedup= 14.68 vs_off=  564.01 vs_up=  548.32
+iml1515    dfba               n1000  p28  f23 runs=3 flagged=0 loop=    69.879s speedup= 23.97 vs_off=  354.87 vs_up=  344.46
+iml1515    dfba               n1000  p56  f4  runs=3 flagged=0 loop=    44.887s speedup=   nan vs_off=  201.80 vs_up=  181.46
+iml1515    dfba               n1000  p56  f8  runs=3 flagged=0 loop=    44.284s speedup=   nan vs_off=  203.74 vs_up=  185.39
+iml1515    dfba               n1000  p56  f16 runs=3 flagged=0 loop=    44.436s speedup=   nan vs_off=  184.94 vs_up=  188.48
+iml1515    dfba               n1000  p56  f23 runs=3 flagged=0 loop=    44.108s speedup= 37.97 vs_off=  179.76 vs_up=  178.67
+iml1515    dfba               n1000  p56  f32 runs=3 flagged=0 loop=    43.512s speedup=   nan vs_off=  167.23 vs_up=  176.89
+iml1515    dfba               n1000  p112 f23 runs=3 flagged=0 loop=    39.457s speedup= 42.45 vs_off=   90.95 vs_up=   88.22
+iml1515    dfba               n10000 p1   f23 runs=3 flagged=0 loop= 18504.822s speedup=  1.00 vs_off= 1815.05 vs_up= 1836.95
+iml1515    dfba               n10000 p56  f23 runs=3 flagged=0 loop=   547.004s speedup= 33.83 vs_off=  284.10 vs_up=  288.77
+iml1515    dfba_disabled      n100   p1   f23 runs=3 flagged=0 loop=     0.034s speedup=  1.00 vs_off=     nan vs_up=    1.01
+iml1515    dfba_disabled      n100   p56  f23 runs=3 flagged=0 loop=     0.095s speedup=  0.36 vs_off=     nan vs_up=    1.07
+iml1515    dfba_disabled      n1000  p1   f23 runs=3 flagged=0 loop=     0.714s speedup=  1.00 vs_off=     nan vs_up=    1.00
+iml1515    dfba_disabled      n1000  p2   f23 runs=3 flagged=0 loop=     0.495s speedup=  1.44 vs_off=     nan vs_up=    1.02
+iml1515    dfba_disabled      n1000  p4   f23 runs=3 flagged=0 loop=     0.328s speedup=  2.18 vs_off=     nan vs_up=    1.02
+iml1515    dfba_disabled      n1000  p8   f23 runs=3 flagged=0 loop=     0.251s speedup=  2.84 vs_off=     nan vs_up=    0.98
+iml1515    dfba_disabled      n1000  p16  f23 runs=3 flagged=0 loop=     0.202s speedup=  3.53 vs_off=     nan vs_up=    0.97
+iml1515    dfba_disabled      n1000  p28  f23 runs=3 flagged=0 loop=     0.197s speedup=  3.62 vs_off=     nan vs_up=    0.97
+iml1515    dfba_disabled      n1000  p56  f4  runs=3 flagged=0 loop=     0.222s speedup=   nan vs_off=     nan vs_up=    0.90
+iml1515    dfba_disabled      n1000  p56  f8  runs=3 flagged=0 loop=     0.217s speedup=   nan vs_off=     nan vs_up=    0.91
+iml1515    dfba_disabled      n1000  p56  f16 runs=3 flagged=0 loop=     0.240s speedup=   nan vs_off=     nan vs_up=    1.02
+iml1515    dfba_disabled      n1000  p56  f23 runs=3 flagged=0 loop=     0.245s speedup=  2.91 vs_off=     nan vs_up=    0.99
+iml1515    dfba_disabled      n1000  p56  f32 runs=3 flagged=0 loop=     0.260s speedup=   nan vs_off=     nan vs_up=    1.06
+iml1515    dfba_disabled      n1000  p112 f23 runs=3 flagged=0 loop=     0.434s speedup=  1.64 vs_off=     nan vs_up=    0.97
+iml1515    dfba_disabled      n10000 p1   f23 runs=3 flagged=0 loop=    10.195s speedup=  1.00 vs_off=     nan vs_up=    1.01
+iml1515    dfba_disabled      n10000 p56  f23 runs=3 flagged=0 loop=     1.925s speedup=  5.30 vs_off=     nan vs_up=    1.02
+iml1515    upstream_physicell n100   p1   f23 runs=3 flagged=0 loop=     0.034s speedup=  1.00 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n100   p56  f23 runs=3 flagged=0 loop=     0.089s speedup=  0.38 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p1   f23 runs=3 flagged=0 loop=     0.711s speedup=  1.00 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p2   f23 runs=3 flagged=0 loop=     0.487s speedup=  1.46 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p4   f23 runs=3 flagged=0 loop=     0.322s speedup=  2.21 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p8   f23 runs=3 flagged=0 loop=     0.256s speedup=  2.78 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p16  f23 runs=3 flagged=0 loop=     0.208s speedup=  3.42 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p28  f23 runs=3 flagged=0 loop=     0.203s speedup=  3.50 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p56  f4  runs=3 flagged=0 loop=     0.247s speedup=   nan vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p56  f8  runs=3 flagged=0 loop=     0.239s speedup=   nan vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p56  f16 runs=3 flagged=0 loop=     0.236s speedup=   nan vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p56  f23 runs=3 flagged=0 loop=     0.247s speedup=  2.88 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p56  f32 runs=3 flagged=0 loop=     0.246s speedup=   nan vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n1000  p112 f23 runs=3 flagged=0 loop=     0.447s speedup=  1.59 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n10000 p1   f23 runs=3 flagged=0 loop=    10.074s speedup=  1.00 vs_off=     nan vs_up=     nan
+iml1515    upstream_physicell n10000 p56  f23 runs=3 flagged=0 loop=     1.894s speedup=  5.32 vs_off=     nan vs_up=     nan
+mcf7_core  dfba               n100   p1   f23 runs=3 flagged=0 loop=    24.217s speedup=  1.00 vs_off=  520.94 vs_up=  534.16
+mcf7_core  dfba               n100   p56  f23 runs=3 flagged=0 loop=     0.735s speedup= 32.94 vs_off=    6.57 vs_up=    6.88
+mcf7_core  dfba               n1000  p1   f23 runs=3 flagged=0 loop=   257.010s speedup=  1.00 vs_off=  455.38 vs_up=  464.51
+mcf7_core  dfba               n1000  p2   f23 runs=3 flagged=0 loop=   124.548s speedup=  2.06 vs_off=  351.99 vs_up=  346.43
+mcf7_core  dfba               n1000  p4   f23 runs=3 flagged=0 loop=    63.561s speedup=  4.04 vs_off=  259.49 vs_up=  262.40
+mcf7_core  dfba               n1000  p8   f23 runs=3 flagged=0 loop=    32.896s speedup=  7.81 vs_off=  147.82 vs_up=  148.83
+mcf7_core  dfba               n1000  p16  f23 runs=3 flagged=0 loop=    17.540s speedup= 14.65 vs_off=   86.78 vs_up=   85.39
+mcf7_core  dfba               n1000  p28  f23 runs=3 flagged=0 loop=    10.787s speedup= 23.83 vs_off=   48.88 vs_up=   49.22
+mcf7_core  dfba               n1000  p56  f23 runs=3 flagged=0 loop=     6.339s speedup= 40.55 vs_off=   20.26 vs_up=   21.36
+mcf7_core  dfba               n1000  p56  f32 runs=3 flagged=0 loop=     6.410s speedup=   nan vs_off=   19.34 vs_up=   19.32
+mcf7_core  dfba               n1000  p112 f23 runs=3 flagged=0 loop=     4.333s speedup= 59.31 vs_off=    8.89 vs_up=    8.30
+mcf7_core  dfba               n10000 p1   f23 runs=3 flagged=0 loop=  2723.099s speedup=  1.00 vs_off=  430.40 vs_up=  427.75
+mcf7_core  dfba               n10000 p56  f23 runs=3 flagged=0 loop=    86.872s speedup= 31.35 vs_off=   41.91 vs_up=   42.54
+mcf7_core  dfba_disabled      n100   p1   f23 runs=3 flagged=0 loop=     0.046s speedup=  1.00 vs_off=     nan vs_up=    1.03
+mcf7_core  dfba_disabled      n100   p56  f23 runs=3 flagged=0 loop=     0.112s speedup=  0.42 vs_off=     nan vs_up=    1.05
+mcf7_core  dfba_disabled      n1000  p1   f23 runs=3 flagged=0 loop=     0.564s speedup=  1.00 vs_off=     nan vs_up=    1.02
+mcf7_core  dfba_disabled      n1000  p2   f23 runs=3 flagged=0 loop=     0.354s speedup=  1.60 vs_off=     nan vs_up=    0.98
+mcf7_core  dfba_disabled      n1000  p4   f23 runs=3 flagged=0 loop=     0.245s speedup=  2.30 vs_off=     nan vs_up=    1.01
+mcf7_core  dfba_disabled      n1000  p8   f23 runs=3 flagged=0 loop=     0.223s speedup=  2.54 vs_off=     nan vs_up=    1.01
+mcf7_core  dfba_disabled      n1000  p16  f23 runs=3 flagged=0 loop=     0.202s speedup=  2.79 vs_off=     nan vs_up=    0.98
+mcf7_core  dfba_disabled      n1000  p28  f23 runs=3 flagged=0 loop=     0.221s speedup=  2.56 vs_off=     nan vs_up=    1.01
+mcf7_core  dfba_disabled      n1000  p56  f23 runs=3 flagged=0 loop=     0.313s speedup=  1.80 vs_off=     nan vs_up=    1.05
+mcf7_core  dfba_disabled      n1000  p56  f32 runs=3 flagged=0 loop=     0.331s speedup=   nan vs_off=     nan vs_up=    1.00
+mcf7_core  dfba_disabled      n1000  p112 f23 runs=3 flagged=0 loop=     0.488s speedup=  1.16 vs_off=     nan vs_up=    0.93
+mcf7_core  dfba_disabled      n10000 p1   f23 runs=3 flagged=0 loop=     6.327s speedup=  1.00 vs_off=     nan vs_up=    0.99
+mcf7_core  dfba_disabled      n10000 p56  f23 runs=3 flagged=0 loop=     2.073s speedup=  3.05 vs_off=     nan vs_up=    1.02
+mcf7_core  upstream_physicell n100   p1   f23 runs=3 flagged=0 loop=     0.045s speedup=  1.00 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n100   p56  f23 runs=3 flagged=0 loop=     0.107s speedup=  0.42 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n1000  p1   f23 runs=3 flagged=0 loop=     0.553s speedup=  1.00 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n1000  p2   f23 runs=3 flagged=0 loop=     0.360s speedup=  1.54 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n1000  p4   f23 runs=3 flagged=0 loop=     0.242s speedup=  2.28 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n1000  p8   f23 runs=3 flagged=0 loop=     0.221s speedup=  2.50 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n1000  p16  f23 runs=3 flagged=0 loop=     0.205s speedup=  2.69 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n1000  p28  f23 runs=3 flagged=0 loop=     0.219s speedup=  2.52 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n1000  p56  f23 runs=3 flagged=0 loop=     0.297s speedup=  1.86 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n1000  p56  f32 runs=3 flagged=0 loop=     0.332s speedup=   nan vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n1000  p112 f23 runs=3 flagged=0 loop=     0.522s speedup=  1.06 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n10000 p1   f23 runs=3 flagged=0 loop=     6.366s speedup=  1.00 vs_off=     nan vs_up=     nan
+mcf7_core  upstream_physicell n10000 p56  f23 runs=3 flagged=0 loop=     2.042s speedup=  3.12 vs_off=     nan vs_up=     nan
+=== scaling exit 0
