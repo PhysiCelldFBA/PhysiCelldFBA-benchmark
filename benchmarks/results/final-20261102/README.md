@@ -25,6 +25,11 @@ per-run evidence.
 | Growth conditions | [growth-final-20261102](../growth_conditions/growth-final-20261102/README.md) | 23 | 22 pass all checks (10 before the fix) |
 | Cancer FBA vs pFBA | [pfba-final-20261104](../pfba/pfba-final-20261104/README.md) | 8 | Same growth, 192× less internal flux, 1.3–2× cost |
 | Performance and scaling | [scaling-final-20261104](../performance/scaling-final-20261104/README.md) | 405 | No add-on overhead; LPs scale to 38–41× on 56 threads |
+| PhysiCelldFBA unit tests | [unit_tests/c59daa81](../unit_tests/c59daa81/README.md) | 3 suites | All pass (section 7) |
+| Computational resources | [tables/](tables/) | — | Hardware, problem sizes, solver cost, feasible sizes (section 8) |
+
+Raw outputs (about 131 GB) are not in this repository; [DATA.md](../../DATA.md) describes where they are
+and how to read them. Archiving: [ZENODO.md](../../../ZENODO.md). License: [LICENSE](../../../LICENSE).
 
 Builds (GCC 11.5.0, `-O3 -march=native -fopenmp -DPHYSICELL_BENCHMARK`, Sapphire Rapids;
 records in [builds/](builds/)):
@@ -181,6 +186,73 @@ k = 1, 3 repeats; PhysiCelldFBA, PhysiCelldFBA without metabolism, and upstream 
 - **The LP work parallelises well:** 85–86% efficiency up to 28 threads, 38–41× at 56 threads and
   42–59× at 112 for MCF7 core and iML1515. E. coli core levels off at about 20× because its LPs are cheap.
 - Field count (4–32) does not change the loop time. iML1515 needs about 2.3 GB per 1000 cells.
+
+## 7. PhysiCelldFBA unit tests on the benchmarked commit
+
+PhysiCelldFBA's own `dfba_unit_test` suite, stock build of `c59daa81` (no benchmark hooks).
+[Full report and logs](../unit_tests/c59daa81/README.md).
+
+| Test | Result |
+|---|---|
+| Voxel sharing: 1, 4 and 8 cells and a mixed layout in one voxel (non-negative concentrations, no dilution by non-consumers) | 5/5 pass |
+| Update order: 12 heterogeneous cells, 5 creation orders, 1 and 4 threads, against the 1-thread identity order | 10/10 agree within 1.1×10⁻¹⁵ |
+| Voxel size and timestep (dx 0.8–3.2 µm × dt 0.005–0.02 min; intracellular dt 2× and 10× dt) | 118/118 pass |
+
+Together with section 1, this covers serial runs, parallel runs and changes of the cell update order.
+
+## 8. Computational resources
+
+All runs used exclusive MareNostrum 5 GPP nodes: 2 × Intel Xeon Platinum 8480+ (Sapphire
+Rapids, 2 × 56 cores, hyper-threading not used), 256 GB RAM, Red Hat Enterprise Linux 9
+(kernel 5.14). GCC 11.5.0 with `-O3 -march=native -fopenmp`. Clp 1.17.10, CoinUtils 2.11.12,
+libSBML 5.20.4. Single-threaded BLAS. OpenMP threads were bound to cores (`OMP_PROC_BIND=spread`,
+`OMP_PLACES=cores`). Machine-readable record: [tables/environment.json](tables/environment.json).
+Software versions for re-running the analysis: [environment/](../../environment/README.md).
+
+**Problem sizes** ([tables/models.csv](tables/models.csv)): the LP the solver sees per cell.
+
+| Model | Reactions | Metabolites (LP rows) | Nonzeros |
+|---|---:|---:|---:|
+| E. coli core | 95 | 72 | 360 |
+| MCF7 core | 374 | 360 | 1566 |
+| iML1515 | 2712 | 1877 | 10 575 |
+
+**Solver settings.** Clp dual simplex, warm-started from each cell's previous basis, primal and
+dual tolerances 10⁻⁷. The pFBA second stage uses primal simplex with the growth fixed at
+100% of the optimum.
+
+**Solver cost** ([tables/solver.csv](tables/solver.csv)): 1000 cells, 1 thread, k = 1, 10 min, 10⁶
+warm solves per run, median of 3 repeats.
+
+| Model | µs per warm solve | Simplex iterations per warm solve | ms per first (cold) solve | Warm solves per second, 1 thread |
+|---|---:|---:|---:|---:|
+| E. coli core | 35.7 | 0.004 | 0.56 | 28 000 |
+| MCF7 core | 210.9 | 0.023 | 1.98 | 4 700 |
+| iML1515 | 1518 | 0.46 | 25.9 | 660 |
+
+Most warm solves need no pivot at all at k = 1, because the bounds hardly move between steps. The
+cost is then mostly setting the bounds and checking the basis. Longer windows need more
+iterations (section 3).
+
+**Feasible problem sizes** ([tables/feasible_sizes.csv](tables/feasible_sizes.csv)): simulation-loop
+time measured at 10 000 cells (one per voxel, k = 1, diffusion dt 0.01 min) and extrapolated
+linearly to a 24-hour simulation. Cost is close to linear in the number of cells (section 6).
+Memory: about 0.12, 0.4 and 2.3 GB per 1000 cells.
+
+| Model | Threads | 1000 cells | 10 000 cells | 100 000 cells |
+|---|---:|---:|---:|---:|
+| E. coli core | 1 | 2.2 h | 22 h | 9.2 days |
+| E. coli core | 56 | 0.09 h | 0.9 h | 9.3 h |
+| MCF7 core | 1 | 11 h | 4.5 days | 45 days |
+| MCF7 core | 56 | 0.35 h | 3.5 h | 35 h |
+| iML1515 | 1 | 74 h | 31 days | 308 days |
+| iML1515 | 56 | 2.2 h | 22 h | 9.1 days |
+
+Running the metabolism every k diffusion steps divides the LP part of these times by up to k
+(section 3). For example, MCF7 core at k = 10 runs about 7–10× faster.
+These are the costs of PhysiCelldFBA on one shared-memory node. PhysiCell has no
+distributed-memory (MPI) parallelisation, so problems larger than one node's memory or time
+budget are not covered by these runs.
 
 ## Known limitations of the engine (documented, not changed)
 

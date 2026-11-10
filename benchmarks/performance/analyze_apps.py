@@ -31,6 +31,23 @@ def gnu_time(path):
     return seconds, int(rss.group(1)) if rss else None, int(status.group(1)) if status else None
 
 
+def physicell_wall(path):
+    """Last 'total wall time' printed by PhysiCell (fallback when the job was killed before GNU time reported)."""
+    hits = re.findall(r'total wall time: (\d+) days, (\d+) hours, (\d+) minutes, and ([\d.e+-]+) seconds', path.read_text(errors='replace')) if path.exists() else []
+    if not hits: return None
+    d, h, m, s = hits[-1]
+    return int(d)*86400 + int(h)*3600 + int(m)*60 + float(s)
+
+
+def slurm_state(job):
+    import subprocess
+    try:
+        out = subprocess.run(['sacct', '-j', job, '-X', '-n', '-P', '--format=State'], capture_output=True, text=True, timeout=60).stdout.split()
+        return out[0] if out else None
+    except (OSError, subprocess.SubprocessError):
+        return None
+
+
 def snapshot(xml):
     import scipy.io as sio
     root = ET.parse(xml).getroot()
@@ -58,12 +75,16 @@ def main():
         snaps = sorted(snapshot(x) for x in list(out.glob('output*.xml')) + [out/'final.xml'] if x.exists()) if out.exists() else []
         cell_steps = sum((t1-t0)*(c0+c1)/2 for (t0, c0), (t1, c1) in zip(snaps, snaps[1:]))/dt if len(snaps) > 1 else None
         wall, rss, status = gnu_time(run/'time.txt')
+        wall_source = 'gnu_time'
+        if wall is None:   # killed (e.g. Slurm time limit): PhysiCell's own clock up to its last report
+            wall, wall_source = physicell_wall(run/'stdout.log'), 'physicell_stdout'
         reached = snaps[-1][0] if snaps else None
         r = dict(name=job['name'], project=job['project'], config=job['config'], threads=int(info.get('threads_setting', 0) or 0),
-                 slurm_job=job['job_id'], exit_status=status, simulated_minutes=max_time, reached_minutes=reached,
+                 slurm_job=job['job_id'], slurm_state=slurm_state(job['job_id']), exit_status=status,
+                 completed=bool(reached is not None and reached >= max_time - 1e-6), simulated_minutes=max_time, reached_minutes=reached,
                  diffusion_dt=dt, intracellular_dt=';'.join(f'{x:g}' for x in intra), snapshots=len(snaps),
                  initial_cells=snaps[0][1] if snaps else None, final_cells=snaps[-1][1] if snaps else None,
-                 max_cells=max(c for _, c in snaps) if snaps else None, wall_seconds=wall, wall_hours=round(wall/3600, 3) if wall else None,
+                 max_cells=max(c for _, c in snaps) if snaps else None, wall_seconds=wall, wall_hours=round(wall/3600, 3) if wall else None, wall_source=wall_source,
                  peak_rss_gib=round(rss/1048576, 2) if rss else None,
                  wall_seconds_per_simulated_hour=round(wall/(reached/60), 2) if wall and reached else None,
                  microseconds_per_cell_step=round(1e6*wall/cell_steps, 2) if wall and cell_steps else None,
