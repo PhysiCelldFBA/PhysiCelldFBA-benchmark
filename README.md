@@ -13,6 +13,7 @@ a patch. Every hook sits inside `#ifdef PHYSICELL_BENCHMARK`.
 
 | Path | Contents |
 |---|---|
+| [`supplementary/`](supplementary/SUPPLEMENTARY.md) | The manuscript's benchmark supplement ([PDF](supplementary/PhysiCelldFBA_benchmark_supplement.pdf)); `make_figures.py` draws Figures S1–S7 from the result tables, `build_pdf.sh` builds the PDF |
 | [`PhysiCelldFBA/`](PhysiCelldFBA) | Submodule: the PhysiCelldFBA source under test (configs, SBML models, simulator) |
 | [`benchmarks/README.md`](benchmarks/README.md) | Overview of the studies and their status |
 | [`benchmarks/voxel_sharing/`](benchmarks/voxel_sharing) | Shared-voxel and mesh-occupancy concurrency diagnostics |
