@@ -19,6 +19,8 @@ final report supersedes them.
 | Model-specific growth conditions | Native and supplied media, single cells and fixed-volume populations | [performance/model_conditions/README.md](performance/model_conditions/README.md) | [23 controls](results/growth_conditions/growth-final-20261102/README.md): 22 pass | [Pre-fix](results/growth_conditions/growth-20261026/README.md): 10 pass |
 | Cancer FBA/pFBA | Single cell and the 240-cell application at intracellular dt 0.01 and 0.1 min | [performance/FINAL_STUDIES.md](performance/FINAL_STUDIES.md) | [8 runs](results/pfba/pfba-final-20261104/README.md): same growth, 192× less internal flux, 1.3–2× cost | — |
 | Performance/scaling | Cells, fields, networks and threads; upstream/disabled baselines | [performance/FINAL_STUDIES.md](performance/FINAL_STUDIES.md) | [405 runs](results/performance/scaling-final-20261104/README.md): no add-on overhead; LPs scale to 38–41× on 56 threads | — |
+| Manuscript simulations | The six dFBA sample projects as shipped (and at 56 threads): wall time, memory | [performance/analyze_apps.py](performance/analyze_apps.py) | [12 runs](results/applications/apps-20261109/README.md): 11 complete; cross-feeding crashed at 2550 of 3000 min | — |
+| PhysiCelldFBA unit tests | `dfba_unit_test` suite on `c59daa81` | [run.sh](results/unit_tests/c59daa81/run.sh) | [3 suites](results/unit_tests/c59daa81/README.md): all pass | — |
 
 `performance/` supplies shared build, input, telemetry and collection utilities.
 The shared-voxel protocol uses the existing sample project's eight-cell test,

@@ -1,0 +1,11 @@
+project crossfeeding
+config config/PhysiCell_settings.xml
+threads_setting 112
+binary_sha256 0988f7dc832b7ed58b291055f75f1ab30a6b5c6657a73fb3c278fd731658e46a
+config_sha256 42607f014846079d75e8ad82d13eeb399c634363fa2c3745416a6c2d5c003bf2
+shipped_config_sha256 42607f014846079d75e8ad82d13eeb399c634363fa2c3745416a6c2d5c003bf2
+slurm_job 48794111
+host gs22r2b72
+start 2026-11-09T06:10:14+01:00
+end 2026-11-10T12:23:01+01:00
+exit 139

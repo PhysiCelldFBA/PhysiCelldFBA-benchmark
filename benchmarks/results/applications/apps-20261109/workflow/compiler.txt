@@ -1,0 +1,2 @@
+g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+g++ -march=native  -O3 -fomit-frame-pointer -mfpmath=both -fopenmp -m64 -std=c++11   -MMD -MP

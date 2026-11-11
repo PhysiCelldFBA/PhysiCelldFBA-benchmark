@@ -1,0 +1,11 @@
+project metabolic_driven_motility
+config config/PhysiCell_settings_motility.xml
+threads_setting 6
+binary_sha256 4803f5035b6c18f26f8342948a1660106835f1215c46641837b989cbee3586da
+config_sha256 364f11d8d892beebb38062f1b8a59cdcb01e38bfb8223392b065f44fa7d4fbb4
+shipped_config_sha256 364f11d8d892beebb38062f1b8a59cdcb01e38bfb8223392b065f44fa7d4fbb4
+slurm_job 48794115
+host gs17r1b03
+start 2026-11-09T06:10:14+01:00
+end 2026-11-09T06:11:19+01:00
+exit 0

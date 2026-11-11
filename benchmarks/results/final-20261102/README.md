@@ -26,6 +26,7 @@ per-run evidence.
 | Cancer FBA vs pFBA | [pfba-final-20261104](../pfba/pfba-final-20261104/README.md) | 8 | Same growth, 192× less internal flux, 1.3–2× cost |
 | Performance and scaling | [scaling-final-20261104](../performance/scaling-final-20261104/README.md) | 405 | No add-on overhead; LPs scale to 38–41× on 56 threads |
 | PhysiCelldFBA unit tests | [unit_tests/c59daa81](../unit_tests/c59daa81/README.md) | 3 suites | All pass (section 7) |
+| The manuscript's simulations as shipped | [apps-20261109](../applications/apps-20261109/README.md) | 12 | 11 complete; cross-feeding crashed at 2550 of 3000 min (section 9) |
 | Computational resources | [tables/](tables/) | — | Hardware, problem sizes, solver cost, feasible sizes (section 8) |
 
 Raw outputs (about 131 GB) are not in this repository; [DATA.md](../../DATA.md) describes where they are
@@ -253,6 +254,31 @@ Running the metabolism every k diffusion steps divides the LP part of these time
 These are the costs of PhysiCelldFBA on one shared-memory node. PhysiCell has no
 distributed-memory (MPI) parallelisation, so problems larger than one node's memory or time
 budget are not covered by these runs.
+
+## 9. The manuscript's own simulations, as shipped
+
+The six dFBA sample projects of `c59daa81`, stock builds, shipped configurations, one exclusive node
+each. Those shipped with fewer threads were repeated at 56 threads (only `omp_num_threads` changed).
+Runs of 2026-11-09, 12 jobs. [Full report](../applications/apps-20261109/README.md).
+
+| Simulation | Simulated | Cells: start → end | Wall time, shipped threads | Wall time, 56 threads | Peak memory |
+|---|---:|---|---:|---:|---:|
+| Unit test | 4 h | 1 → 8 | 30 s (4) | 66 s | 20 MB |
+| Motility / motility and proliferation | 10 h | 1 / 1 → 4 | 65 s (6) | 93–95 s | 16 MB |
+| Acetate switch (E. coli core) | 10 h | 200 → 1600 | 4.08 h (3) | 0.72 h | 0.28 GB |
+| Cancer metabolism (MCF7 core) | 72 h | 240 → 354 | 2.42 h (6) | 0.55 h | 0.15 GB |
+| Bacterial colony (E. coli core) | 10 h | 211 → 93 655 | 16.0 h (112) | — | 11.0 GB |
+| Cross-feeding (iCB925 + iMG746, trimmed) | 42.5 of 50 h | 353 → 29 742 | 30.2 h (112), crashed | — | 14.2 GB |
+
+- Small simulations take about a minute, and more threads only slow them down. With hundreds of cells,
+  56 threads are 4.4–5.7× faster than the shipped 3–6.
+- Growing bacterial populations at the shipped dt of 0.001 min are the expensive case: 16 h on a full node
+  for 10 simulated hours of the bacterial colony.
+- **The cross-feeding run crashed** with a segmentation fault (no message, 14 GB of 256 GB memory) after
+  2550 of 3000 simulated minutes. Its colony had outgrown the 200 × 200 µm domain: 261 cells were outside it
+  at 2550 min, while no completed run ever reached its domain edge. The cause was not traced, because the
+  benchmark does not change the engine. Details and a reproduction suggestion are in the
+  [full report](../applications/apps-20261109/README.md#the-cross-feeding-run-crashed).
 
 ## Known limitations of the engine (documented, not changed)
 

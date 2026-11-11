@@ -1,0 +1,60 @@
+flux_value: -15.767
+current simulated time: 200 min (max: 240 min)
+total agents: 8
+interval wall time: 0 days, 0 hours, 0 minutes, and 2.84298 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 55.0045 seconds 
+
+flux_value: -15.4455
+flux_value: -15.433
+flux_value: -15.4455
+flux_value: -15.4394
+flux_value: -15.4394
+flux_value: -15.433
+current simulated time: 210 min (max: 240 min)
+total agents: 8
+interval wall time: 0 days, 0 hours, 0 minutes, and 2.83056 seconds 
+total wall time: 0 days, 0 hours, 0 minutes, and 57.8351 seconds 
+
+flux_value: -2.21087e-07
+flux_value: -3.16079e-07
+flux_value: -2.21087e-07
+flux_value: -1.69046e-07
+flux_value: -3.16079e-07
+current simulated time: 220 min (max: 240 min)
+total agents: 8
+interval wall time: 0 days, 0 hours, 0 minutes, and 2.82284 seconds 
+total wall time: 0 days, 0 hours, 1 minutes, and 0.657936 seconds 
+
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+current simulated time: 230 min (max: 240 min)
+total agents: 8
+interval wall time: 0 days, 0 hours, 0 minutes, and 2.82467 seconds 
+total wall time: 0 days, 0 hours, 1 minutes, and 3.48261 seconds 
+
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+current simulated time: 240 min (max: 240 min)
+total agents: 8
+interval wall time: 0 days, 0 hours, 0 minutes, and 2.82911 seconds 
+total wall time: 0 days, 0 hours, 1 minutes, and 6.31172 seconds 
+
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+flux_value: 0
+
+Total simulation runtime: 
+0 days, 0 hours, 1 minutes, and 6.31981 seconds 

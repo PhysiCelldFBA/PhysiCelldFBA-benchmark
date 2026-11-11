@@ -1,0 +1,11 @@
+project ecoli_acetic_switch
+config config/PhysiCell_settings.xml
+threads_setting 3
+binary_sha256 66d1b951de2b0da159bd4b02ea706799e70160ef15e0337a1b2727130173e55f
+config_sha256 3dbfb29092b7ebb63e2d50a00ed87b932d9e476e2fccd69b1ff960edaf5baa14
+shipped_config_sha256 3dbfb29092b7ebb63e2d50a00ed87b932d9e476e2fccd69b1ff960edaf5baa14
+slurm_job 48794106
+host gs15r2b71
+start 2026-11-09T06:10:14+01:00
+end 2026-11-09T10:14:56+01:00
+exit 0

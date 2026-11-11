@@ -1,0 +1,11 @@
+project bacterial_colony
+config config/PhysiCell_settings.xml
+threads_setting 112
+binary_sha256 3eef8dabcd9954bb00f6e0862de246de7f7980b304e9090b5d77d234d51df1b6
+config_sha256 e095612b8622bdfbfea93cb7bf2ebdf833d68703957dafc289a2b96cf0491a16
+shipped_config_sha256 e095612b8622bdfbfea93cb7bf2ebdf833d68703957dafc289a2b96cf0491a16
+slurm_job 48794108
+host gs20r1b59
+start 2026-11-09T06:10:14+01:00
+end 2026-11-09T22:10:01+01:00
+exit 0

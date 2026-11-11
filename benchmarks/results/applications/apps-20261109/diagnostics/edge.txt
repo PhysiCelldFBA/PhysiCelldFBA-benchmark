@@ -1,0 +1,12 @@
+$ edge.py crossfeeding-shipped/output 100 1.25 20 50 70 80 85
+t=600 cells=813 x[-31.16,24.04] y[-16.25,16.94] outside=0 within2um=0 cells_per_occupied_voxel mean=1.24 max=3
+t=1500 cells=5594 x[-61.25,35.20] y[-45.77,46.78] outside=0 within2um=0 cells_per_occupied_voxel mean=1.39 max=4
+t=2100 cells=15177 x[-89.35,58.69] y[-74.29,75.44] outside=0 within2um=0 cells_per_occupied_voxel mean=1.50 max=5
+t=2400 cells=24039 x[-100.65,72.58] y[-91.31,91.83] outside=42 within2um=132 cells_per_occupied_voxel mean=1.63 max=6
+t=2550 cells=29742 x[-100.72,81.09] y[-99.35,100.06] outside=261 within2um=506 cells_per_occupied_voxel mean=1.72 max=9
+$ edge.py bacterial-colony-shipped/output 500 2 10 15 20
+t=300 cells=13501 x[-77.67,78.32] y[-77.61,78.07] outside=0 within2um=0 cells_per_occupied_voxel mean=2.81 max=4
+t=450 cells=46438 x[-148.77,149.46] y[-147.79,148.36] outside=0 within2um=0 cells_per_occupied_voxel mean=2.69 max=5
+t=600 cells=93654 x[-213.18,213.15] y[-212.62,213.20] outside=0 within2um=0 cells_per_occupied_voxel mean=2.64 max=5
+$ edge.py acetic-switch-shipped/output 350 2 120
+t=600 cells=1600 x[-99.28,96.11] y[-100.36,100.70] outside=0 within2um=0 cells_per_occupied_voxel mean=1.65 max=4

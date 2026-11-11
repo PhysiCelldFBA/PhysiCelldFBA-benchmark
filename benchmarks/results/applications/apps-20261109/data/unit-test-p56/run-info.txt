@@ -1,0 +1,11 @@
+project dfba_unit_test
+config config/PhysiCell_settings.xml
+threads_setting 56
+binary_sha256 52ade27e13de5cce8eb64a080f0e121634d9f11df24c1214b4e3aea5150bf3c9
+config_sha256 8a9678f9dd0634bbb28f35ef95f4c526d42895b7c4d870fd96b569a3f922d607
+shipped_config_sha256 e2327a5c08f131675313abf55f8a0a7f70f56ffa0c63f1732abd5b35952b6665
+slurm_job 48794105
+host gs14r1b64
+start 2026-11-09T06:10:14+01:00
+end 2026-11-09T06:11:21+01:00
+exit 0

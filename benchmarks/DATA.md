@@ -26,13 +26,17 @@ on it long-term. Every campaign carries `campaign.sha256`, so its pinned files c
 | `growth-final-20261102` | Growth-condition controls | 23 | 1.9 GB | [growth-final-20261102](results/growth_conditions/growth-final-20261102/README.md) |
 | `pfba-final-20261104` | Cancer FBA vs pFBA (single cell, application) | 8 | 1.2 GB | [pfba-final-20261104](results/pfba/pfba-final-20261104/README.md) |
 | `scaling-final-20261104` | Performance and scaling, 3 variants | 405 | 19 GB | [scaling-final-20261104](results/performance/scaling-final-20261104/README.md) |
-| `apps-20261109` | The manuscript's own simulations as shipped (timing) | 12 | — | [apps-20261109](results/applications/apps-20261109/README.md) |
+| `apps-20261109` | The manuscript's own simulations as shipped (timing) | 12 | 7.4 GB | [apps-20261109](results/applications/apps-20261109/README.md) |
 | `unit-tests-c59daa81` | PhysiCelldFBA's `dfba_unit_test` suite on `c59daa81` | — | 0.1 GB | [unit_tests/c59daa81](results/unit_tests/c59daa81/README.md) |
 
 Build folders (`final-20261102/{fix,dev}`, `studies-20261104/upstream`, `apps-20261109/build`), preflight runs,
 pilots (`pfba-pilot-20261104`, `dtfix-20261027`, `dt-pilot-*`, `tradeoff-*-20261027`) and the job lists
 (`*/submitted-jobs.tsv`) are kept alongside. Their compact results are in the earlier-stage reports linked
 from [README.md](README.md).
+
+`apps-20261109` is not a campaign: it holds `build/<project>/` (stock builds), `runs/<name>/` (the executable,
+the `config/` folder as run, `run-info.txt`, GNU time `time.txt`, `stdout.log`, `stderr.log` and the project's own
+output folder with snapshots and SVGs), `submitted-jobs.tsv` and `diagnostics/`.
 
 ## Layout of a campaign
 

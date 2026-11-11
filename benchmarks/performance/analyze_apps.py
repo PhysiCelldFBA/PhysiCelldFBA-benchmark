@@ -28,7 +28,9 @@ def gnu_time(path):
         seconds = sum(v*60**i for i, v in enumerate(reversed(parts)))
     rss = re.search(r'Maximum resident set size \(kbytes\): (\d+)', text)
     status = re.search(r'Exit status: (\d+)', text)
-    return seconds, int(rss.group(1)) if rss else None, int(status.group(1)) if status else None
+    signal = re.search(r'Command terminated by signal (\d+)', text)   # GNU time then reports "Exit status: 0"
+    code = 128 + int(signal.group(1)) if signal else int(status.group(1)) if status else None
+    return seconds, int(rss.group(1)) if rss else None, code
 
 
 def physicell_wall(path):
@@ -75,6 +77,7 @@ def main():
         snaps = sorted(snapshot(x) for x in list(out.glob('output*.xml')) + [out/'final.xml'] if x.exists()) if out.exists() else []
         cell_steps = sum((t1-t0)*(c0+c1)/2 for (t0, c0), (t1, c1) in zip(snaps, snaps[1:]))/dt if len(snaps) > 1 else None
         wall, rss, status = gnu_time(run/'time.txt')
+        if 'exit' in info: status = int(info['exit'])   # the launcher's own record of the return code
         wall_source = 'gnu_time'
         if wall is None:   # killed (e.g. Slurm time limit): PhysiCell's own clock up to its last report
             wall, wall_source = physicell_wall(run/'stdout.log'), 'physicell_stdout'
