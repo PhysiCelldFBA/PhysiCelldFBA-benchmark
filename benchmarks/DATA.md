@@ -2,7 +2,7 @@
 
 The repository contains the **compact results** (tables, figures, per-run metrics and logs) under
 [`results/`](results/). The **raw campaign outputs** (every input bundle, MultiCellDS snapshot and per-step
-telemetry table) are too large for Git (about 131 GB for the final campaigns) and are kept on MareNostrum 5:
+telemetry table) are too large for Git (about 140 GB for the final campaigns) and are kept on MareNostrum 5:
 
 | Location | Contents |
 |---|---|

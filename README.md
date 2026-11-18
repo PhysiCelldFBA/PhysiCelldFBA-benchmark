@@ -67,3 +67,11 @@ procedure.
    not, regenerate it for the new source and record the change.
 3. Rebuild, prepare **new** campaigns and compare them with the earlier reports
    (`benchmarks/voxel_sharing/compare_builds.py`). Never overwrite published results.
+
+## License and citation
+
+The code in this repository (benchmark harness, scripts and patches) is distributed under the BSD 3-Clause
+license, the license of PhysiCell: see [LICENSE](LICENSE). The results, tables, figures and documentation are
+distributed under CC-BY-4.0.
+
+Release v1.0.0 is archived on Zenodo: [doi:10.5281/zenodo.24283791](https://doi.org/10.5281/zenodo.24283791).

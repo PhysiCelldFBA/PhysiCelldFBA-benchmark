@@ -667,10 +667,11 @@ intracellular timesteps of 0.01 min (solid) and 0.1 min (dashed). One run per co
 
 - PhysiCelldFBA commit `c59daa81bc13c459b9421b3fb5dbb7b6200b3b8b`.
 - PhysiCell baseline: commit `49d7cc54d9367431ae3f51814621258fdbbb736d` (version 1.14.2).
-- Benchmark repository: github.com/PhysiCelldFBA/PhysiCelldFBA-benchmark, release `[tag]`, archived on Zenodo as
-  `[DOI]`. It contains PhysiCelldFBA at the benchmarked commit as a Git submodule.
+- Benchmark repository: github.com/PhysiCelldFBA/PhysiCelldFBA-benchmark, release `v1.0.0`, archived on Zenodo as
+  [doi:10.5281/zenodo.24283791](https://doi.org/10.5281/zenodo.24283791). It contains PhysiCelldFBA at the benchmarked commit as a Git submodule.
 
-**License.** The benchmark code and results are distributed under the BSD 3-Clause license, the license of PhysiCell.
+**License.** The benchmark code is distributed under the BSD 3-Clause license, the license of PhysiCell (file
+`LICENSE`). The results, tables, figures and documentation are distributed under CC-BY-4.0.
 
 **What the archive contains.**
 

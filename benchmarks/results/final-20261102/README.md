@@ -29,7 +29,7 @@ per-run evidence.
 | The manuscript's simulations as shipped | [apps-20261109](../applications/apps-20261109/README.md) | 12 | 11 complete; cross-feeding crashed at 2550 of 3000 min (section 9) |
 | Computational resources | [tables/](tables/) | — | Hardware, problem sizes, solver cost, feasible sizes (section 8) |
 
-Raw outputs (about 131 GB) are not in this repository; [DATA.md](../../DATA.md) describes where they are
+Raw outputs (about 140 GB) are not in this repository; [DATA.md](../../DATA.md) describes where they are
 and how to read them. Archiving: [ZENODO.md](../../../ZENODO.md). License: [LICENSE](../../../LICENSE).
 
 Builds (GCC 11.5.0, `-O3 -march=native -fopenmp -DPHYSICELL_BENCHMARK`, Sapphire Rapids;
