@@ -13,7 +13,7 @@ pFBA fallbacks), as described below.
 |---|---:|---:|---:|---:|
 | Biomass change | 5.611976% | 5.611976% | 5.611976% | 5.611976% |
 | Median total internal \|flux\| | 3020 | 15.7 | 3020 | 15.7 |
-| Mean glucose / O₂ / lactate net export (BioFVM units/min) | −1204 / −4927 / 1536 | −946 / −4254 / 959 | −1204 / −4927 / 1536 | −946 / −4254 / 959 |
+| Mean glucose / O₂ / lactate net export (BioFVM units/min per cell; 1 unit = 1 mM µm³ = 1 amol) | −1204 / −4927 / 1536 | −946 / −4254 / 959 | −1204 / −4927 / 1536 | −946 / −4254 / 959 |
 | Second-stage solves (all optimal) | — | 24 000 | — | 2 400 |
 | Simulation-loop time | 15.7 s | 22.9 s | 8.9 s | 9.5 s |
 

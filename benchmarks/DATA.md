@@ -13,6 +13,11 @@ telemetry table) are too large for Git (about 140 GB for the final campaigns) an
 on it long-term. Every campaign carries `campaign.sha256`, so its pinned files can be checked after a copy
 (`sha256sum --check campaign.sha256`, which needs the original absolute paths, or an adapted copy of the list).
 
+For release v1.0.0 the whole `workspaces/` folder (163 GB) is also archived in the Zenodo record of the benchmark, as
+one `tar.zst` archive per folder (6.7 GB in total). The simulator executables, identical copies of nine binaries, are
+stored once in `executables.tar.zst`. The `README.md` uploaded with the archives explains how to extract them, and
+[`package_raw_data.sh`](package_raw_data.sh) and [`restore_executables.sh`](restore_executables.sh) are the scripts used.
+
 ## Final campaigns
 
 | Campaign folder | Study | Runs | Size | Report |

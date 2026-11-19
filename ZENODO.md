@@ -29,9 +29,12 @@ manuscript.
 
 ## 3. Raw data
 
-The raw campaign outputs (about 140 GB, see [benchmarks/DATA.md](benchmarks/DATA.md)) are not part of this
-record. If they are archived later, use a separate record and link it with "is supplemented by". Dropping the
-duplicated executables in `bundles/` and compressing the per-step CSV tables reduces the size considerably.
+The raw campaign outputs (the whole `benchmarks/workspaces/` folder, 163 GB; see
+[benchmarks/DATA.md](benchmarks/DATA.md)) go in the same record, next to the repository archive. They are packaged by
+[`benchmarks/package_raw_data.sh`](benchmarks/package_raw_data.sh): one byte-exact `tar.zst` per folder, verified against
+the SHA-256 of every source file, with the duplicated simulator executables stored once (`executables.tar.zst`;
+[`benchmarks/restore_executables.sh`](benchmarks/restore_executables.sh) puts them back). The result is 25 archives,
+6.7 GB in total, uploaded with their `README.md` and `SHA256SUMS`.
 
 ## 4. After publication
 

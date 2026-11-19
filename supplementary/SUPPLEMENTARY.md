@@ -606,7 +606,7 @@ status; live and dead cells; mean substrate concentrations; infeasible LPs; loop
 |---|---:|---:|---:|---:|
 | Biomass change | 5.611976% | 5.611976% | 5.611976% | 5.611976% |
 | Median total internal \|flux\| | 3,020 | 15.7 | 3,020 | 15.7 |
-| Mean glucose / O₂ / lactate net exchange (BioFVM units/min) | −1,204 / −4,927 / +1,536 | −946 / −4,254 / +959 | −1,204 / −4,927 / +1,536 | −946 / −4,254 / +959 |
+| Mean glucose / O₂ / lactate net exchange (BioFVM units/min per cell; 1 unit = 1 mM µm³ = 1 amol) | −1,204 / −4,927 / +1,536 | −946 / −4,254 / +959 | −1,204 / −4,927 / +1,536 | −946 / −4,254 / +959 |
 | Second-stage solves (all optimal) | — | 24,000 | — | 2,400 |
 | Simulation-loop time | 15.7 s | 22.9 s | 8.9 s | 9.5 s |
 
@@ -685,8 +685,8 @@ intracellular timesteps of 0.01 min (solid) and 0.1 min (dashed). One run per co
 - **Results**: per study, tables of every run, figures, compact per-run evidence (metrics, telemetry summaries, settings,
   hardware records, logs) and an `analysis.json` with the SHA-256 of the analysis script and of every evidence file.
 - **Environment**: compiler and module versions, and `pip freeze` of the analysis environment.
-- **Raw outputs** (about 140 GB: snapshots and per-step telemetry) are archived separately, with a guide to their layout
-  (`benchmarks/DATA.md`).
+- **Raw outputs** (snapshots and per-step telemetry; 163 GB, 6.7 GB compressed) are archived in the same Zenodo record, as
+  one archive per campaign folder, with a guide to their layout (`benchmarks/DATA.md`).
 
 **Commands.** Each study is prepared, run and analysed by a scripted workflow. The exact sequences used are in
 `benchmarks/results/final-20261102/workflow/` and `workflow-studies/`. In outline:
